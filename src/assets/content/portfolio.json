@@ -1,0 +1,877 @@
+{
+  "schemaVersion": 2,
+  "profile": {
+    "name": "Arlan Mendes",
+    "tagline": {
+      "en": "Software Engineer & Competitive Athlete",
+      "pt": null,
+      "fr": null
+    },
+    "location": "Regina, SK, Canada",
+    "summary": {
+      "en": "Bridging enterprise systems architecture and endurance athletic rigor.",
+      "pt": null,
+      "fr": null
+    },
+    "socialLinks": [
+      {
+        "label": "GitHub",
+        "icon": "terminal",
+        "url": "https://github.com/arlamend7"
+      },
+      {
+        "label": "LinkedIn",
+        "icon": "link",
+        "url": "https://www.linkedin.com/in/arlan-dos-santos-franklin-mendes-b190a717b/"
+      },
+      {
+        "label": "Steam",
+        "icon": "sports_esports",
+        "url": "https://steamcommunity.com/profiles/76561198277951568/"
+      }
+    ]
+  },
+  "home": {
+    "badges": [
+      {
+        "en": "Full Delivery Lifecycle",
+        "pt": null,
+        "fr": null
+      },
+      {
+        "en": "SQL & C#/.NET & Angular",
+        "pt": null,
+        "fr": null
+      },
+      {
+        "en": "State Champion & World Aquathlon Qualifier",
+        "pt": null,
+        "fr": null
+      }
+    ],
+    "eyebrow": {
+      "en": "Architectural Engineering • Athletics",
+      "pt": null,
+      "fr": null
+    },
+    "title": {
+      "en": "High-performance engineering.",
+      "pt": null,
+      "fr": null
+    },
+    "subtitle": {
+      "en": "From business to delivery.",
+      "pt": null,
+      "fr": null
+    },
+    "introduction": {
+      "en": "I connect business needs to technical delivery—from solution analysis and architecture to development, quality assurance, documentation, and team coordination.",
+      "pt": null,
+      "fr": null
+    },
+    "stack": {
+      "en": "C# • .NET • Angular",
+      "pt": null,
+      "fr": null
+    },
+    "stackDescription": {
+      "en": "Enterprise systems, databases & APIs",
+      "pt": null,
+      "fr": null
+    },
+    "sportsSummary": {
+      "en": "State Champion • World Championship Qualifier (2017)",
+      "pt": null,
+      "fr": null
+    },
+    "capabilities": [
+      {
+        "id": "0",
+        "icon": "speed",
+        "eyebrow": {
+          "en": "System integrity",
+          "pt": null,
+          "fr": null
+        },
+        "title": {
+          "en": "Performance-focused engineering",
+          "pt": null,
+          "fr": null
+        },
+        "description": {
+          "en": "SQL query and stored procedure optimization, data-access refactoring, and performance-sensitive pricing systems.",
+          "pt": null,
+          "fr": null
+        },
+        "footerLabel": {
+          "en": "Focus areas",
+          "pt": null,
+          "fr": null
+        },
+        "footer": {
+          "en": "SQL optimization • Stored procedures • Data access",
+          "pt": null,
+          "fr": null
+        },
+        "tone": "primary"
+      },
+      {
+        "id": "1",
+        "icon": "hub",
+        "eyebrow": {
+          "en": "End-to-end execution",
+          "pt": null,
+          "fr": null
+        },
+        "title": {
+          "en": "One person, many responsibilities",
+          "pt": null,
+          "fr": null
+        },
+        "description": {
+          "en": "Hands-on development, solution analysis, architecture, QA, documentation, and coordination across my career.",
+          "pt": null,
+          "fr": null
+        },
+        "footerLabel": {
+          "en": "Execution scope",
+          "pt": null,
+          "fr": null
+        },
+        "footer": {
+          "en": "Development • QA • Architecture • Coordination",
+          "pt": null,
+          "fr": null
+        },
+        "tone": "primary"
+      },
+      {
+        "id": "2",
+        "icon": "sync_alt",
+        "eyebrow": {
+          "en": "Alignment & strategy",
+          "pt": null,
+          "fr": null
+        },
+        "title": {
+          "en": "A bridge between business & engineering",
+          "pt": null,
+          "fr": null
+        },
+        "description": {
+          "en": "I make complex work understandable through proposals, use cases, diagrams, shared priorities, and clear technical documentation.",
+          "pt": null,
+          "fr": null
+        },
+        "footerLabel": {
+          "en": "Methodology",
+          "pt": null,
+          "fr": null
+        },
+        "footer": {
+          "en": "Proposals • Use cases • Diagrams • Documentation",
+          "pt": null,
+          "fr": null
+        },
+        "tone": "accent"
+      }
+    ],
+    "recognitions": [
+      {
+        "id": "gft-program",
+        "icon": "verified",
+        "eyebrow": {
+          "en": "GFT GROUP",
+          "pt": null,
+          "fr": null
+        },
+        "title": {
+          "en": "International English Immersion Program",
+          "pt": null,
+          "fr": null
+        },
+        "description": {
+          "en": "Brazilian employees selected for a funded international English program in the USA.",
+          "pt": null,
+          "fr": null
+        },
+        "footerLabel": {
+          "en": "Selection",
+          "pt": null,
+          "fr": null
+        },
+        "footer": {
+          "en": "1 of 10",
+          "pt": null,
+          "fr": null
+        },
+        "tone": "primary"
+      },
+      {
+        "id": "autoglass-training",
+        "icon": "verified",
+        "eyebrow": {
+          "en": "AUTOGLASS",
+          "pt": null,
+          "fr": null
+        },
+        "title": {
+          "en": "Professional Development Program",
+          "pt": null,
+          "fr": null
+        },
+        "description": {
+          "en": "Selected for paid professional training during the first eight months.",
+          "pt": null,
+          "fr": null
+        },
+        "footerLabel": {
+          "en": "Selection",
+          "pt": null,
+          "fr": null
+        },
+        "footer": {
+          "en": "1 of 8",
+          "pt": null,
+          "fr": null
+        },
+        "tone": "primary"
+      },
+      {
+        "id": "pricing-team",
+        "icon": "verified",
+        "eyebrow": {
+          "en": "AUTOGLASS",
+          "pt": null,
+          "fr": null
+        },
+        "title": {
+          "en": "Performance-Focused Pricing Team",
+          "pt": null,
+          "fr": null
+        },
+        "description": {
+          "en": "Selected for sensitive, performance-focused pricing projects.",
+          "pt": null,
+          "fr": null
+        },
+        "footerLabel": {
+          "en": "Selection",
+          "pt": null,
+          "fr": null
+        },
+        "footer": {
+          "en": "3-developer team",
+          "pt": null,
+          "fr": null
+        },
+        "tone": "accent"
+      }
+    ],
+    "sports": [
+      {
+        "id": "world-qualification-2017",
+        "icon": "public",
+        "year": 2017,
+        "title": {
+          "en": "World Aquathlon Championship qualifier",
+          "pt": null,
+          "fr": null
+        },
+        "result": {
+          "en": "Qualified",
+          "pt": null,
+          "fr": null
+        },
+        "description": {
+          "en": "Qualified for the World Aquathlon Championship in Penticton, Canada, scheduled for August 2017.",
+          "pt": null,
+          "fr": null
+        }
+      },
+      {
+        "id": "capixaba-2017",
+        "icon": "military_tech",
+        "year": 2017,
+        "title": {
+          "en": "Campeão Capixaba de Aquathlon",
+          "pt": null,
+          "fr": null
+        },
+        "result": {
+          "en": "1st overall",
+          "pt": null,
+          "fr": null
+        },
+        "description": {
+          "en": "Espírito Santo state aquathlon champion in 2017.",
+          "pt": null,
+          "fr": null
+        }
+      },
+      {
+        "id": "brazilian-2016",
+        "icon": "workspace_premium",
+        "year": 2016,
+        "title": {
+          "en": "Brazilian Aquathlon Championship · Brasília",
+          "pt": null,
+          "fr": null
+        },
+        "result": {
+          "en": "3rd overall",
+          "pt": null,
+          "fr": null
+        },
+        "description": {
+          "en": "Third overall at the 2016 Brazilian Aquathlon Championship in Brasília.",
+          "pt": null,
+          "fr": null
+        }
+      },
+      {
+        "id": "triathlon-2017",
+        "icon": "directions_bike",
+        "year": 2017,
+        "title": {
+          "en": "Triathlon victories",
+          "pt": null,
+          "fr": null
+        },
+        "result": {
+          "en": "1st overall",
+          "pt": null,
+          "fr": null
+        },
+        "description": {
+          "en": "First overall in the first two triathlon championship stages and at Triathlon Apaches Itaoca.",
+          "pt": null,
+          "fr": null
+        }
+      }
+    ],
+    "sportsIntroduction": {
+      "en": "Competitive swimming from age nine; aquathlon and triathlon competition from 2015.",
+      "pt": null,
+      "fr": null
+    },
+    "sportsImage": {
+      "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuBlQCKc9lLOvRyuDi_qgYayaUa8ajnZOgd_q5VAqEQl2iXw0bdTthXJHa_RUw2AdgZrZmWllWuzoK0FzEH0hpH245bSPLeaUGpICK_rzJ9ko5kguiSZw6hnHs18asocGH2e15PJwHW8UNJLeh4BwD9GBDfJy4pdrBmvgqGwuxLx_TDPTAJWlHQoq6-b0BWT8LiIw7sI6iGtMFmI7PnPi2yanprhPBpfy6GAib7bfyDL50yx5hYqcGTW1g",
+      "alt": {
+        "en": "Illustrative photograph of a swimmer by open water",
+        "pt": null,
+        "fr": null
+      },
+      "caption": {
+        "en": "Illustrative image — personal competition photo to be supplied.",
+        "pt": null,
+        "fr": null
+      }
+    },
+    "gaming": {
+      "en": "Games are part of my life beyond engineering and training.",
+      "pt": null,
+      "fr": null
+    }
+  },
+  "companies": [
+    {
+      "id": "techinnov",
+      "name": "TechInnov",
+      "role": {
+        "en": "Developer & QA Coordinator",
+        "pt": null,
+        "fr": null
+      },
+      "period": {
+        "startYear": 2023,
+        "endYear": null,
+        "current": true
+      },
+      "location": "Canada",
+      "engagement": {
+        "en": "Employment",
+        "pt": null,
+        "fr": null
+      },
+      "summary": {
+        "en": "Connecting business needs, hands-on engineering, quality assurance, and team coordination for a multilingual learning platform.",
+        "pt": null,
+        "fr": null
+      },
+      "description": [
+        {
+          "en": "At TechInnov, I work across the delivery lifecycle of an online learning platform used by learners, tutors, coordinators, and administrators. I combine Angular/TypeScript and C#/.NET development with SQL Server work, solution analysis, QA coordination, and technical documentation.",
+          "pt": null,
+          "fr": null
+        },
+        {
+          "en": "I turn business needs into proposals that clients can evaluate: scope, assumptions, alternatives, use cases, process flows, and diagrams. I support estimation, prioritization, and technical decisions so business stakeholders, developers, and testers share a clear understanding of the work.",
+          "pt": null,
+          "fr": null
+        }
+      ],
+      "work": [
+        {
+          "title": {
+            "en": "Performance and full-stack development",
+            "pt": null,
+            "fr": null
+          },
+          "items": [
+            {
+              "en": "Optimize SQL Server queries and stored procedures and refactor data-access code.",
+              "pt": null,
+              "fr": null
+            },
+            {
+              "en": "Build and maintain Angular/TypeScript and C#/.NET features using Entity Framework, including established .NET Framework and MVC code.",
+              "pt": null,
+              "fr": null
+            },
+            {
+              "en": "Develop booking, rescheduling, cancellation rules, learner-progress tracking, and reporting.",
+              "pt": null,
+              "fr": null
+            },
+            {
+              "en": "Generate PDF documents with iTextSharp and write Angular unit tests.",
+              "pt": null,
+              "fr": null
+            },
+            {
+              "en": "Contribute to pronunciation scoring with Azure speech services and multilingual interfaces, database content, and email templates.",
+              "pt": null,
+              "fr": null
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Business analysis and coordination",
+            "pt": null,
+            "fr": null
+          },
+          "items": [
+            {
+              "en": "Compare solution alternatives and prepare proposals for client validation.",
+              "pt": null,
+              "fr": null
+            },
+            {
+              "en": "Document scope, assumptions, use cases, flows, diagrams, and architectural decisions.",
+              "pt": null,
+              "fr": null
+            },
+            {
+              "en": "Coordinate estimates and organize and prioritize work for developers and testers.",
+              "pt": null,
+              "fr": null
+            },
+            {
+              "en": "Support technical decisions and stakeholder communication through Jira, Confluence, and Slack.",
+              "pt": null,
+              "fr": null
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Quality, accessibility, and documentation",
+            "pt": null,
+            "fr": null
+          },
+          "items": [
+            {
+              "en": "Plan and coordinate feature-level QA, smoke tests, regression tests, and evidence reports.",
+              "pt": null,
+              "fr": null
+            },
+            {
+              "en": "Work with Playwright automation and nightly test runs.",
+              "pt": null,
+              "fr": null
+            },
+            {
+              "en": "Check WCAG accessibility requirements and contribute to migration of tutor features to the accessible platform.",
+              "pt": null,
+              "fr": null
+            },
+            {
+              "en": "Create technical documentation, coding guidance, reusable QA templates, and logging processes.",
+              "pt": null,
+              "fr": null
+            }
+          ]
+        }
+      ],
+      "achievements": [
+        {
+          "en": "Responsibility spanning business analysis, development, QA, documentation, and coordination.",
+          "pt": null,
+          "fr": null
+        },
+        {
+          "en": "Performance-focused SQL and data-access improvements.",
+          "pt": null,
+          "fr": null
+        },
+        {
+          "en": "Contributions to multilingual and accessible learning experiences.",
+          "pt": null,
+          "fr": null
+        }
+      ],
+      "technologies": [
+        "Angular",
+        "TypeScript",
+        "C#",
+        ".NET",
+        ".NET Framework",
+        "MVC",
+        "SQL Server",
+        "Entity Framework",
+        "Playwright",
+        "iTextSharp",
+        "Azure speech services"
+      ],
+      "projectIds": []
+    },
+    {
+      "id": "gft",
+      "name": "GFT Group",
+      "role": {
+        "en": "Full-Stack Developer",
+        "pt": null,
+        "fr": null
+      },
+      "period": {
+        "startYear": 2021,
+        "endYear": 2023,
+        "current": false
+      },
+      "location": null,
+      "engagement": {
+        "en": "Employment",
+        "pt": null,
+        "fr": null
+      },
+      "summary": {
+        "en": "Full-stack delivery, cloud APIs, and support beyond the development role.",
+        "pt": null,
+        "fr": null
+      },
+      "description": [
+        {
+          "en": "At GFT Group, I developed responsive, accessible Angular interfaces and .NET APIs using Azure, microservices, event-driven architecture, and CQRS.",
+          "pt": null,
+          "fr": null
+        },
+        {
+          "en": "My responsibilities also included configuring Azure DevOps pipelines when the team did not have a DevOps specialist, and helping new developers understand both the technology and the business rules through training and quizzes. I worked on a health-insurance request and purchase flow with prepayment through a third-party library.",
+          "pt": null,
+          "fr": null
+        }
+      ],
+      "work": [
+        {
+          "title": {
+            "en": "Engineering and delivery",
+            "pt": null,
+            "fr": null
+          },
+          "items": [
+            {
+              "en": "Develop responsive and accessible Angular interfaces and .NET APIs.",
+              "pt": null,
+              "fr": null
+            },
+            {
+              "en": "Work with Azure, microservices, event-driven architecture, and CQRS.",
+              "pt": null,
+              "fr": null
+            },
+            {
+              "en": "Configure Azure DevOps pipelines for projects without a dedicated DevOps specialist.",
+              "pt": null,
+              "fr": null
+            },
+            {
+              "en": "Contribute to a prepayment flow using a third-party library for health-insurance requests and purchases.",
+              "pt": null,
+              "fr": null
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Team enablement",
+            "pt": null,
+            "fr": null
+          },
+          "items": [
+            {
+              "en": "Train new developers in technologies and business rules.",
+              "pt": null,
+              "fr": null
+            },
+            {
+              "en": "Create quizzes to reinforce onboarding and knowledge sharing.",
+              "pt": null,
+              "fr": null
+            }
+          ]
+        }
+      ],
+      "achievements": [
+        {
+          "en": "Selected as one of 10 Brazilian employees for a GFT-funded international English program in the United States.",
+          "pt": null,
+          "fr": null
+        }
+      ],
+      "technologies": ["Angular", ".NET", "Azure", "Azure DevOps", "Microservices", "CQRS"],
+      "projectIds": []
+    },
+    {
+      "id": "telegestao",
+      "name": "Telegestão",
+      "role": {
+        "en": "Software Architect",
+        "pt": null,
+        "fr": null
+      },
+      "period": {
+        "startYear": 2022,
+        "endYear": 2023,
+        "current": false
+      },
+      "location": "Brazil",
+      "engagement": {
+        "en": "Freelance · concurrent with GFT",
+        "pt": null,
+        "fr": null
+      },
+      "summary": {
+        "en": "Architecture, reusable foundations, and documentation for a multi-tenant management system.",
+        "pt": null,
+        "fr": null
+      },
+      "description": [
+        {
+          "en": "As a freelance software architect at Telegestão, I designed a microservices architecture for a multi-tenant management system using Angular, ASP.NET Web API, and Azure Cloud.",
+          "pt": null,
+          "fr": null
+        },
+        {
+          "en": "I created development templates, libraries, and standards, and documented architecture, application flows, data handling, and LGPD considerations. This work took place alongside my employment at GFT.",
+          "pt": null,
+          "fr": null
+        }
+      ],
+      "work": [
+        {
+          "title": {
+            "en": "Architecture and reusable foundations",
+            "pt": null,
+            "fr": null
+          },
+          "items": [
+            {
+              "en": "Design microservices for a multi-tenant management system.",
+              "pt": null,
+              "fr": null
+            },
+            {
+              "en": "Create templates, reusable libraries, and development standards.",
+              "pt": null,
+              "fr": null
+            },
+            {
+              "en": "Document architecture, application flows, data handling, and LGPD considerations.",
+              "pt": null,
+              "fr": null
+            }
+          ]
+        }
+      ],
+      "achievements": [
+        {
+          "en": "Combined architecture design with practical libraries, templates, and documentation for implementation.",
+          "pt": null,
+          "fr": null
+        }
+      ],
+      "technologies": ["Angular", "ASP.NET Web API", "Azure", "Microservices", "Multi-tenancy"],
+      "projectIds": []
+    },
+    {
+      "id": "autoglass",
+      "name": "Autoglass",
+      "role": {
+        "en": "Full-Stack Developer",
+        "pt": null,
+        "fr": null
+      },
+      "period": {
+        "startYear": 2019,
+        "endYear": 2021,
+        "current": false
+      },
+      "location": "Brazil",
+      "engagement": {
+        "en": "Employment",
+        "pt": null,
+        "fr": null
+      },
+      "summary": {
+        "en": "Performance-sensitive pricing, legacy modernization, and early professional recognition.",
+        "pt": null,
+        "fr": null
+      },
+      "description": [
+        {
+          "en": "At Autoglass, I maintained and modernized systems spanning Delphi, AngularJS, and .NET Framework toward .NET and Angular, in on-premises and AWS environments.",
+          "pt": null,
+          "fr": null
+        },
+        {
+          "en": "I worked on pricing systems covering products, taxes, freight, and configurable scenario rules. I was selected for a three-developer team handling sensitive pricing information and performance requirements, working with architecture and QA.",
+          "pt": null,
+          "fr": null
+        },
+        {
+          "en": "Alongside development, I contributed to automated testing, log visibility, and training new developers in technology and business rules.",
+          "pt": null,
+          "fr": null
+        }
+      ],
+      "work": [
+        {
+          "title": {
+            "en": "Systems and performance",
+            "pt": null,
+            "fr": null
+          },
+          "items": [
+            {
+              "en": "Maintain and modernize legacy Delphi, AngularJS, and .NET Framework applications.",
+              "pt": null,
+              "fr": null
+            },
+            {
+              "en": "Develop pricing rules covering products, taxes, freight, and configurable scenarios.",
+              "pt": null,
+              "fr": null
+            },
+            {
+              "en": "Collaborate with architecture and QA on performance-sensitive pricing work.",
+              "pt": null,
+              "fr": null
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Quality and team development",
+            "pt": null,
+            "fr": null
+          },
+          "items": [
+            {
+              "en": "Write unit, integration, and end-to-end tests with Jest, Cypress, and Protractor.",
+              "pt": null,
+              "fr": null
+            },
+            {
+              "en": "Work with Kibana log dashboards and collaborate with QA.",
+              "pt": null,
+              "fr": null
+            },
+            {
+              "en": "Train new developers and create technology and business-rule quizzes.",
+              "pt": null,
+              "fr": null
+            }
+          ]
+        }
+      ],
+      "achievements": [
+        {
+          "en": "Selected as one of eight for paid training during the first eight months, covering languages, governance, and processes.",
+          "pt": null,
+          "fr": null
+        },
+        {
+          "en": "Selected for a three-developer team on sensitive pricing projects with performance requirements.",
+          "pt": null,
+          "fr": null
+        }
+      ],
+      "technologies": [
+        "Delphi",
+        "AngularJS",
+        "Angular",
+        ".NET Framework",
+        ".NET",
+        "AWS",
+        "Jest",
+        "Cypress",
+        "Protractor",
+        "Kibana"
+      ],
+      "projectIds": []
+    }
+  ],
+  "projects": [
+    {
+      "id": "libs-csharp",
+      "kind": "package",
+      "name": "libs-csharp",
+      "description": {
+        "en": "Reusable C# libraries for email, queries, Excel, database access, scheduled jobs, and utilities.",
+        "pt": null,
+        "fr": null
+      },
+      "url": null
+    },
+    {
+      "id": "flutter-route-definer",
+      "kind": "package",
+      "name": "flutter_route_definer",
+      "description": {
+        "en": "Flutter navigation with route parsing, parameters, and access rules.",
+        "pt": null,
+        "fr": null
+      },
+      "url": null
+    },
+    {
+      "id": "briefcase-handlers",
+      "kind": "package",
+      "name": "Briefcase.Handlers",
+      "description": {
+        "en": "",
+        "pt": null,
+        "fr": null
+      },
+      "url": null
+    },
+    {
+      "id": "voar-prime",
+      "kind": "project",
+      "name": "Voar Prime",
+      "description": {
+        "en": "Project documentation to be supplied.",
+        "pt": null,
+        "fr": null
+      },
+      "markdown": {
+        "en": "assets/voar-prime.md",
+        "pt": null,
+        "fr": null
+      }
+    }
+  ],
+  "initialCompanyId": "techinnov"
+}

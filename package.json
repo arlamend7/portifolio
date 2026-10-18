@@ -1,0 +1,49 @@
+{
+  "name": "arlan-mendes-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "ng serve --host 127.0.0.1",
+    "build": "ng build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "lint": "eslint src",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check": "npm run lint && npm run test && npm run build"
+  },
+  "dependencies": {
+    "@angular/common": "22.2.3",
+    "@angular/compiler": "22.2.3",
+    "@angular/core": "22.2.3",
+    "@angular/platform-browser": "22.2.3",
+    "@angular/router": "22.2.3",
+    "@ngx-translate/core": "18.0.0",
+    "@ngx-translate/http-loader": "18.0.0",
+    "highlight.js": "11.12.0",
+    "markdown-it": "15.0.3",
+    "rxjs": "^7.8.2",
+    "tslib": "^2.8.1",
+    "valibot": "^1.5.0"
+  },
+  "devDependencies": {
+    "@angular/build": "22.2.3",
+    "@angular/cli": "22.2.3",
+    "@angular/compiler-cli": "22.2.3",
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.58.0",
+    "@types/node": "^24.0.0",
+    "angular-eslint": "^22.0.0",
+    "eslint": "^10.13.0",
+    "prettier": "^3.8.0",
+    "sass": "^1.97.0",
+    "typescript": "~6.0.0",
+    "typescript-eslint": "^8.0.0",
+    "vitest": "^4.0.0"
+  },
+  "engines": {
+    "node": "^22.22.3 || ^24.15.0 || >=26.0.0"
+  },
+  "type": "module"
+}

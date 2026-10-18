@@ -1,0 +1,43 @@
+<dialog
+  #dialog
+  (close)="state.close()"
+  (cancel)="state.close()"
+  aria-labelledby="preferences-title"
+>
+  <div class="dialog-heading">
+    <h2 id="preferences-title">{{ 'preferences.title' | translate }}</h2>
+    <button type="button" (click)="close()">{{ 'common.close' | translate }} ×</button>
+  </div>
+  <fieldset>
+    <legend>{{ 'preferences.theme' | translate }}</legend>
+    <div class="choices">
+      @for(option of themes;track option){<button
+        type="button"
+        class="pill"
+        [attr.aria-pressed]="theme.theme() === option"
+        (click)="theme.select(option)"
+      >
+        {{ ('preferences.' + option) | translate }}</button
+      >}
+    </div>
+  </fieldset>
+  <label class="color-control"
+    >{{ 'preferences.accent' | translate }}<input
+      type="color"
+      [value]="theme.accent()"
+      (input)="changeAccent($event)"
+  /></label>
+  <fieldset>
+    <legend>{{ 'preferences.language' | translate }}</legend>
+    <div class="choices">
+      @for(language of locale.available;track language){<button
+        type="button"
+        class="pill"
+        [attr.aria-pressed]="locale.current() === language"
+        (click)="locale.select(language)"
+      >
+        {{ ('preferences.' + language) | translate }}</button
+      >}
+    </div>
+  </fieldset>
+</dialog>

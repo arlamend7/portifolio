@@ -1,0 +1,47 @@
+dialog {
+  border: 0;
+  border-radius: 12px;
+  padding: 32px;
+  width: min(580px, calc(100vw - 32px));
+  color: var(--text);
+  background: var(--surface);
+  max-height: 90vh;
+  overflow: auto;
+}
+dialog::backdrop {
+  background: #001b15aa;
+  backdrop-filter: blur(4px);
+}
+.dialog-heading {
+  display: flex;
+  gap: 24px;
+  align-items: start;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+h2 {
+  font: var(--heading-lg);
+}
+.dialog-heading button {
+  flex-shrink: 0;
+}
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 24px 0;
+}
+legend {
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+.choices {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.color-control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}

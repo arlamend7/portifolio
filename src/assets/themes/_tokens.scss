@@ -1,0 +1,47 @@
+:root {
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+  --font-heading: 'Newsreader', Georgia, serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --display: 400 56px/64px var(--font-heading);
+  --heading-xl: 400 40px/48px var(--font-heading);
+  --heading-lg: 400 28px/36px var(--font-heading);
+  --mono-small: 400 11px/16px var(--font-mono);
+  --surface: #f9f9f7;
+  --surface-low: #f4f4f2;
+  --surface-high: #eeeeec;
+  --surface-card: #fff;
+  --text: #1a1c1b;
+  --text-muted: #414844;
+  --brand: #002218;
+  --on-brand: #fff;
+  --accent: #914c00;
+  --accent-soft: #ffdcc3;
+  --border: #c1c8c3;
+  --header-bg: #f9f9f7ed;
+  --shadow: 0 1px 8px #00000006;
+}
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --surface: #101c17;
+  --surface-low: #17271e;
+  --surface-high: #253b2e;
+  --surface-card: #20342a;
+  --text: #e1ede5;
+  --text-muted: #b5c8bd;
+  --brand: #bce4cd;
+  --on-brand: #002218;
+  --accent: #ffb77f;
+  --accent-soft: #513119;
+  --border: #4c6658;
+  --header-bg: #101c17ed;
+}
+:root[data-theme='custom'] {
+  --brand: var(--custom-accent, #245b45);
+  --on-brand: var(--custom-on-accent, #fff);
+}
+@media (max-width: 640px) {
+  :root {
+    --display: 400 38px/44px var(--font-heading);
+    --heading-xl: 400 30px/36px var(--font-heading);
+  }
+}

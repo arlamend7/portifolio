@@ -1,0 +1,39 @@
+.reader-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 220px;
+  gap: 56px;
+}
+.markdown-content {
+  min-width: 0;
+}
+.table-of-contents {
+  position: sticky;
+  top: 112px;
+  align-self: start;
+}
+.table-of-contents nav {
+  display: grid;
+  gap: 16px;
+  margin-top: 24px;
+}
+.table-of-contents a {
+  color: var(--text-muted);
+  font-size: 13px;
+}
+.table-of-contents p {
+  margin-top: 20px;
+  font-size: 13px;
+}
+@media (max-width: 800px) {
+  .reader-layout {
+    grid-template-columns: 1fr;
+  }
+  .table-of-contents {
+    position: static;
+    grid-row: 1;
+  }
+  .table-of-contents nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

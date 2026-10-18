@@ -1,0 +1,30 @@
+@if(result().status === 'loading') {
+<p role="status">{{ 'common.loading' | translate }}</p>
+} @if(result().status === 'error') {
+<div role="alert">
+  <p>{{ 'projects.readmeError' | translate }}</p>
+  <button type="button" class="button" (click)="retry()">{{ 'common.retry' | translate }}</button>
+</div>
+} @if(rendered();as document) {
+<div class="reader-layout">
+  <!-- Delegates clicks from generated Markdown links and native code-copy buttons. -->
+  <!-- eslint-disable-next-line @angular-eslint/template/click-events-have-key-events, @angular-eslint/template/interactive-supports-focus -->
+  <article
+    class="markdown-content"
+    [innerHTML]="document.safeHtml"
+    (click)="activateContent($event)"
+  ></article>
+  <aside class="table-of-contents">
+    <h2 class="eyebrow">{{ 'projects.onThisPage' | translate }}</h2>
+    <nav>
+      @for(heading of document.headings;track heading.id){<a
+        [href]="'#' + heading.id"
+        [style.padding-inline-start.px]="(heading.level - 1) * 8"
+        (click)="followHeading($event,heading.id)"
+        >{{ heading.text }}</a
+      >}
+    </nav>
+    <p role="status" aria-live="polite">{{ copyStatus() | translate }}</p>
+  </aside>
+</div>
+}

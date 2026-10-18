@@ -1,0 +1,29 @@
+.project-detail {
+  max-width: 1200px;
+  padding-top: 48px;
+  padding-bottom: 80px;
+  min-height: 65vh;
+}
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 48px;
+}
+h1 {
+  font: var(--display);
+  margin: 20px 0;
+}
+.description {
+  color: var(--text-muted);
+  margin-bottom: 48px;
+}
+.back-link {
+  display: inline-block;
+  margin-top: 48px;
+}
+.notice {
+  margin-bottom: 24px;
+}

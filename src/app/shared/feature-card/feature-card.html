@@ -1,0 +1,16 @@
+<article
+  class="feature-card"
+  [class.compact]="compact()"
+  [class.accent]="feature().tone === 'accent'"
+>
+  <div>
+    @if (!compact()) { <span class="icon-tile"><app-icon [name]="feature().icon" /></span> }
+    <p class="eyebrow">{{ feature().eyebrow | localize: locale.current() }}</p>
+    <h3>{{ feature().title | localize: locale.current() }}</h3>
+    <p class="description">{{ feature().description | localize: locale.current() }}</p>
+  </div>
+  <div class="card-footer">
+    <span class="eyebrow">{{ feature().footerLabel | localize: locale.current() }}</span>
+    <p>{{ feature().footer | localize: locale.current() }}</p>
+  </div>
+</article>

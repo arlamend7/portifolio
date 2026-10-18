@@ -1,0 +1,75 @@
+<article class="company-card" [id]="company().id">
+  <button
+    type="button"
+    class="company-trigger"
+    [id]="'trigger-' + company().id"
+    [attr.aria-expanded]="expanded()"
+    [attr.aria-controls]="'panel-' + company().id"
+    (click)="toggled.emit(company().id)"
+  >
+    <span class="period"
+      ><strong
+        >{{ company().period.startYear }}–{{ company().period.current ? ('experience.present' |
+        translate) : company().period.endYear }}</strong
+      ><span class="eyebrow"
+        >{{ company().location }} · {{ company().engagement | localize: locale.current() }}</span
+      ></span
+    >
+    <span class="company-heading"
+      ><span class="company-name">{{ company().name }}</span
+      ><span class="role">{{ company().role | localize: locale.current() }}</span
+      ><span class="summary">{{ company().summary | localize: locale.current() }}</span></span
+    >
+    <span class="expand-label"
+      ><span class="eyebrow">{{ 'experience.details' | translate }}</span
+      ><app-icon [name]="expanded() ? 'expand_less' : 'expand_more'"
+    /></span>
+  </button>
+  <div
+    class="company-content"
+    role="region"
+    [id]="'panel-' + company().id"
+    [attr.aria-labelledby]="'trigger-' + company().id"
+    [hidden]="!expanded()"
+  >
+    <section class="mission">
+      <h3 class="eyebrow">{{ 'experience.mission' | translate }}</h3>
+      @for(paragraph of company().description;track $index){
+      <p>{{ paragraph | localize: locale.current() }}</p>
+      }
+    </section>
+    <div class="work-groups">
+      @for(group of company().work;track $index){
+      <section class="work-group">
+        <h3>{{ group.title | localize: locale.current() }}</h3>
+        <ul>
+          @for(item of group.items;track $index){
+          <li>{{ item | localize: locale.current() }}</li>
+          }
+        </ul>
+      </section>
+      }
+    </div>
+    <section class="contributions">
+      <h3 class="eyebrow">{{ 'experience.achievements' | translate }}</h3>
+      <ul>
+        @for(achievement of company().achievements;track $index){
+        <li>{{ achievement | localize: locale.current() }}</li>
+        }
+      </ul>
+    </section>
+    <section>
+      <h3 class="eyebrow">{{ 'experience.technologies' | translate }}</h3>
+      <div class="technology-list">
+        @for(technology of company().technologies;track technology){<span>{{ technology }}</span>}
+      </div>
+    </section>
+    <section class="company-projects">
+      <h3 class="eyebrow">{{ 'experience.projects' | translate }}</h3>
+      @for(project of projects();track project.id){<app-project-card [project]="project" />} @empty
+      {
+      <p class="pending">{{ 'experience.noProjects' | translate }}</p>
+      }
+    </section>
+  </div>
+</article>

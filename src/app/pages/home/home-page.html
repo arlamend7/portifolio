@@ -1,0 +1,149 @@
+@if (store.portfolio(); as content) {
+<main id="main-content" class="container home-page" tabindex="-1">
+  <div class="metadata">
+    @for(badge of content.home.badges;track $index){<span class="badge" [class.accent]="$last"
+      >{{ badge | localize: locale.current() }}</span
+    >}
+  </div>
+  <section class="hero">
+    <div>
+      <p class="eyebrow">
+        <app-icon name="terminal" />{{ content.home.eyebrow | localize: locale.current() }}
+      </p>
+      <h1>
+        {{ content.home.title | localize: locale.current() }}<br /><em
+          >{{ content.home.subtitle | localize: locale.current() }}</em
+        >
+      </h1>
+      <p class="hero-description">{{ content.home.introduction | localize: locale.current() }}</p>
+      <div class="hero-actions">
+        <a class="button primary" routerLink="/work" [fragment]="content.initialCompanyId"
+          >{{ 'home.exploreWork' | translate }}<app-icon name="arrow_forward" /></a
+        ><a class="button secondary" routerLink="/" fragment="sports"
+          ><app-icon name="sprint" />{{ 'home.sportsAction' | translate }}</a
+        >
+      </div>
+    </div>
+    <aside class="summary-card">
+      <p class="eyebrow">{{ 'home.dualDiscipline' | translate }}</p>
+      <div class="summary-tile">
+        <p class="eyebrow">{{ 'home.coreStack' | translate }}</p>
+        <h2>{{ content.home.stack | localize: locale.current() }}</h2>
+        <p>{{ content.home.stackDescription | localize: locale.current() }}</p>
+      </div>
+      <div class="summary-tile">
+        <p class="eyebrow">{{ 'home.milestones' | translate }}</p>
+        <h2 class="accent-text">{{ 'home.sportsDiscipline' | translate }}</h2>
+        <p>{{ content.home.sportsSummary | localize: locale.current() }}</p>
+      </div>
+      <span class="eyebrow">{{ content.profile.location }}</span>
+    </aside>
+  </section>
+  <section class="page-section">
+    <app-section-heading
+      [eyebrow]="'home.capabilitiesLabel' | translate"
+      [title]="'home.capabilitiesTitle' | translate"
+      [description]="'home.capabilitiesDescription' | translate"
+    />
+    <div class="three-columns">
+      @for(feature of content.home.capabilities;track feature.id){<app-feature-card
+        [feature]="feature"
+      />}
+    </div>
+  </section>
+  <section class="page-section recognition">
+    <app-section-heading
+      [eyebrow]="'home.recognitionLabel' | translate"
+      [title]="'home.recognitionTitle' | translate"
+      [description]="'home.recognitionDescription' | translate"
+    />
+    <div class="three-columns">
+      @for(feature of content.home.recognitions;track feature.id){<app-feature-card
+        [feature]="feature"
+        [compact]="true"
+      />}
+    </div>
+  </section>
+  <section class="page-section" id="sports">
+    <app-section-heading
+      [eyebrow]="'home.sportsLabel' | translate"
+      [title]="'home.sportsTitle' | translate"
+      [description]="content.home.sportsIntroduction | localize: locale.current()"
+    />
+    <div class="sports-layout">
+      <div class="sports-results">
+        @for(achievement of content.home.sports;track achievement.id){
+        <article class="sports-result">
+          <span class="icon-tile"><app-icon [name]="achievement.icon" /></span>
+          <div>
+            <p class="eyebrow">
+              {{ achievement.result | localize: locale.current() }} · {{ achievement.year }}
+            </p>
+            <h3>{{ achievement.title | localize: locale.current() }}</h3>
+            <p>{{ achievement.description | localize: locale.current() }}</p>
+          </div>
+        </article>
+        }
+      </div>
+      <aside>
+        <figure class="sports-photo">
+          <img
+            [src]="content.home.sportsImage.src"
+            [alt]="content.home.sportsImage.alt | localize: locale.current()"
+            loading="lazy"
+          />
+          <figcaption>
+            {{ content.home.sportsImage.caption | localize: locale.current() }}
+          </figcaption>
+        </figure>
+        <div class="discipline-card">
+          <p class="eyebrow">{{ 'home.dualDiscipline' | translate }}</p>
+          <h3>{{ 'home.disciplineTitle' | translate }}</h3>
+          <div class="decorative-cadence" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <p>{{ 'home.disciplineText' | translate }}</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+  <section class="page-section" id="personal">
+    <app-section-heading
+      [eyebrow]="'home.ecosystemLabel' | translate"
+      [title]="'home.ecosystemTitle' | translate"
+    />
+    <div class="ecosystem-layout">
+      <div class="projects-panel">
+        <p class="eyebrow">{{ 'home.independentProjects' | translate }}</p>
+        <div class="project-list">
+          @for(project of packages();track project.id){<app-project-card [project]="project" />}
+        </div>
+        <a routerLink="/projects" class="text-link">{{ 'home.viewProjects' | translate }} →</a>
+      </div>
+      <aside class="personal-panel">
+        <div class="gaming-card">
+          <p class="eyebrow accent-text">
+            <app-icon name="sports_esports" />{{ 'home.steamCommunity' | translate }}
+          </p>
+          <h3>{{ 'home.steamTitle' | translate }}</h3>
+          <p>{{ content.home.gaming | localize: locale.current() }}</p>
+          @if(steam();as link){<a
+            [href]="link.url"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="button"
+            >{{ 'home.steamLink' | translate }}<app-icon name="open_in_new" /></a
+          >}
+        </div>
+        <button type="button" class="preferences-banner" (click)="preferences.open()">
+          <app-icon name="tune" /><span
+            ><strong>{{ 'preferences.title' | translate }}</strong
+            ><small>{{ 'home.readingDescription' | translate }}</small></span
+          >
+        </button>
+      </aside>
+    </div>
+  </section>
+</main>
+
+}

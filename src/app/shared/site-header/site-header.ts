@@ -1,0 +1,33 @@
+import { ChangeDetectionStrategy, Component, inject, input, output } from '@angular/core';
+import { RouterLink, RouterLinkActive } from '@angular/router';
+import { TranslatePipe } from '@ngx-translate/core';
+import { Portfolio } from '../../core/content/portfolio.schema';
+import { LocaleStore } from '../../core/i18n/locale-store';
+import { LocalizedTextPipe } from '../../core/i18n/localized-text.pipe';
+import { Icon } from '../icon/icon';
+
+@Component({
+  selector: 'app-site-header',
+  imports: [RouterLink, RouterLinkActive, TranslatePipe, LocalizedTextPipe, Icon],
+  templateUrl: './site-header.html',
+  styleUrl: './site-header.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+})
+export class SiteHeader {
+  readonly profile = input.required<Portfolio['profile']>();
+  readonly preferencesRequested = output<void>();
+  protected readonly locale = inject(LocaleStore);
+  protected readonly activeOptions = {
+    paths: 'exact',
+    queryParams: 'ignored',
+    matrixParams: 'ignored',
+    fragment: 'exact',
+  } as const;
+  protected readonly links = [
+    { key: 'home', route: '/', fragment: undefined },
+    { key: 'experience', route: '/work', fragment: undefined },
+    { key: 'projects', route: '/projects', fragment: undefined },
+    { key: 'sports', route: '/', fragment: 'sports' },
+    { key: 'personal', route: '/', fragment: 'personal' },
+  ];
+}

@@ -1,0 +1,34 @@
+<main id="main-content" class="container experience-page" tabindex="-1">
+  <div class="page-introduction">
+    <div>
+      <p class="eyebrow">{{ 'experience.eyebrow' | translate }}</p>
+      <h1>{{ 'experience.title' | translate }}</h1>
+      <p>{{ 'experience.introduction' | translate }}</p>
+    </div>
+    <div class="view-summary">
+      <div>
+        <span class="eyebrow">{{ 'experience.details' | translate }}</span
+        ><strong>{{ 'experience.singleOpen' | translate }}</strong>
+      </div>
+      <div>
+        <span class="eyebrow">{{ 'experience.companies' | translate }}</span
+        ><strong>{{ companyViews().length }}</strong>
+      </div>
+    </div>
+  </div>
+  <div class="lifecycle-banner">
+    <span class="icon-tile"><app-icon name="account_tree" /></span>
+    <div>
+      <h2>{{ 'experience.overview' | translate }}</h2>
+      <p>{{ 'experience.overviewDescription' | translate }}</p>
+    </div>
+  </div>
+  <div class="company-list">
+    @for(view of companyViews();track view.company.id){<app-company-card
+      [company]="view.company"
+      [projects]="view.projects"
+      [expanded]="expandedId() === view.company.id"
+      (toggled)="toggleCompany($event)"
+    />}
+  </div>
+</main>

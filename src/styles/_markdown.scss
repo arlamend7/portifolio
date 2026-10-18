@@ -1,0 +1,146 @@
+/* Rendered Markdown is outside component style encapsulation; scope every rule. */
+.markdown-content {
+  line-height: 1.8;
+  color: var(--text-muted);
+  overflow-wrap: break-word;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+    color: var(--text);
+    line-height: 1.3;
+    margin: 32px 0 18px;
+    scroll-margin-top: 150px;
+  }
+  h1 {
+    font-size: 38px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  p,
+  ul,
+  ol,
+  blockquote,
+  .table-scroll,
+  .code-block {
+    margin-bottom: 24px;
+  }
+  ul,
+  ol {
+    padding-left: 24px;
+  }
+  a {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  blockquote {
+    margin-inline: 0;
+    border-left: 3px solid var(--border);
+    padding: 16px 24px;
+    background: var(--surface-low);
+  }
+  blockquote p:last-child {
+    margin-bottom: 0;
+  }
+  code {
+    font: 13px/22px var(--font-mono);
+  }
+  :not(pre) > code {
+    background: var(--surface-high);
+    padding: 2px 5px;
+    border-radius: 3px;
+  }
+  .code-block {
+    border-radius: 8px;
+    overflow: hidden;
+    background: var(--surface-high);
+  }
+  .code-toolbar {
+    padding: 16px 24px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    font: var(--mono-small);
+  }
+  .code-toolbar button {
+    border-radius: 4px;
+    padding: 4px 8px;
+  }
+  pre {
+    margin: 0;
+    padding: 20px 24px;
+    overflow-x: auto;
+  }
+  pre code {
+    background: transparent;
+    padding: 0;
+  }
+  .table-scroll {
+    overflow-x: auto;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--surface-card);
+  }
+  th,
+  td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+  }
+  th {
+    font-weight: 500;
+  }
+  img {
+    height: auto;
+    max-width: 100%;
+  }
+  hr {
+    border: 0;
+    border-top: 1px solid var(--border);
+    margin: 32px 0;
+  }
+  .hljs-keyword,
+  .hljs-selector-tag,
+  .hljs-literal {
+    color: #a44315;
+  }
+  .hljs-string,
+  .hljs-attribute {
+    color: #297048;
+  }
+  .hljs-title,
+  .hljs-type {
+    color: #295899;
+  }
+  .hljs-comment {
+    color: #637166;
+    font-style: italic;
+  }
+}
+[data-theme='dark'] .markdown-content {
+  .hljs-keyword,
+  .hljs-selector-tag,
+  .hljs-literal {
+    color: #ffb78e;
+  }
+  .hljs-string,
+  .hljs-attribute {
+    color: #9dd9aa;
+  }
+  .hljs-title,
+  .hljs-type {
+    color: #9fcaff;
+  }
+  .hljs-comment {
+    color: #a4b6a9;
+  }
+}

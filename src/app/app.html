@@ -1,0 +1,19 @@
+<a href="#main-content" class="skip-link">{{ 'nav.skip' | translate }}</a> @if(content.status() ===
+'loading') {
+<main class="container loading-state" role="status">{{ 'common.loading' | translate }}</main>
+} @if(content.status() === 'error') {
+<main class="container loading-state" role="alert">
+  <p>{{ 'common.error' | translate }}</p>
+  <button type="button" class="button" (click)="content.reload()">
+    {{ 'common.retry' | translate }}
+  </button>
+</main>
+} @if(content.status() === 'ready') { @if(content.portfolio();as portfolio) {
+<app-site-header [profile]="portfolio.profile" (preferencesRequested)="settings.open()" />
+@if(showTranslationNotice()){
+<p class="translation-notice">{{ 'common.translationFallback' | translate }}</p>
+}
+<router-outlet />
+<app-site-footer [profile]="portfolio.profile" />
+<app-reading-preferences #settings />
+} }

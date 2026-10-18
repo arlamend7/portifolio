@@ -1,0 +1,28 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-main">
+      <div class="identity">
+        <strong>{{ profile().name }}</strong>
+        <p>{{ profile().summary | localize: locale.current() }}</p>
+        <span class="eyebrow">{{ 'footer.signature' | translate }}</span>
+      </div>
+      <nav>
+        <a routerLink="/">{{ 'nav.home' | translate }}</a
+        ><a routerLink="/work">{{ 'nav.experience' | translate }}</a
+        ><a routerLink="/projects">{{ 'nav.projects' | translate }}</a>
+      </nav>
+      <div class="social-links">
+        @for(link of profile().socialLinks;track link.url){<a
+          [href]="link.url"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><app-icon [name]="link.icon" />{{ link.label }}</a
+        >}
+      </div>
+    </div>
+    <div class="footer-bottom eyebrow">
+      <span>© {{ year }} {{ profile().name }}. {{ 'footer.rights' | translate }}</span
+      ><span>{{ profile().location }}</span>
+    </div>
+  </div>
+</footer>

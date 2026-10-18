@@ -1,0 +1,43 @@
+<header class="site-header">
+  <div class="header-inner container">
+    <a routerLink="/" class="brand"
+      ><span class="monogram" aria-hidden="true">A</span
+      ><span
+        ><strong>{{ profile().name }}</strong
+        ><span class="eyebrow">{{ profile().tagline | localize: locale.current() }}</span></span
+      ></a
+    >
+    <nav [attr.aria-label]="'nav.menu' | translate">
+      @for (link of links; track link.key) {
+      <a
+        [routerLink]="link.route"
+        [fragment]="link.fragment"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="activeOptions"
+        >{{ ('nav.' + link.key) | translate }}</a
+      >
+      }
+    </nav>
+    <div class="header-actions">
+      <div class="language-switch" [attr.aria-label]="'preferences.language' | translate">
+        @for (language of locale.available; track language) {
+        <button
+          type="button"
+          [attr.aria-pressed]="locale.current() === language"
+          (click)="locale.select(language)"
+        >
+          {{ language.toUpperCase() }}
+        </button>
+        }
+      </div>
+      <button
+        type="button"
+        class="icon-button"
+        [attr.aria-label]="'preferences.open' | translate"
+        (click)="preferencesRequested.emit()"
+      >
+        <app-icon name="tune" />
+      </button>
+    </div>
+  </div>
+</header>

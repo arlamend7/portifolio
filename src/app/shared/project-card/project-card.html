@@ -1,0 +1,23 @@
+<article class="project-card">
+  <div>
+    <span class="eyebrow">{{ ('projects.' + project().kind) | translate }}</span>
+    <h3>{{ project().name }}</h3>
+    @if (project().description) {
+    <p>{{ project().description | localize: locale.current() }}</p>
+    }
+  </div>
+  @if (project(); as item) { @if (item.kind === 'package') { @if (item.url) {
+  <a
+    [href]="item.url"
+    target="_blank"
+    rel="noopener noreferrer"
+    [attr.aria-label]="item.name + ' — ' + ('common.external' | translate)"
+  >
+    {{ 'projects.openLibrary' | translate }} <app-icon name="open_in_new" />
+  </a>
+  } @else { <span class="pending">{{ 'projects.linkPending' | translate }}</span> } } @else {
+  <a [routerLink]="['/projects', item.id]"
+    >{{ 'projects.readDocumentation' | translate }} <app-icon name="arrow_forward"
+  /></a>
+  } }
+</article>
