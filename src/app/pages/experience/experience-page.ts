@@ -28,9 +28,7 @@ export class ExperiencePage {
     const data = this.store.portfolio();
     const fragment = this.fragment();
     if (fragment === 'all-closed') return null;
-    return data?.companies.some((company) => company.id === fragment)
-      ? fragment
-      : data?.initialCompanyId;
+    return data?.companies.some((company) => company.id === fragment) ? fragment : null;
   });
   protected readonly companyViews = computed(() => {
     const data = this.store.portfolio();

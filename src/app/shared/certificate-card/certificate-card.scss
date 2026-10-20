@@ -24,7 +24,8 @@ header,
   gap: 16px;
   align-items: center;
 }
-header app-icon {
+header app-icon,
+.card-bottom app-icon {
   color: var(--accent);
 }
 h3 {

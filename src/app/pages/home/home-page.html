@@ -17,7 +17,7 @@
       </h1>
       <p class="hero-description">{{ content.home.introduction | localize: locale.current() }}</p>
       <div class="hero-actions">
-        <a class="button primary" routerLink="/work" [fragment]="content.initialCompanyId"
+        <a class="button primary" routerLink="/work"
           >{{ 'home.exploreWork' | translate }}<app-icon name="arrow_forward" /></a
         ><a class="button secondary" routerLink="/sports"
           ><app-icon name="sprint" />{{ 'home.sportsAction' | translate }}</a

@@ -176,6 +176,7 @@ export const portfolioSchema = v.pipe(
           id: idSchema,
           language: localizedTextSchema,
           test: v.string(),
+          gradeNote: v.optional(localizedTextSchema),
           date: v.string(),
           summary: localizedTextSchema,
           scores: v.array(v.object({ label: localizedTextSchema, value: v.string() })),

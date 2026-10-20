@@ -321,38 +321,27 @@
         "scores": [
           {
             "label": {
-              "en": "Reading",
-              "pt": "Leitura",
-              "fr": "Compréhension écrite"
+              "en": "Comprehension",
+              "pt": "Compreensão",
+              "fr": "Compréhension"
             },
-            "value": "8 · Advanced Mid"
+            "value": "B2"
           },
           {
             "label": {
-              "en": "Writing",
-              "pt": "Escrita",
-              "fr": "Expression écrite"
+              "en": "Expression",
+              "pt": "Expressão",
+              "fr": "Expression"
             },
-            "value": "5 · Intermediate Mid"
-          },
-          {
-            "label": {
-              "en": "Listening",
-              "pt": "Compreensão oral",
-              "fr": "Compréhension orale"
-            },
-            "value": "6 · Intermediate High"
-          },
-          {
-            "label": {
-              "en": "Speaking",
-              "pt": "Expressão oral",
-              "fr": "Expression orale"
-            },
-            "value": "6 · Intermediate High"
+            "value": "B2"
           }
         ],
-        "pdf": "assets/documents/english-stamp-2022.pdf"
+        "pdf": "assets/documents/english-stamp-2022.pdf",
+        "gradeNote": {
+          "en": "Self-assessed CEFR level · STAMP report linked below",
+          "pt": "Nível CEFR autoavaliado · relatório STAMP abaixo",
+          "fr": "Niveau CECRL autoévalué · rapport STAMP ci-dessous"
+        }
       },
       {
         "id": "french",
@@ -371,35 +360,19 @@
         "scores": [
           {
             "label": {
-              "en": "Reading",
-              "pt": "Leitura",
-              "fr": "Compréhension écrite"
+              "en": "Comprehension",
+              "pt": "Compreensão",
+              "fr": "Compréhension"
             },
-            "value": "472/699 · B2"
+            "value": "B2"
           },
           {
             "label": {
-              "en": "Writing",
-              "pt": "Escrita",
-              "fr": "Expression écrite"
+              "en": "Expression",
+              "pt": "Expressão",
+              "fr": "Expression"
             },
-            "value": "8/20 · B1"
-          },
-          {
-            "label": {
-              "en": "Listening",
-              "pt": "Compreensão oral",
-              "fr": "Compréhension orale"
-            },
-            "value": "498/699 · B2"
-          },
-          {
-            "label": {
-              "en": "Speaking",
-              "pt": "Expressão oral",
-              "fr": "Expression orale"
-            },
-            "value": "8/20 · B1"
+            "value": "B1"
           }
         ],
         "pdf": "assets/documents/french-tcf-2026.pdf"
@@ -1052,7 +1025,10 @@
         "iTextSharp",
         "Azure speech services"
       ],
-      "projectIds": []
+      "projectIds": [
+        "techinnov-account-management-platform",
+        "techinnov-language-learning-platform"
+      ]
     },
     {
       "id": "gft",
@@ -1155,7 +1131,10 @@
         "Microservices",
         "CQRS"
       ],
-      "projectIds": []
+      "projectIds": [
+        "gft-life-insurance-sales-platform",
+        "gft-event-driven-data-synchronization-system"
+      ]
     },
     {
       "id": "telegestao",
@@ -1233,7 +1212,11 @@
         "Microservices",
         "Multi-tenancy"
       ],
-      "projectIds": []
+      "projectIds": [
+        "telegestao-telecom-management-platform",
+        "telegestao-single-sign-on-sso-platform",
+        "telegestao-document-management-system"
+      ]
     },
     {
       "id": "autoglass",
@@ -1350,21 +1333,13 @@
         "Protractor",
         "Kibana"
       ],
-      "projectIds": []
+      "projectIds": [
+        "autoglass-product-quotation-platform",
+        "autoglass-internal-business-management-system"
+      ]
     }
   ],
   "projects": [
-    {
-      "id": "libs-csharp",
-      "kind": "package",
-      "name": "libs-csharp",
-      "description": {
-        "en": "Reusable C# libraries for email, queries, Excel, database access, scheduled jobs, and utilities.",
-        "pt": "Bibliotecas C# reutilizáveis para e-mail, consultas, Excel, acesso a bancos de dados, tarefas agendadas e utilitários.",
-        "fr": "Bibliothèques C# réutilisables pour les courriels, les requêtes, Excel, l’accès aux bases de données, les tâches planifiées et les utilitaires."
-      },
-      "url": null
-    },
     {
       "id": "route-definer",
       "kind": "package",
@@ -1429,7 +1404,7 @@
         "pt": "",
         "fr": ""
       },
-      "url": null
+      "url": "https://www.nuget.org/packages/Briefcase.Handlers"
     },
     {
       "id": "voar-prime",
@@ -1444,6 +1419,195 @@
         "en": "assets/voar-prime.md",
         "pt": "assets/voar-prime.md",
         "fr": "assets/voar-prime.md"
+      }
+    },
+    {
+      "kind": "package",
+      "id": "libs-linq-fluent-expressions",
+      "name": "Libs.Linq.Fluent.Expressions",
+      "url": "https://www.nuget.org/packages/Libs.Linq.Fluent.Expressions"
+    },
+    {
+      "kind": "package",
+      "id": "libs-linq-fluent-funcs",
+      "name": "Libs.Linq.Fluent.Funcs",
+      "url": "https://www.nuget.org/packages/Libs.Linq.Fluent.Funcs"
+    },
+    {
+      "kind": "package",
+      "id": "libs-npoi-extensions",
+      "name": "Libs.NPOI.Extensions",
+      "url": "https://www.nuget.org/packages/Libs.NPOI.Extensions"
+    },
+    {
+      "kind": "package",
+      "id": "libs-npoi-fluent",
+      "name": "Libs.NPOI.Fluent",
+      "url": "https://www.nuget.org/packages/Libs.NPOI.Fluent"
+    },
+    {
+      "kind": "project",
+      "id": "discord-bot",
+      "name": "Discord bot",
+      "description": {
+        "en": "Project documentation to be supplied.",
+        "pt": "Documentação do projeto a ser adicionada.",
+        "fr": "Documentation du projet à venir."
+      },
+      "markdown": {
+        "en": "assets/discord-bot.md",
+        "pt": null,
+        "fr": null
+      }
+    },
+    {
+      "kind": "project",
+      "id": "mendes-advogados",
+      "name": "Mendes advogados",
+      "description": {
+        "en": "Project documentation to be supplied.",
+        "pt": "Documentação do projeto a ser adicionada.",
+        "fr": "Documentation du projet à venir."
+      },
+      "markdown": {
+        "en": "assets/mendes-advogados.md",
+        "pt": null,
+        "fr": null
+      }
+    },
+    {
+      "kind": "project",
+      "id": "techinnov-account-management-platform",
+      "name": "Account Management Platform",
+      "description": {
+        "en": "Project documentation to be supplied.",
+        "pt": "Documentação do projeto a ser adicionada.",
+        "fr": "Documentation du projet à venir."
+      },
+      "markdown": {
+        "en": "assets/techinnov-account-management-platform.md",
+        "pt": null,
+        "fr": null
+      }
+    },
+    {
+      "kind": "project",
+      "id": "techinnov-language-learning-platform",
+      "name": "Language Learning Platform",
+      "description": {
+        "en": "Project documentation to be supplied.",
+        "pt": "Documentação do projeto a ser adicionada.",
+        "fr": "Documentation du projet à venir."
+      },
+      "markdown": {
+        "en": "assets/techinnov-language-learning-platform.md",
+        "pt": null,
+        "fr": null
+      }
+    },
+    {
+      "kind": "project",
+      "id": "gft-life-insurance-sales-platform",
+      "name": "Life insurance Sales Platform",
+      "description": {
+        "en": "Project documentation to be supplied.",
+        "pt": "Documentação do projeto a ser adicionada.",
+        "fr": "Documentation du projet à venir."
+      },
+      "markdown": {
+        "en": "assets/gft-life-insurance-sales-platform.md",
+        "pt": null,
+        "fr": null
+      }
+    },
+    {
+      "kind": "project",
+      "id": "gft-event-driven-data-synchronization-system",
+      "name": "Event-Driven Data Synchronization System",
+      "description": {
+        "en": "Project documentation to be supplied.",
+        "pt": "Documentação do projeto a ser adicionada.",
+        "fr": "Documentation du projet à venir."
+      },
+      "markdown": {
+        "en": "assets/gft-event-driven-data-synchronization-system.md",
+        "pt": null,
+        "fr": null
+      }
+    },
+    {
+      "kind": "project",
+      "id": "telegestao-telecom-management-platform",
+      "name": "Telecom Management Platform",
+      "description": {
+        "en": "Project documentation to be supplied.",
+        "pt": "Documentação do projeto a ser adicionada.",
+        "fr": "Documentation du projet à venir."
+      },
+      "markdown": {
+        "en": "assets/telegestao-telecom-management-platform.md",
+        "pt": null,
+        "fr": null
+      }
+    },
+    {
+      "kind": "project",
+      "id": "telegestao-single-sign-on-sso-platform",
+      "name": "Single Sign-On (SSO) Platform",
+      "description": {
+        "en": "Project documentation to be supplied.",
+        "pt": "Documentação do projeto a ser adicionada.",
+        "fr": "Documentation du projet à venir."
+      },
+      "markdown": {
+        "en": "assets/telegestao-single-sign-on-sso-platform.md",
+        "pt": null,
+        "fr": null
+      }
+    },
+    {
+      "kind": "project",
+      "id": "telegestao-document-management-system",
+      "name": "Document Management System",
+      "description": {
+        "en": "Project documentation to be supplied.",
+        "pt": "Documentação do projeto a ser adicionada.",
+        "fr": "Documentation du projet à venir."
+      },
+      "markdown": {
+        "en": "assets/telegestao-document-management-system.md",
+        "pt": null,
+        "fr": null
+      }
+    },
+    {
+      "kind": "project",
+      "id": "autoglass-product-quotation-platform",
+      "name": "Product Quotation Platform",
+      "description": {
+        "en": "Project documentation to be supplied.",
+        "pt": "Documentação do projeto a ser adicionada.",
+        "fr": "Documentation du projet à venir."
+      },
+      "markdown": {
+        "en": "assets/autoglass-product-quotation-platform.md",
+        "pt": null,
+        "fr": null
+      }
+    },
+    {
+      "kind": "project",
+      "id": "autoglass-internal-business-management-system",
+      "name": "Internal Business Management System",
+      "description": {
+        "en": "Project documentation to be supplied.",
+        "pt": "Documentação do projeto a ser adicionada.",
+        "fr": "Documentation du projet à venir."
+      },
+      "markdown": {
+        "en": "assets/autoglass-internal-business-management-system.md",
+        "pt": null,
+        "fr": null
       }
     }
   ],

@@ -23,6 +23,8 @@ test('shared layout, single-open employers, deep links and close-all persistence
   await page.locator('#experience').screenshot({ path: 'test-results/home-experience.png' });
   await page.locator('#sports').screenshot({ path: 'test-results/home-sports.png' });
   await page.getByRole('link', { name: 'Explore my work', exact: false }).click();
+  await expect(page.locator('[id^="panel-"]:visible')).toHaveCount(0);
+  await page.locator('#trigger-techinnov').click();
   await expect(page.locator('#panel-techinnov')).toBeVisible();
   await page.locator('#trigger-gft').click();
   await expect(page.locator('#panel-gft')).toBeVisible();
