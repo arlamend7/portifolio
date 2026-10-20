@@ -1,0 +1,27 @@
+<ng-template #content>
+  <header>
+    <span class="eyebrow"
+      >{{ certificate().provider }} · {{ 'certificates.' + certificate().kind | translate }}</span
+    ><app-icon name="workspace_premium" />
+  </header>
+  <h3>{{ certificate().title | localize: locale.current() }}</h3>
+  <p class="category">{{ 'certificateCategories.' + certificate().category | translate }}</p>
+  <div class="card-bottom">
+    <span
+      ><time [attr.datetime]="certificate().issued">{{ issued() }}</time>@if (certificate().hours;
+      as hours) { · {{ hours }} h }</span
+    >@if (certificate().url) {<app-icon name="open_in_new" />}
+  </div>
+  @if (certificate().url) {<span class="sr-only"
+    >{{ 'certificates.open' | translate }} — {{ 'common.external' | translate }}</span
+  >}
+</ng-template>
+@if (certificate().url; as url) {<a
+  class="certificate-card"
+  [href]="url"
+  target="_blank"
+  rel="noopener noreferrer"
+  ><ng-container [ngTemplateOutlet]="content" /></a
+>} @else {
+<article class="certificate-card"><ng-container [ngTemplateOutlet]="content" /></article>
+}

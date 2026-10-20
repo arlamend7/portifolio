@@ -21,13 +21,12 @@ export class SiteHeader {
     paths: 'exact',
     queryParams: 'ignored',
     matrixParams: 'ignored',
-    fragment: 'exact',
+    fragment: 'ignored',
   } as const;
   protected readonly links = [
     { key: 'home', route: '/', fragment: undefined },
     { key: 'experience', route: '/work', fragment: undefined },
     { key: 'projects', route: '/projects', fragment: undefined },
-    { key: 'sports', route: '/', fragment: 'sports' },
-    { key: 'personal', route: '/', fragment: 'personal' },
+    { key: 'sports', route: '/sports', fragment: undefined },
   ];
 }

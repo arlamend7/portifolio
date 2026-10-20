@@ -4,30 +4,75 @@
     "name": "Arlan Mendes",
     "tagline": {
       "en": "Software Engineer & Competitive Athlete",
-      "pt": null,
-      "fr": null
+      "pt": "Engenheiro de Software e Atleta Competitivo",
+      "fr": "Ingénieur logiciel et athlète de compétition"
     },
     "location": "Regina, SK, Canada",
     "summary": {
       "en": "Bridging enterprise systems architecture and endurance athletic rigor.",
-      "pt": null,
-      "fr": null
+      "pt": "Unindo a arquitetura de sistemas corporativos ao rigor dos esportes de resistência.",
+      "fr": "Allier l’architecture des systèmes d’entreprise à la rigueur des sports d’endurance."
     },
     "socialLinks": [
       {
-        "label": "GitHub",
-        "icon": "terminal",
-        "url": "https://github.com/arlamend7"
+        "label": "LinkedIn",
+        "icon": "work",
+        "url": "https://www.linkedin.com/in/arlan-dos-santos-franklin-mendes-b190a717b/",
+        "description": {
+          "en": "Professional connections",
+          "pt": "Conexões profissionais",
+          "fr": "Réseau professionnel"
+        }
       },
       {
-        "label": "LinkedIn",
-        "icon": "link",
-        "url": "https://www.linkedin.com/in/arlan-dos-santos-franklin-mendes-b190a717b/"
+        "label": "GitHub",
+        "icon": "code",
+        "url": "https://github.com/arlamend7",
+        "description": {
+          "en": "Code, libraries & collaboration",
+          "pt": "Código, bibliotecas e colaboração",
+          "fr": "Code, bibliothèques et collaboration"
+        }
+      },
+      {
+        "label": "Email",
+        "icon": "mail",
+        "url": "mailto:arlanmendes197@gmail.com",
+        "description": {
+          "en": "Start a conversation",
+          "pt": "Vamos conversar",
+          "fr": "Parlons ensemble"
+        }
+      },
+      {
+        "label": "Instagram",
+        "icon": "photo_camera",
+        "url": "https://www.instagram.com/arlamend7/",
+        "description": {
+          "en": "Life beyond the screen",
+          "pt": "A vida além da tela",
+          "fr": "La vie au-delà de l’écran"
+        }
       },
       {
         "label": "Steam",
         "icon": "sports_esports",
-        "url": "https://steamcommunity.com/profiles/76561198277951568/"
+        "url": "https://steamcommunity.com/profiles/76561198277951568/",
+        "description": {
+          "en": "Let’s play together",
+          "pt": "Vamos jogar juntos",
+          "fr": "Jouons ensemble"
+        }
+      },
+      {
+        "label": "Alura",
+        "icon": "school",
+        "url": "https://cursos.alura.com.br/user/arlan-mendes/fullCertificate/197ebca894560654cde4938a283b7c61",
+        "description": {
+          "en": "Learning & certificates",
+          "pt": "Aprendizado e certificados",
+          "fr": "Formation et certificats"
+        }
       }
     ]
   },
@@ -35,258 +80,274 @@
     "badges": [
       {
         "en": "Full Delivery Lifecycle",
-        "pt": null,
-        "fr": null
+        "pt": "Ciclo completo de entrega",
+        "fr": "Cycle complet de livraison"
       },
       {
         "en": "SQL & C#/.NET & Angular",
-        "pt": null,
-        "fr": null
+        "pt": "SQL e C#/.NET e Angular",
+        "fr": "SQL, C#/.NET et Angular"
       },
       {
         "en": "State Champion & World Aquathlon Qualifier",
-        "pt": null,
-        "fr": null
+        "pt": "Campeão estadual e classificado para o Mundial de Aquatlo",
+        "fr": "Champion régional et qualifié pour les Championnats du monde d’aquathlon"
       }
     ],
     "eyebrow": {
       "en": "Architectural Engineering • Athletics",
-      "pt": null,
-      "fr": null
+      "pt": "Engenharia de software e arquitetura • Esportes",
+      "fr": "Ingénierie et architecture logicielle • Sport"
     },
     "title": {
       "en": "High-performance engineering.",
-      "pt": null,
-      "fr": null
+      "pt": "Engenharia de alto desempenho.",
+      "fr": "Ingénierie haute performance."
     },
     "subtitle": {
       "en": "From business to delivery.",
-      "pt": null,
-      "fr": null
+      "pt": "Das necessidades do negócio à entrega.",
+      "fr": "Des besoins métier à la livraison."
     },
     "introduction": {
       "en": "I connect business needs to technical delivery—from solution analysis and architecture to development, quality assurance, documentation, and team coordination.",
-      "pt": null,
-      "fr": null
+      "pt": "Conecto as necessidades do negócio à entrega técnica — da análise de soluções e arquitetura ao desenvolvimento, garantia da qualidade, documentação e coordenação de equipes.",
+      "fr": "Je relie les besoins métier à la réalisation technique, de l’analyse des solutions et de l’architecture au développement, à l’assurance qualité, à la documentation et à la coordination d’équipes."
     },
     "stack": {
       "en": "C# • .NET • Angular",
-      "pt": null,
-      "fr": null
+      "pt": "C# • .NET • Angular",
+      "fr": "C# • .NET • Angular"
     },
     "stackDescription": {
       "en": "Enterprise systems, databases & APIs",
-      "pt": null,
-      "fr": null
+      "pt": "Sistemas corporativos, bancos de dados e APIs",
+      "fr": "Systèmes d’entreprise, bases de données et API"
     },
     "sportsSummary": {
       "en": "State Champion • World Championship Qualifier (2017)",
-      "pt": null,
-      "fr": null
+      "pt": "Campeão estadual • Classificado para o Mundial (2017)",
+      "fr": "Champion régional • Qualifié pour les Championnats du monde (2017)"
     },
     "capabilities": [
       {
-        "id": "0",
-        "icon": "speed",
+        "id": "performance-engineering",
         "eyebrow": {
           "en": "System integrity",
-          "pt": null,
-          "fr": null
+          "pt": "Integridade dos sistemas",
+          "fr": "Intégrité des systèmes"
         },
         "title": {
           "en": "Performance-focused engineering",
-          "pt": null,
-          "fr": null
+          "pt": "Engenharia focada em desempenho",
+          "fr": "Ingénierie axée sur la performance"
         },
         "description": {
           "en": "SQL query and stored procedure optimization, data-access refactoring, and performance-sensitive pricing systems.",
+          "pt": "Otimização de consultas SQL e procedimentos armazenados, refatoração do acesso a dados e sistemas de precificação com altos requisitos de desempenho.",
+          "fr": "Optimisation des requêtes SQL et des procédures stockées, refactorisation de l’accès aux données et systèmes de tarification exigeants en matière de performance."
+        },
+        "markdown": {
+          "en": "assets/capabilities/performance-engineering.md",
           "pt": null,
           "fr": null
-        },
-        "footerLabel": {
-          "en": "Focus areas",
-          "pt": null,
-          "fr": null
-        },
-        "footer": {
-          "en": "SQL optimization • Stored procedures • Data access",
-          "pt": null,
-          "fr": null
-        },
-        "tone": "primary"
+        }
       },
       {
-        "id": "1",
-        "icon": "hub",
+        "id": "end-to-end-delivery",
         "eyebrow": {
           "en": "End-to-end execution",
-          "pt": null,
-          "fr": null
+          "pt": "Execução de ponta a ponta",
+          "fr": "Réalisation de bout en bout"
         },
         "title": {
           "en": "One person, many responsibilities",
-          "pt": null,
-          "fr": null
+          "pt": "Uma pessoa, muitas responsabilidades",
+          "fr": "Une personne, de multiples responsabilités"
         },
         "description": {
           "en": "Hands-on development, solution analysis, architecture, QA, documentation, and coordination across my career.",
+          "pt": "Desenvolvimento prático, análise de soluções, arquitetura, QA, documentação e coordenação ao longo da minha carreira.",
+          "fr": "Développement pratique, analyse des solutions, architecture, assurance qualité, documentation et coordination tout au long de ma carrière."
+        },
+        "markdown": {
+          "en": "assets/capabilities/end-to-end-delivery.md",
           "pt": null,
           "fr": null
-        },
-        "footerLabel": {
-          "en": "Execution scope",
-          "pt": null,
-          "fr": null
-        },
-        "footer": {
-          "en": "Development • QA • Architecture • Coordination",
-          "pt": null,
-          "fr": null
-        },
-        "tone": "primary"
+        }
       },
       {
-        "id": "2",
-        "icon": "sync_alt",
+        "id": "business-and-engineering",
         "eyebrow": {
           "en": "Alignment & strategy",
-          "pt": null,
-          "fr": null
+          "pt": "Alinhamento e estratégia",
+          "fr": "Alignement et stratégie"
         },
         "title": {
           "en": "A bridge between business & engineering",
-          "pt": null,
-          "fr": null
+          "pt": "Uma ponte entre negócios e engenharia",
+          "fr": "Un pont entre le métier et l’ingénierie"
         },
         "description": {
           "en": "I make complex work understandable through proposals, use cases, diagrams, shared priorities, and clear technical documentation.",
+          "pt": "Torno trabalhos complexos mais compreensíveis por meio de propostas, casos de uso, diagramas, prioridades compartilhadas e documentação técnica clara.",
+          "fr": "Je rends les travaux complexes compréhensibles grâce à des propositions, des cas d’utilisation, des diagrammes, des priorités communes et une documentation technique claire."
+        },
+        "markdown": {
+          "en": "assets/capabilities/business-and-engineering.md",
           "pt": null,
           "fr": null
-        },
-        "footerLabel": {
-          "en": "Methodology",
-          "pt": null,
-          "fr": null
-        },
-        "footer": {
-          "en": "Proposals • Use cases • Diagrams • Documentation",
-          "pt": null,
-          "fr": null
-        },
-        "tone": "accent"
+        }
       }
     ],
     "recognitions": [
       {
         "id": "gft-program",
-        "icon": "verified",
         "eyebrow": {
           "en": "GFT GROUP",
-          "pt": null,
-          "fr": null
+          "pt": "GFT GROUP",
+          "fr": "GFT GROUP"
         },
         "title": {
           "en": "International English Immersion Program",
-          "pt": null,
-          "fr": null
+          "pt": "Programa Internacional de Imersão em Inglês",
+          "fr": "Programme international d’immersion en anglais"
         },
         "description": {
           "en": "Brazilian employees selected for a funded international English program in the USA.",
-          "pt": null,
-          "fr": null
+          "pt": "Funcionários brasileiros selecionados para um programa internacional de inglês nos Estados Unidos, financiado pela empresa.",
+          "fr": "Employés brésiliens sélectionnés pour un programme international d’anglais aux États-Unis, financé par l’entreprise."
         },
-        "footerLabel": {
-          "en": "Selection",
-          "pt": null,
-          "fr": null
-        },
-        "footer": {
-          "en": "1 of 10",
-          "pt": null,
-          "fr": null
-        },
-        "tone": "primary"
+        "selection": {
+          "label": {
+            "en": "Selection",
+            "pt": "Seleção",
+            "fr": "Sélection"
+          },
+          "value": {
+            "en": "1 of 10",
+            "pt": "1 entre 10",
+            "fr": "1 sur 10"
+          }
+        }
       },
       {
         "id": "autoglass-training",
-        "icon": "verified",
         "eyebrow": {
           "en": "AUTOGLASS",
-          "pt": null,
-          "fr": null
+          "pt": "AUTOGLASS",
+          "fr": "AUTOGLASS"
         },
         "title": {
           "en": "Professional Development Program",
-          "pt": null,
-          "fr": null
+          "pt": "Programa de Desenvolvimento Profissional",
+          "fr": "Programme de perfectionnement professionnel"
         },
         "description": {
           "en": "Selected for paid professional training during the first eight months.",
-          "pt": null,
-          "fr": null
+          "pt": "Selecionado para uma formação profissional remunerada durante os primeiros oito meses.",
+          "fr": "Sélectionné pour une formation professionnelle rémunérée pendant les huit premiers mois."
         },
-        "footerLabel": {
-          "en": "Selection",
-          "pt": null,
-          "fr": null
-        },
-        "footer": {
-          "en": "1 of 8",
-          "pt": null,
-          "fr": null
-        },
-        "tone": "primary"
+        "selection": {
+          "label": {
+            "en": "Selection",
+            "pt": "Seleção",
+            "fr": "Sélection"
+          },
+          "value": {
+            "en": "1 of 8",
+            "pt": "1 entre 8",
+            "fr": "1 sur 8"
+          }
+        }
       },
       {
         "id": "pricing-team",
-        "icon": "verified",
         "eyebrow": {
           "en": "AUTOGLASS",
-          "pt": null,
-          "fr": null
+          "pt": "AUTOGLASS",
+          "fr": "AUTOGLASS"
         },
         "title": {
           "en": "Performance-Focused Pricing Team",
-          "pt": null,
-          "fr": null
+          "pt": "Equipe de Precificação Focada em Desempenho",
+          "fr": "Équipe de tarification axée sur la performance"
         },
         "description": {
           "en": "Selected for sensitive, performance-focused pricing projects.",
-          "pt": null,
-          "fr": null
+          "pt": "Selecionado para projetos sensíveis de precificação com foco em desempenho.",
+          "fr": "Sélectionné pour des projets sensibles de tarification axés sur la performance."
         },
-        "footerLabel": {
-          "en": "Selection",
-          "pt": null,
-          "fr": null
-        },
-        "footer": {
-          "en": "3-developer team",
-          "pt": null,
-          "fr": null
-        },
-        "tone": "accent"
+        "selection": {
+          "label": {
+            "en": "Selection",
+            "pt": "Seleção",
+            "fr": "Sélection"
+          },
+          "value": {
+            "en": "3-developer team",
+            "pt": "Equipe de 3 desenvolvedores",
+            "fr": "Équipe de 3 développeurs"
+          }
+        }
       }
     ],
-    "sports": [
+    "certificateIds": [
+      "5504fb0f-ed83-4746-89e6-5f9058c0e213",
+      "fb0a2ac8-4f96-465f-b0c3-9e50af7d2dda",
+      "b460322c-1111-47d1-85c4-138edfc624ef"
+    ]
+  },
+  "sports": {
+    "introduction": {
+      "en": "Competitive swimming from age nine; aquathlon and triathlon competition from 2015.",
+      "pt": "Natação competitiva desde os nove anos; competições de aquatlo e triatlo desde 2015.",
+      "fr": "Natation de compétition depuis l’âge de neuf ans ; compétitions d’aquathlon et de triathlon depuis 2015."
+    },
+    "journey": {
+      "en": "I’ve competed in swimming, aquathlon and triathlon, earning state and national podiums and qualifying for the 2017 World Aquathlon Championship.",
+      "pt": "Competi na natação, no aquatlo e no triatlo, conquistando pódios estaduais e nacionais e a classificação para o Mundial de Aquatlo de 2017.",
+      "fr": "J’ai participé à des compétitions de natation, d’aquathlon et de triathlon, décrochant des podiums régionaux et nationaux et une qualification pour les Championnats du monde d’aquathlon 2017."
+    },
+    "image": {
+      "src": "assets/images/arlan-sporting-achievements.jpg",
+      "alt": {
+        "en": "Arlan Mendes running in a Brazil triathlon suit.",
+        "pt": "Arlan Mendes correndo com um uniforme de triatlo do Brasil.",
+        "fr": "Arlan Mendes en course, vêtu d’une tenue de triathlon du Brésil."
+      },
+      "caption": {
+        "en": "Photo: Wagner Araujo / International Triathlon Union.",
+        "pt": "Foto: Wagner Araujo / International Triathlon Union.",
+        "fr": "Photo : Wagner Araujo / International Triathlon Union."
+      },
+      "sourceUrl": "https://www.instagram.com/p/BYO-ilggp-Y45XkLsN76s8EI4nSJKmAODq-uXY0/"
+    },
+    "highlightIds": [
+      "world-qualification-2017",
+      "capixaba-2017",
+      "brazilian-2016",
+      "triathlon-apaches-2017"
+    ],
+    "achievements": [
       {
         "id": "world-qualification-2017",
         "icon": "public",
         "year": 2017,
         "title": {
           "en": "World Aquathlon Championship qualifier",
-          "pt": null,
-          "fr": null
+          "pt": "Classificado para o Campeonato Mundial de Aquatlo",
+          "fr": "Qualifié pour les Championnats du monde d’aquathlon"
         },
         "result": {
           "en": "Qualified",
-          "pt": null,
-          "fr": null
+          "pt": "Classificado",
+          "fr": "Qualifié"
         },
         "description": {
           "en": "Qualified for the World Aquathlon Championship in Penticton, Canada, scheduled for August 2017.",
-          "pt": null,
-          "fr": null
+          "pt": "Classificado para o Campeonato Mundial de Aquatlo em Penticton, Canadá, previsto para agosto de 2017.",
+          "fr": "Qualifié pour les Championnats du monde d’aquathlon à Penticton, au Canada, prévus en août 2017."
         }
       },
       {
@@ -295,18 +356,78 @@
         "year": 2017,
         "title": {
           "en": "Campeão Capixaba de Aquathlon",
-          "pt": null,
-          "fr": null
+          "pt": "Campeão Capixaba de Aquatlo",
+          "fr": "Champion de l’Espírito Santo en aquathlon"
         },
         "result": {
           "en": "1st overall",
-          "pt": null,
-          "fr": null
+          "pt": "1º lugar geral",
+          "fr": "1re place au classement général"
         },
         "description": {
           "en": "Espírito Santo state aquathlon champion in 2017.",
-          "pt": null,
-          "fr": null
+          "pt": "Campeão estadual de aquatlo do Espírito Santo em 2017.",
+          "fr": "Champion de l’État d’Espírito Santo en aquathlon en 2017."
+        }
+      },
+      {
+        "id": "triathlon-stage-1-2017",
+        "icon": "directions_bike",
+        "year": 2017,
+        "title": {
+          "en": "Triathlon championship · Stage 1",
+          "pt": "Campeonato de triatlo · 1ª etapa",
+          "fr": "Championnat de triathlon · Étape 1"
+        },
+        "result": {
+          "en": "1st overall",
+          "pt": "1º lugar geral",
+          "fr": "1re place au classement général"
+        },
+        "description": {
+          "en": "First overall in the first stage of the 2017 triathlon championship.",
+          "pt": "Primeiro lugar geral na primeira etapa do campeonato de triatlo de 2017.",
+          "fr": "Première place au classement général de la première étape du championnat de triathlon 2017."
+        }
+      },
+      {
+        "id": "triathlon-stage-2-2017",
+        "icon": "directions_bike",
+        "year": 2017,
+        "title": {
+          "en": "Triathlon championship · Stage 2",
+          "pt": "Campeonato de triatlo · 2ª etapa",
+          "fr": "Championnat de triathlon · Étape 2"
+        },
+        "result": {
+          "en": "1st overall",
+          "pt": "1º lugar geral",
+          "fr": "1re place au classement général"
+        },
+        "description": {
+          "en": "First overall in the second stage of the 2017 triathlon championship.",
+          "pt": "Primeiro lugar geral na segunda etapa do campeonato de triatlo de 2017.",
+          "fr": "Première place au classement général de la deuxième étape du championnat de triathlon 2017."
+        }
+      },
+      {
+        "id": "triathlon-apaches-2017",
+        "icon": "directions_bike",
+        "year": 2017,
+        "title": {
+          "en": "Triathlon Apaches Itaoca",
+          "pt": "Triathlon Apaches Itaoca",
+          "fr": "Triathlon Apaches Itaoca"
+        },
+        "result": {
+          "en": "1st overall",
+          "pt": "1º lugar geral",
+          "fr": "1re place au classement général"
+        },
+        "description": {
+          "en": "First overall at Triathlon Apaches Itaoca in 2017.",
+          "pt": "Primeiro lugar geral no Triathlon Apaches Itaoca em 2017.",
+          "fr": "Première place au classement général du Triathlon Apaches Itaoca en 2017."
         }
       },
       {
@@ -315,64 +436,352 @@
         "year": 2016,
         "title": {
           "en": "Brazilian Aquathlon Championship · Brasília",
-          "pt": null,
-          "fr": null
+          "pt": "Campeonato Brasileiro de Aquatlo · Brasília",
+          "fr": "Championnat du Brésil d’aquathlon · Brasília"
         },
         "result": {
           "en": "3rd overall",
-          "pt": null,
-          "fr": null
+          "pt": "3º lugar geral",
+          "fr": "3e place au classement général"
         },
         "description": {
           "en": "Third overall at the 2016 Brazilian Aquathlon Championship in Brasília.",
-          "pt": null,
-          "fr": null
+          "pt": "Terceiro lugar geral no Campeonato Brasileiro de Aquatlo de 2016, em Brasília.",
+          "fr": "Troisième au classement général du Championnat du Brésil d’aquathlon 2016, à Brasília."
         }
       },
       {
-        "id": "triathlon-2017",
-        "icon": "directions_bike",
-        "year": 2017,
+        "id": "joao-moreno-2016",
+        "icon": "pool",
+        "year": 2016,
         "title": {
-          "en": "Triathlon victories",
-          "pt": null,
-          "fr": null
+          "en": "Travessia João Moreno",
+          "pt": "Travessia João Moreno",
+          "fr": "Travessia João Moreno"
         },
         "result": {
-          "en": "1st overall",
-          "pt": null,
-          "fr": null
+          "en": "1st in category · 2nd overall",
+          "pt": "1º na categoria · 2º geral",
+          "fr": "1re dans la catégorie · 2e au général"
         },
         "description": {
-          "en": "First overall in the first two triathlon championship stages and at Triathlon Apaches Itaoca.",
-          "pt": null,
-          "fr": null
+          "en": "Category winner and second overall in the João Moreno open-water swim.",
+          "pt": "Primeiro lugar na categoria e segundo lugar geral na Travessia João Moreno.",
+          "fr": "Première place dans la catégorie et deuxième au classement général de la traversée en eau libre João Moreno."
         }
-      }
-    ],
-    "sportsIntroduction": {
-      "en": "Competitive swimming from age nine; aquathlon and triathlon competition from 2015.",
-      "pt": null,
-      "fr": null
-    },
-    "sportsImage": {
-      "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuBlQCKc9lLOvRyuDi_qgYayaUa8ajnZOgd_q5VAqEQl2iXw0bdTthXJHa_RUw2AdgZrZmWllWuzoK0FzEH0hpH245bSPLeaUGpICK_rzJ9ko5kguiSZw6hnHs18asocGH2e15PJwHW8UNJLeh4BwD9GBDfJy4pdrBmvgqGwuxLx_TDPTAJWlHQoq6-b0BWT8LiIw7sI6iGtMFmI7PnPi2yanprhPBpfy6GAib7bfyDL50yx5hYqcGTW1g",
-      "alt": {
-        "en": "Illustrative photograph of a swimmer by open water",
-        "pt": null,
-        "fr": null
       },
-      "caption": {
-        "en": "Illustrative image — personal competition photo to be supplied.",
-        "pt": null,
-        "fr": null
+      {
+        "id": "triathlon-stage-1-2016",
+        "icon": "directions_bike",
+        "year": 2016,
+        "title": {
+          "en": "Triathlon championship · Stage 1",
+          "pt": "Campeonato de triatlo · 1ª etapa",
+          "fr": "Championnat de triathlon · Étape 1"
+        },
+        "result": {
+          "en": "1st in category",
+          "pt": "1º lugar na categoria",
+          "fr": "1re place dans la catégorie"
+        },
+        "description": {
+          "en": "First in category and 12th overall.",
+          "pt": "Primeiro lugar na categoria e 12º lugar geral.",
+          "fr": "Première place dans la catégorie et 12e au classement général."
+        }
+      },
+      {
+        "id": "triathlon-stage-2-2016",
+        "icon": "directions_bike",
+        "year": 2016,
+        "title": {
+          "en": "Triathlon championship · Stage 2",
+          "pt": "Campeonato de triatlo · 2ª etapa",
+          "fr": "Championnat de triathlon · Étape 2"
+        },
+        "result": {
+          "en": "1st in category",
+          "pt": "1º lugar na categoria",
+          "fr": "1re place dans la catégorie"
+        },
+        "description": {
+          "en": "First in category and 5th overall.",
+          "pt": "Primeiro lugar na categoria e 5º lugar geral.",
+          "fr": "Première place dans la catégorie et 5e au classement général."
+        }
+      },
+      {
+        "id": "triathlon-stage-3-2016",
+        "icon": "directions_bike",
+        "year": 2016,
+        "title": {
+          "en": "Triathlon championship · Stage 3",
+          "pt": "Campeonato de triatlo · 3ª etapa",
+          "fr": "Championnat de triathlon · Étape 3"
+        },
+        "result": {
+          "en": "1st in category",
+          "pt": "1º lugar na categoria",
+          "fr": "1re place dans la catégorie"
+        },
+        "description": {
+          "en": "First in category and 3rd overall.",
+          "pt": "Primeiro lugar na categoria e 3º lugar geral.",
+          "fr": "Première place dans la catégorie et 3e au classement général."
+        }
+      },
+      {
+        "id": "triathlon-stage-4-2016",
+        "icon": "directions_bike",
+        "year": 2016,
+        "title": {
+          "en": "Triathlon grand final · Stage 4",
+          "pt": "Grande final do triatlo · 4ª etapa",
+          "fr": "Grande finale du triathlon · Étape 4"
+        },
+        "result": {
+          "en": "1st in category",
+          "pt": "1º lugar na categoria",
+          "fr": "1re place dans la catégorie"
+        },
+        "description": {
+          "en": "First in category and 6th overall.",
+          "pt": "Primeiro lugar na categoria e 6º lugar geral.",
+          "fr": "Première place dans la catégorie et 6e au classement général."
+        }
+      },
+      {
+        "id": "aquathlon-stage-1-2016",
+        "icon": "sprint",
+        "year": 2016,
+        "title": {
+          "en": "Aquathlon championship · Stage 1",
+          "pt": "Campeonato de aquatlo · 1ª etapa",
+          "fr": "Championnat d’aquathlon · Étape 1"
+        },
+        "result": {
+          "en": "6th overall",
+          "pt": "6º lugar geral",
+          "fr": "6e place au classement général"
+        },
+        "description": {
+          "en": "Sixth overall in the first stage of the aquathlon championship.",
+          "pt": "Sexto lugar geral na primeira etapa do campeonato de aquatlo.",
+          "fr": "Sixième au classement général de la première étape du championnat d’aquathlon."
+        }
+      },
+      {
+        "id": "season-ranking-2016",
+        "icon": "military_tech",
+        "year": 2016,
+        "title": {
+          "en": "End-of-season ranking",
+          "pt": "Classificação ao final da temporada",
+          "fr": "Classement de fin de saison"
+        },
+        "result": {
+          "en": "1st · Ages 18–19",
+          "pt": "1º · Categoria 18–19 anos",
+          "fr": "1re place · 18–19 ans"
+        },
+        "description": {
+          "en": "First in the 18–19 age category and fourth overall in the main men’s category. The competition name is not specified in the sporting résumé.",
+          "pt": "Primeiro lugar na categoria 18–19 anos e quarto lugar geral masculino na categoria principal. O currículo esportivo não especifica o nome da competição.",
+          "fr": "Première place dans la catégorie des 18–19 ans et quatrième au classement général masculin de la catégorie principale. Le CV sportif ne précise pas le nom de la compétition."
+        }
+      },
+      {
+        "id": "fac-absoluto-2015",
+        "icon": "pool",
+        "year": 2015,
+        "title": {
+          "en": "I Torneio FAC Absoluto",
+          "pt": "I Torneio FAC Absoluto",
+          "fr": "I Torneio FAC Absoluto"
+        },
+        "placements": [
+          {
+            "id": "100-butterfly",
+            "event": {
+              "en": "100 m butterfly",
+              "pt": "100 m borboleta",
+              "fr": "100 m papillon"
+            },
+            "result": {
+              "en": "1st place",
+              "pt": "1º lugar",
+              "fr": "1re place"
+            }
+          },
+          {
+            "id": "100-backstroke",
+            "event": {
+              "en": "100 m backstroke",
+              "pt": "100 m costas",
+              "fr": "100 m dos"
+            },
+            "result": {
+              "en": "3rd place",
+              "pt": "3º lugar",
+              "fr": "3e place"
+            }
+          },
+          {
+            "id": "100-freestyle",
+            "event": {
+              "en": "100 m freestyle",
+              "pt": "100 m livre",
+              "fr": "100 m nage libre"
+            },
+            "result": {
+              "en": "3rd place",
+              "pt": "3º lugar",
+              "fr": "3e place"
+            }
+          },
+          {
+            "id": "50-freestyle",
+            "event": {
+              "en": "50 m freestyle",
+              "pt": "50 m livre",
+              "fr": "50 m nage libre"
+            },
+            "result": {
+              "en": "4th place",
+              "pt": "4º lugar",
+              "fr": "4e place"
+            }
+          }
+        ]
+      },
+      {
+        "id": "fac-infantil-senior-2015",
+        "icon": "pool",
+        "year": 2015,
+        "title": {
+          "en": "I Torneio FAC Infantil a Sênior",
+          "pt": "I Torneio FAC Infantil a Sênior",
+          "fr": "I Torneio FAC Infantil a Sênior"
+        },
+        "placements": [
+          {
+            "id": "100-backstroke",
+            "event": {
+              "en": "100 m backstroke",
+              "pt": "100 m costas",
+              "fr": "100 m dos"
+            },
+            "result": {
+              "en": "2nd place",
+              "pt": "2º lugar",
+              "fr": "2e place"
+            }
+          },
+          {
+            "id": "100-butterfly",
+            "event": {
+              "en": "100 m butterfly",
+              "pt": "100 m borboleta",
+              "fr": "100 m papillon"
+            },
+            "result": {
+              "en": "2nd place",
+              "pt": "2º lugar",
+              "fr": "2e place"
+            }
+          }
+        ]
+      },
+      {
+        "id": "swimming-winter-2015",
+        "icon": "pool",
+        "year": 2015,
+        "title": {
+          "en": "Campeonato Estadual de Inverno",
+          "pt": "Campeonato Estadual de Inverno",
+          "fr": "Campeonato Estadual de Inverno"
+        },
+        "placements": [
+          {
+            "id": "100-freestyle",
+            "event": {
+              "en": "100 m freestyle",
+              "pt": "100 m livre",
+              "fr": "100 m nage libre"
+            },
+            "result": {
+              "en": "1st place",
+              "pt": "1º lugar",
+              "fr": "1re place"
+            }
+          },
+          {
+            "id": "200-backstroke",
+            "event": {
+              "en": "200 m backstroke",
+              "pt": "200 m costas",
+              "fr": "200 m dos"
+            },
+            "result": {
+              "en": "1st place",
+              "pt": "1º lugar",
+              "fr": "1re place"
+            }
+          },
+          {
+            "id": "100-backstroke",
+            "event": {
+              "en": "100 m backstroke",
+              "pt": "100 m costas",
+              "fr": "100 m dos"
+            },
+            "result": {
+              "en": "2nd place",
+              "pt": "2º lugar",
+              "fr": "2e place"
+            }
+          }
+        ]
+      },
+      {
+        "id": "swimming-speed-2015",
+        "icon": "pool",
+        "year": 2015,
+        "title": {
+          "en": "Campeonato Estadual de Velocidade",
+          "pt": "Campeonato Estadual de Velocidade",
+          "fr": "Campeonato Estadual de Velocidade"
+        },
+        "placements": [
+          {
+            "id": "400-freestyle",
+            "event": {
+              "en": "400 m freestyle",
+              "pt": "400 m livre",
+              "fr": "400 m nage libre"
+            },
+            "result": {
+              "en": "2nd place",
+              "pt": "2º lugar",
+              "fr": "2e place"
+            }
+          },
+          {
+            "id": "200-freestyle",
+            "event": {
+              "en": "200 m freestyle",
+              "pt": "200 m livre",
+              "fr": "200 m nage libre"
+            },
+            "result": {
+              "en": "3rd place",
+              "pt": "3º lugar",
+              "fr": "3e place"
+            }
+          }
+        ]
       }
-    },
-    "gaming": {
-      "en": "Games are part of my life beyond engineering and training.",
-      "pt": null,
-      "fr": null
-    }
+    ]
   },
   "companies": [
     {
@@ -380,8 +789,8 @@
       "name": "TechInnov",
       "role": {
         "en": "Developer & QA Coordinator",
-        "pt": null,
-        "fr": null
+        "pt": "Desenvolvedor e Coordenador de QA",
+        "fr": "Développeur et coordonnateur de l’assurance qualité"
       },
       "period": {
         "startYear": 2023,
@@ -391,116 +800,116 @@
       "location": "Canada",
       "engagement": {
         "en": "Employment",
-        "pt": null,
-        "fr": null
+        "pt": "Vínculo empregatício",
+        "fr": "Emploi salarié"
       },
       "summary": {
         "en": "Connecting business needs, hands-on engineering, quality assurance, and team coordination for a multilingual learning platform.",
-        "pt": null,
-        "fr": null
+        "pt": "Conectando necessidades de negócio, desenvolvimento prático, garantia da qualidade e coordenação de equipes em uma plataforma multilíngue de aprendizagem.",
+        "fr": "Relier les besoins métier, le développement concret, l’assurance qualité et la coordination d’équipe pour une plateforme d’apprentissage multilingue."
       },
       "description": [
         {
           "en": "At TechInnov, I work across the delivery lifecycle of an online learning platform used by learners, tutors, coordinators, and administrators. I combine Angular/TypeScript and C#/.NET development with SQL Server work, solution analysis, QA coordination, and technical documentation.",
-          "pt": null,
-          "fr": null
+          "pt": "Na TechInnov, atuo em todo o ciclo de entrega de uma plataforma de ensino on-line utilizada por alunos, tutores, coordenadores e administradores. Combino desenvolvimento com Angular/TypeScript e C#/.NET, trabalho com SQL Server, análise de soluções, coordenação de QA e documentação técnica.",
+          "fr": "Chez TechInnov, j’interviens à toutes les étapes de livraison d’une plateforme d’apprentissage en ligne utilisée par les apprenants, les tuteurs, les coordonnateurs et les administrateurs. Je combine le développement Angular/TypeScript et C#/.NET avec SQL Server, l’analyse de solutions, la coordination de l’assurance qualité et la documentation technique."
         },
         {
           "en": "I turn business needs into proposals that clients can evaluate: scope, assumptions, alternatives, use cases, process flows, and diagrams. I support estimation, prioritization, and technical decisions so business stakeholders, developers, and testers share a clear understanding of the work.",
-          "pt": null,
-          "fr": null
+          "pt": "Transformo necessidades de negócio em propostas que os clientes podem avaliar: escopo, premissas, alternativas, casos de uso, fluxos de processos e diagramas. Apoio estimativas, priorização e decisões técnicas para que as partes interessadas do negócio, os desenvolvedores e os testadores tenham uma compreensão clara e compartilhada do trabalho.",
+          "fr": "Je transforme les besoins métier en propositions que les clients peuvent évaluer : périmètre, hypothèses, solutions de rechange, cas d’utilisation, flux de processus et diagrammes. Je contribue aux estimations, à la priorisation et aux décisions techniques afin que les parties prenantes, les développeurs et les testeurs partagent une compréhension claire du travail."
         }
       ],
       "work": [
         {
           "title": {
             "en": "Performance and full-stack development",
-            "pt": null,
-            "fr": null
+            "pt": "Desempenho e desenvolvimento full-stack",
+            "fr": "Performance et développement full stack"
           },
           "items": [
             {
               "en": "Optimize SQL Server queries and stored procedures and refactor data-access code.",
-              "pt": null,
-              "fr": null
+              "pt": "Otimizar consultas e procedimentos armazenados no SQL Server e refatorar o código de acesso a dados.",
+              "fr": "Optimiser les requêtes et les procédures stockées SQL Server et refactoriser le code d’accès aux données."
             },
             {
               "en": "Build and maintain Angular/TypeScript and C#/.NET features using Entity Framework, including established .NET Framework and MVC code.",
-              "pt": null,
-              "fr": null
+              "pt": "Desenvolver e manter funcionalidades com Angular/TypeScript e C#/.NET usando Entity Framework, incluindo código existente em .NET Framework e MVC.",
+              "fr": "Développer et maintenir des fonctionnalités Angular/TypeScript et C#/.NET avec Entity Framework, y compris du code existant en .NET Framework et MVC."
             },
             {
               "en": "Develop booking, rescheduling, cancellation rules, learner-progress tracking, and reporting.",
-              "pt": null,
-              "fr": null
+              "pt": "Desenvolver regras de agendamento, reagendamento e cancelamento, acompanhamento do progresso dos alunos e relatórios.",
+              "fr": "Développer les règles de réservation, de report et d’annulation, le suivi des progrès des apprenants et la production de rapports."
             },
             {
               "en": "Generate PDF documents with iTextSharp and write Angular unit tests.",
-              "pt": null,
-              "fr": null
+              "pt": "Gerar documentos PDF com iTextSharp e escrever testes unitários para Angular.",
+              "fr": "Générer des documents PDF avec iTextSharp et écrire des tests unitaires Angular."
             },
             {
               "en": "Contribute to pronunciation scoring with Azure speech services and multilingual interfaces, database content, and email templates.",
-              "pt": null,
-              "fr": null
+              "pt": "Contribuir para a avaliação de pronúncia com os serviços de fala do Azure e para interfaces, conteúdos de banco de dados e modelos de e-mail multilíngues.",
+              "fr": "Contribuer à l’évaluation de la prononciation avec les services vocaux Azure ainsi qu’aux interfaces, aux contenus de base de données et aux modèles de courriels multilingues."
             }
           ]
         },
         {
           "title": {
             "en": "Business analysis and coordination",
-            "pt": null,
-            "fr": null
+            "pt": "Análise de negócios e coordenação",
+            "fr": "Analyse métier et coordination"
           },
           "items": [
             {
               "en": "Compare solution alternatives and prepare proposals for client validation.",
-              "pt": null,
-              "fr": null
+              "pt": "Comparar alternativas de solução e preparar propostas para validação pelo cliente.",
+              "fr": "Comparer des solutions possibles et préparer des propositions à faire valider par le client."
             },
             {
               "en": "Document scope, assumptions, use cases, flows, diagrams, and architectural decisions.",
-              "pt": null,
-              "fr": null
+              "pt": "Documentar escopo, premissas, casos de uso, fluxos, diagramas e decisões de arquitetura.",
+              "fr": "Documenter le périmètre, les hypothèses, les cas d’utilisation, les flux, les diagrammes et les décisions d’architecture."
             },
             {
               "en": "Coordinate estimates and organize and prioritize work for developers and testers.",
-              "pt": null,
-              "fr": null
+              "pt": "Coordenar estimativas, organizar e priorizar o trabalho de desenvolvedores e testadores.",
+              "fr": "Coordonner les estimations, organiser et prioriser le travail des développeurs et des testeurs."
             },
             {
               "en": "Support technical decisions and stakeholder communication through Jira, Confluence, and Slack.",
-              "pt": null,
-              "fr": null
+              "pt": "Apoiar decisões técnicas e a comunicação com as partes interessadas por meio do Jira, Confluence e Slack.",
+              "fr": "Appuyer les décisions techniques et la communication avec les parties prenantes à l’aide de Jira, Confluence et Slack."
             }
           ]
         },
         {
           "title": {
             "en": "Quality, accessibility, and documentation",
-            "pt": null,
-            "fr": null
+            "pt": "Qualidade, acessibilidade e documentação",
+            "fr": "Qualité, accessibilité et documentation"
           },
           "items": [
             {
               "en": "Plan and coordinate feature-level QA, smoke tests, regression tests, and evidence reports.",
-              "pt": null,
-              "fr": null
+              "pt": "Planejar e coordenar a garantia da qualidade por funcionalidade, testes de fumaça, testes de regressão e relatórios de evidências.",
+              "fr": "Planifier et coordonner l’assurance qualité par fonctionnalité, les tests de bon fonctionnement, les tests de régression et les rapports de preuves."
             },
             {
               "en": "Work with Playwright automation and nightly test runs.",
-              "pt": null,
-              "fr": null
+              "pt": "Trabalhar com automação usando Playwright e execuções noturnas de testes.",
+              "fr": "Travailler sur l’automatisation avec Playwright et les exécutions nocturnes des tests."
             },
             {
               "en": "Check WCAG accessibility requirements and contribute to migration of tutor features to the accessible platform.",
-              "pt": null,
-              "fr": null
+              "pt": "Verificar os requisitos de acessibilidade WCAG e contribuir para a migração das funcionalidades dos tutores para a plataforma acessível.",
+              "fr": "Vérifier les exigences d’accessibilité WCAG et contribuer à la migration des fonctionnalités destinées aux tuteurs vers la plateforme accessible."
             },
             {
               "en": "Create technical documentation, coding guidance, reusable QA templates, and logging processes.",
-              "pt": null,
-              "fr": null
+              "pt": "Criar documentação técnica, orientações de codificação, modelos reutilizáveis de QA e processos de registro de logs.",
+              "fr": "Créer de la documentation technique, des lignes directrices de codage, des modèles réutilisables d’assurance qualité et des processus de journalisation."
             }
           ]
         }
@@ -508,18 +917,18 @@
       "achievements": [
         {
           "en": "Responsibility spanning business analysis, development, QA, documentation, and coordination.",
-          "pt": null,
-          "fr": null
+          "pt": "Responsabilidades que abrangem análise de negócios, desenvolvimento, QA, documentação e coordenação.",
+          "fr": "Des responsabilités couvrant l’analyse métier, le développement, l’assurance qualité, la documentation et la coordination."
         },
         {
           "en": "Performance-focused SQL and data-access improvements.",
-          "pt": null,
-          "fr": null
+          "pt": "Melhorias em SQL e acesso a dados com foco em desempenho.",
+          "fr": "Améliorations de SQL et de l’accès aux données axées sur la performance."
         },
         {
           "en": "Contributions to multilingual and accessible learning experiences.",
-          "pt": null,
-          "fr": null
+          "pt": "Contribuições para experiências de aprendizagem multilíngues e acessíveis.",
+          "fr": "Contributions à des expériences d’apprentissage multilingues et accessibles."
         }
       ],
       "technologies": [
@@ -542,8 +951,8 @@
       "name": "GFT Group",
       "role": {
         "en": "Full-Stack Developer",
-        "pt": null,
-        "fr": null
+        "pt": "Desenvolvedor Full Stack",
+        "fr": "Développeur full stack"
       },
       "period": {
         "startYear": 2021,
@@ -553,72 +962,72 @@
       "location": null,
       "engagement": {
         "en": "Employment",
-        "pt": null,
-        "fr": null
+        "pt": "Vínculo empregatício",
+        "fr": "Emploi salarié"
       },
       "summary": {
         "en": "Full-stack delivery, cloud APIs, and support beyond the development role.",
-        "pt": null,
-        "fr": null
+        "pt": "Entregas full-stack, APIs na nuvem e suporte além das responsabilidades de desenvolvimento.",
+        "fr": "Livraison full stack, API infonuagiques et soutien au-delà du rôle de développement."
       },
       "description": [
         {
           "en": "At GFT Group, I developed responsive, accessible Angular interfaces and .NET APIs using Azure, microservices, event-driven architecture, and CQRS.",
-          "pt": null,
-          "fr": null
+          "pt": "Na GFT Group, desenvolvi interfaces Angular responsivas e acessíveis e APIs .NET usando Azure, microsserviços, arquitetura orientada a eventos e CQRS.",
+          "fr": "Chez GFT Group, j’ai développé des interfaces Angular adaptatives et accessibles ainsi que des API .NET avec Azure, des microservices, une architecture événementielle et CQRS."
         },
         {
           "en": "My responsibilities also included configuring Azure DevOps pipelines when the team did not have a DevOps specialist, and helping new developers understand both the technology and the business rules through training and quizzes. I worked on a health-insurance request and purchase flow with prepayment through a third-party library.",
-          "pt": null,
-          "fr": null
+          "pt": "Minhas responsabilidades também incluíam configurar pipelines do Azure DevOps quando a equipe não contava com um especialista em DevOps e ajudar novos desenvolvedores a compreender tanto a tecnologia quanto as regras de negócio por meio de treinamentos e questionários. Trabalhei em um fluxo de solicitação e compra de planos de saúde com pré-pagamento por meio de uma biblioteca de terceiros.",
+          "fr": "Mes responsabilités comprenaient également la configuration de pipelines Azure DevOps lorsque l’équipe ne disposait pas d’un spécialiste DevOps, ainsi que l’accompagnement des nouveaux développeurs dans l’apprentissage des technologies et des règles métier grâce à des formations et des questionnaires. J’ai travaillé sur un parcours de demande et d’achat d’assurance maladie avec prépaiement au moyen d’une bibliothèque tierce."
         }
       ],
       "work": [
         {
           "title": {
             "en": "Engineering and delivery",
-            "pt": null,
-            "fr": null
+            "pt": "Engenharia e entrega",
+            "fr": "Ingénierie et livraison"
           },
           "items": [
             {
               "en": "Develop responsive and accessible Angular interfaces and .NET APIs.",
-              "pt": null,
-              "fr": null
+              "pt": "Desenvolver interfaces Angular responsivas e acessíveis e APIs .NET.",
+              "fr": "Développer des interfaces Angular adaptatives et accessibles ainsi que des API .NET."
             },
             {
               "en": "Work with Azure, microservices, event-driven architecture, and CQRS.",
-              "pt": null,
-              "fr": null
+              "pt": "Trabalhar com Azure, microsserviços, arquitetura orientada a eventos e CQRS.",
+              "fr": "Travailler avec Azure, les microservices, l’architecture événementielle et CQRS."
             },
             {
               "en": "Configure Azure DevOps pipelines for projects without a dedicated DevOps specialist.",
-              "pt": null,
-              "fr": null
+              "pt": "Configurar pipelines do Azure DevOps em projetos sem um especialista DevOps dedicado.",
+              "fr": "Configurer des pipelines Azure DevOps pour des projets sans spécialiste DevOps attitré."
             },
             {
               "en": "Contribute to a prepayment flow using a third-party library for health-insurance requests and purchases.",
-              "pt": null,
-              "fr": null
+              "pt": "Contribuir para um fluxo de pré-pagamento com uma biblioteca de terceiros para solicitações e compras de planos de saúde.",
+              "fr": "Contribuer à un parcours de prépaiement utilisant une bibliothèque tierce pour les demandes et les achats d’assurance maladie."
             }
           ]
         },
         {
           "title": {
             "en": "Team enablement",
-            "pt": null,
-            "fr": null
+            "pt": "Capacitação da equipe",
+            "fr": "Montée en compétences de l’équipe"
           },
           "items": [
             {
               "en": "Train new developers in technologies and business rules.",
-              "pt": null,
-              "fr": null
+              "pt": "Treinar novos desenvolvedores em tecnologias e regras de negócio.",
+              "fr": "Former les nouveaux développeurs aux technologies et aux règles métier."
             },
             {
               "en": "Create quizzes to reinforce onboarding and knowledge sharing.",
-              "pt": null,
-              "fr": null
+              "pt": "Criar questionários para reforçar a integração e o compartilhamento de conhecimento.",
+              "fr": "Créer des questionnaires pour renforcer l’intégration des nouveaux membres et le partage des connaissances."
             }
           ]
         }
@@ -626,8 +1035,8 @@
       "achievements": [
         {
           "en": "Selected as one of 10 Brazilian employees for a GFT-funded international English program in the United States.",
-          "pt": null,
-          "fr": null
+          "pt": "Selecionado entre dez funcionários brasileiros para um programa internacional de inglês nos Estados Unidos, financiado pela GFT.",
+          "fr": "Sélectionné parmi dix employés brésiliens pour un programme international d’anglais aux États-Unis financé par GFT."
         }
       ],
       "technologies": ["Angular", ".NET", "Azure", "Azure DevOps", "Microservices", "CQRS"],
@@ -638,8 +1047,8 @@
       "name": "Telegestão",
       "role": {
         "en": "Software Architect",
-        "pt": null,
-        "fr": null
+        "pt": "Arquiteto de Software",
+        "fr": "Architecte logiciel"
       },
       "period": {
         "startYear": 2022,
@@ -649,48 +1058,48 @@
       "location": "Brazil",
       "engagement": {
         "en": "Freelance · concurrent with GFT",
-        "pt": null,
-        "fr": null
+        "pt": "Freelancer · em paralelo à GFT",
+        "fr": "Freelance · en parallèle de GFT"
       },
       "summary": {
         "en": "Architecture, reusable foundations, and documentation for a multi-tenant management system.",
-        "pt": null,
-        "fr": null
+        "pt": "Arquitetura, bases reutilizáveis e documentação para um sistema de gestão multilocatário.",
+        "fr": "Architecture, composants de base réutilisables et documentation pour un système de gestion multilocataire."
       },
       "description": [
         {
           "en": "As a freelance software architect at Telegestão, I designed a microservices architecture for a multi-tenant management system using Angular, ASP.NET Web API, and Azure Cloud.",
-          "pt": null,
-          "fr": null
+          "pt": "Como arquiteto de software freelancer na Telegestão, projetei uma arquitetura de microsserviços para um sistema de gestão multilocatário usando Angular, ASP.NET Web API e Azure Cloud.",
+          "fr": "En tant qu’architecte logiciel freelance chez Telegestão, j’ai conçu une architecture de microservices pour un système de gestion multilocataire avec Angular, ASP.NET Web API et Azure Cloud."
         },
         {
           "en": "I created development templates, libraries, and standards, and documented architecture, application flows, data handling, and LGPD considerations. This work took place alongside my employment at GFT.",
-          "pt": null,
-          "fr": null
+          "pt": "Criei modelos de desenvolvimento, bibliotecas e padrões, além de documentar a arquitetura, os fluxos da aplicação, o tratamento de dados e as considerações relacionadas à LGPD. Esse trabalho ocorreu em paralelo ao meu vínculo com a GFT.",
+          "fr": "J’ai créé des modèles de développement, des bibliothèques et des normes, et documenté l’architecture, les flux applicatifs, le traitement des données et les aspects liés à la LGPD (loi brésilienne sur la protection des données). Ce travail s’est déroulé en parallèle de mon emploi chez GFT."
         }
       ],
       "work": [
         {
           "title": {
             "en": "Architecture and reusable foundations",
-            "pt": null,
-            "fr": null
+            "pt": "Arquitetura e bases reutilizáveis",
+            "fr": "Architecture et composants de base réutilisables"
           },
           "items": [
             {
               "en": "Design microservices for a multi-tenant management system.",
-              "pt": null,
-              "fr": null
+              "pt": "Projetar microsserviços para um sistema de gestão multilocatário.",
+              "fr": "Concevoir des microservices pour un système de gestion multilocataire."
             },
             {
               "en": "Create templates, reusable libraries, and development standards.",
-              "pt": null,
-              "fr": null
+              "pt": "Criar modelos, bibliotecas reutilizáveis e padrões de desenvolvimento.",
+              "fr": "Créer des modèles, des bibliothèques réutilisables et des normes de développement."
             },
             {
               "en": "Document architecture, application flows, data handling, and LGPD considerations.",
-              "pt": null,
-              "fr": null
+              "pt": "Documentar a arquitetura, os fluxos da aplicação, o tratamento de dados e as considerações relacionadas à LGPD.",
+              "fr": "Documenter l’architecture, les flux applicatifs, le traitement des données et les aspects liés à la LGPD."
             }
           ]
         }
@@ -698,8 +1107,8 @@
       "achievements": [
         {
           "en": "Combined architecture design with practical libraries, templates, and documentation for implementation.",
-          "pt": null,
-          "fr": null
+          "pt": "Combinei o projeto de arquitetura com bibliotecas, modelos e documentação práticos para apoiar a implementação.",
+          "fr": "J’ai combiné la conception architecturale avec des bibliothèques, des modèles et de la documentation pratiques pour faciliter la mise en œuvre."
         }
       ],
       "technologies": ["Angular", "ASP.NET Web API", "Azure", "Microservices", "Multi-tenancy"],
@@ -710,8 +1119,8 @@
       "name": "Autoglass",
       "role": {
         "en": "Full-Stack Developer",
-        "pt": null,
-        "fr": null
+        "pt": "Desenvolvedor Full Stack",
+        "fr": "Développeur full stack"
       },
       "period": {
         "startYear": 2019,
@@ -721,77 +1130,77 @@
       "location": "Brazil",
       "engagement": {
         "en": "Employment",
-        "pt": null,
-        "fr": null
+        "pt": "Vínculo empregatício",
+        "fr": "Emploi salarié"
       },
       "summary": {
         "en": "Performance-sensitive pricing, legacy modernization, and early professional recognition.",
-        "pt": null,
-        "fr": null
+        "pt": "Precificação com altos requisitos de desempenho, modernização de sistemas legados e reconhecimento no início da carreira.",
+        "fr": "Tarification exigeante en matière de performance, modernisation de systèmes existants et reconnaissance en début de carrière."
       },
       "description": [
         {
           "en": "At Autoglass, I maintained and modernized systems spanning Delphi, AngularJS, and .NET Framework toward .NET and Angular, in on-premises and AWS environments.",
-          "pt": null,
-          "fr": null
+          "pt": "Na Autoglass, mantive e modernizei sistemas em Delphi, AngularJS e .NET Framework, migrando-os em direção ao .NET e Angular, em ambientes locais e na AWS.",
+          "fr": "Chez Autoglass, j’ai maintenu et modernisé des systèmes reposant sur Delphi, AngularJS et .NET Framework, en les faisant évoluer vers .NET et Angular, dans des environnements sur site et AWS."
         },
         {
           "en": "I worked on pricing systems covering products, taxes, freight, and configurable scenario rules. I was selected for a three-developer team handling sensitive pricing information and performance requirements, working with architecture and QA.",
-          "pt": null,
-          "fr": null
+          "pt": "Trabalhei em sistemas de precificação que abrangiam produtos, impostos, frete e regras de cenários configuráveis. Fui selecionado para uma equipe de três desenvolvedores responsável por informações sensíveis de precificação e requisitos de desempenho, em colaboração com arquitetura e QA.",
+          "fr": "J’ai travaillé sur des systèmes de tarification couvrant les produits, les taxes, les frais de transport et des règles de scénarios configurables. J’ai été sélectionné pour une équipe de trois développeurs chargée de données tarifaires sensibles et d’exigences de performance, en collaboration avec les équipes d’architecture et d’assurance qualité."
         },
         {
           "en": "Alongside development, I contributed to automated testing, log visibility, and training new developers in technology and business rules.",
-          "pt": null,
-          "fr": null
+          "pt": "Além do desenvolvimento, contribuí para testes automatizados, visibilidade de logs e treinamento de novos desenvolvedores em tecnologias e regras de negócio.",
+          "fr": "En parallèle du développement, j’ai contribué aux tests automatisés, à la visibilité des journaux et à la formation des nouveaux développeurs aux technologies et aux règles métier."
         }
       ],
       "work": [
         {
           "title": {
             "en": "Systems and performance",
-            "pt": null,
-            "fr": null
+            "pt": "Sistemas e desempenho",
+            "fr": "Systèmes et performance"
           },
           "items": [
             {
               "en": "Maintain and modernize legacy Delphi, AngularJS, and .NET Framework applications.",
-              "pt": null,
-              "fr": null
+              "pt": "Manter e modernizar aplicações legadas em Delphi, AngularJS e .NET Framework.",
+              "fr": "Maintenir et moderniser des applications existantes en Delphi, AngularJS et .NET Framework."
             },
             {
               "en": "Develop pricing rules covering products, taxes, freight, and configurable scenarios.",
-              "pt": null,
-              "fr": null
+              "pt": "Desenvolver regras de precificação para produtos, impostos, frete e cenários configuráveis.",
+              "fr": "Développer des règles de tarification pour les produits, les taxes, les frais de transport et les scénarios configurables."
             },
             {
               "en": "Collaborate with architecture and QA on performance-sensitive pricing work.",
-              "pt": null,
-              "fr": null
+              "pt": "Colaborar com as equipes de arquitetura e QA em projetos de precificação com altos requisitos de desempenho.",
+              "fr": "Collaborer avec les équipes d’architecture et d’assurance qualité sur des travaux de tarification exigeants en matière de performance."
             }
           ]
         },
         {
           "title": {
             "en": "Quality and team development",
-            "pt": null,
-            "fr": null
+            "pt": "Qualidade e desenvolvimento da equipe",
+            "fr": "Qualité et développement de l’équipe"
           },
           "items": [
             {
               "en": "Write unit, integration, and end-to-end tests with Jest, Cypress, and Protractor.",
-              "pt": null,
-              "fr": null
+              "pt": "Escrever testes unitários, de integração e de ponta a ponta com Jest, Cypress e Protractor.",
+              "fr": "Écrire des tests unitaires, d’intégration et de bout en bout avec Jest, Cypress et Protractor."
             },
             {
               "en": "Work with Kibana log dashboards and collaborate with QA.",
-              "pt": null,
-              "fr": null
+              "pt": "Trabalhar com painéis de logs no Kibana e colaborar com a equipe de QA.",
+              "fr": "Travailler avec des tableaux de bord de journaux dans Kibana et collaborer avec l’équipe d’assurance qualité."
             },
             {
               "en": "Train new developers and create technology and business-rule quizzes.",
-              "pt": null,
-              "fr": null
+              "pt": "Treinar novos desenvolvedores e criar questionários sobre tecnologias e regras de negócio.",
+              "fr": "Former les nouveaux développeurs et créer des questionnaires sur les technologies et les règles métier."
             }
           ]
         }
@@ -799,13 +1208,13 @@
       "achievements": [
         {
           "en": "Selected as one of eight for paid training during the first eight months, covering languages, governance, and processes.",
-          "pt": null,
-          "fr": null
+          "pt": "Selecionado entre oito participantes para um treinamento remunerado durante os primeiros oito meses, abrangendo linguagens, governança e processos.",
+          "fr": "Sélectionné parmi huit participants pour une formation rémunérée pendant les huit premiers mois, portant sur les langages, la gouvernance et les processus."
         },
         {
           "en": "Selected for a three-developer team on sensitive pricing projects with performance requirements.",
-          "pt": null,
-          "fr": null
+          "pt": "Selecionado para uma equipe de três desenvolvedores em projetos sensíveis de precificação com requisitos de desempenho.",
+          "fr": "Sélectionné dans une équipe de trois développeurs pour des projets sensibles de tarification soumis à des exigences de performance."
         }
       ],
       "technologies": [
@@ -830,21 +1239,65 @@
       "name": "libs-csharp",
       "description": {
         "en": "Reusable C# libraries for email, queries, Excel, database access, scheduled jobs, and utilities.",
-        "pt": null,
-        "fr": null
+        "pt": "Bibliotecas C# reutilizáveis para e-mail, consultas, Excel, acesso a bancos de dados, tarefas agendadas e utilitários.",
+        "fr": "Bibliothèques C# réutilisables pour les courriels, les requêtes, Excel, l’accès aux bases de données, les tâches planifiées et les utilitaires."
       },
       "url": null
     },
     {
-      "id": "flutter-route-definer",
+      "id": "route-definer",
       "kind": "package",
-      "name": "flutter_route_definer",
+      "name": "route_definer",
       "description": {
         "en": "Flutter navigation with route parsing, parameters, and access rules.",
+        "pt": "Navegação em Flutter com análise de rotas, parâmetros e regras de acesso.",
+        "fr": "Navigation Flutter avec analyse des routes, paramètres et règles d’accès."
+      },
+      "url": "https://pub.dev/packages/route_definer"
+    },
+    {
+      "id": "flutter-client-factory",
+      "kind": "package",
+      "name": "flutter_client_factory",
+      "description": {
+        "en": "HTTP clients for Dart and Flutter with streaming, browser and native transports, and configurable resilience policies.",
         "pt": null,
         "fr": null
       },
-      "url": null
+      "url": "https://pub.dev/packages/flutter_client_factory"
+    },
+    {
+      "id": "envx",
+      "kind": "package",
+      "name": "envx",
+      "description": {
+        "en": "Environment configuration for Dart and Flutter using typed selection and layered JSON, dotenv, memory, and process values.",
+        "pt": null,
+        "fr": null
+      },
+      "url": "https://pub.dev/packages/envx"
+    },
+    {
+      "id": "flutter-client-factory-widgets",
+      "kind": "package",
+      "name": "flutter_client_factory_widgets",
+      "description": {
+        "en": "Flutter adapters for managing resource state with flutter_client_factory.",
+        "pt": null,
+        "fr": null
+      },
+      "url": "https://pub.dev/packages/flutter_client_factory_widgets"
+    },
+    {
+      "id": "universal-ble-server",
+      "kind": "package",
+      "name": "universal_ble_server",
+      "description": {
+        "en": "Bluetooth Low Energy clients and servers with typed fields, message framing, and optional sessions.",
+        "pt": null,
+        "fr": null
+      },
+      "url": "https://pub.dev/packages/universal_ble_server"
     },
     {
       "id": "briefcase-handlers",
@@ -852,8 +1305,8 @@
       "name": "Briefcase.Handlers",
       "description": {
         "en": "",
-        "pt": null,
-        "fr": null
+        "pt": "",
+        "fr": ""
       },
       "url": null
     },
@@ -863,15 +1316,1255 @@
       "name": "Voar Prime",
       "description": {
         "en": "Project documentation to be supplied.",
-        "pt": null,
-        "fr": null
+        "pt": "Documentação do projeto a ser adicionada.",
+        "fr": "Documentation du projet à venir."
       },
       "markdown": {
         "en": "assets/voar-prime.md",
-        "pt": null,
-        "fr": null
+        "pt": "assets/voar-prime.md",
+        "fr": "assets/voar-prime.md"
       }
     }
   ],
-  "initialCompanyId": "techinnov"
+  "initialCompanyId": "techinnov",
+  "technologies": [
+    {
+      "id": "angular",
+      "name": "Angular",
+      "icon": "web"
+    },
+    {
+      "id": "typescript",
+      "name": "TypeScript",
+      "icon": "code"
+    },
+    {
+      "id": "c",
+      "name": "C#",
+      "icon": "code"
+    },
+    {
+      "id": "net",
+      "name": ".NET",
+      "icon": "deployed_code"
+    },
+    {
+      "id": "net-framework",
+      "name": ".NET Framework",
+      "icon": "deployed_code"
+    },
+    {
+      "id": "mvc",
+      "name": "MVC",
+      "icon": "account_tree"
+    },
+    {
+      "id": "sql-server",
+      "name": "SQL Server",
+      "icon": "database"
+    },
+    {
+      "id": "entity-framework",
+      "name": "Entity Framework",
+      "icon": "database"
+    },
+    {
+      "id": "playwright",
+      "name": "Playwright",
+      "icon": "fact_check"
+    },
+    {
+      "id": "itextsharp",
+      "name": "iTextSharp",
+      "icon": "description"
+    },
+    {
+      "id": "azure-speech-services",
+      "name": "Azure speech services",
+      "icon": "record_voice_over"
+    },
+    {
+      "id": "azure",
+      "name": "Azure",
+      "icon": "cloud"
+    },
+    {
+      "id": "azure-devops",
+      "name": "Azure DevOps",
+      "icon": "cloud_sync"
+    },
+    {
+      "id": "microservices",
+      "name": "Microservices",
+      "icon": "hub"
+    },
+    {
+      "id": "cqrs",
+      "name": "CQRS",
+      "icon": "account_tree"
+    },
+    {
+      "id": "asp-net-web-api",
+      "name": "ASP.NET Web API",
+      "icon": "api"
+    },
+    {
+      "id": "multi-tenancy",
+      "name": "Multi-tenancy",
+      "icon": "domain"
+    },
+    {
+      "id": "delphi",
+      "name": "Delphi",
+      "icon": "code"
+    },
+    {
+      "id": "angularjs",
+      "name": "AngularJS",
+      "icon": "web"
+    },
+    {
+      "id": "aws",
+      "name": "AWS",
+      "icon": "cloud"
+    },
+    {
+      "id": "jest",
+      "name": "Jest",
+      "icon": "fact_check"
+    },
+    {
+      "id": "cypress",
+      "name": "Cypress",
+      "icon": "fact_check"
+    },
+    {
+      "id": "protractor",
+      "name": "Protractor",
+      "icon": "fact_check"
+    },
+    {
+      "id": "kibana",
+      "name": "Kibana",
+      "icon": "monitoring"
+    },
+    {
+      "id": "docker",
+      "name": "Docker",
+      "icon": "deployed_code"
+    },
+    {
+      "id": "mongodb",
+      "name": "MongoDB",
+      "icon": "database"
+    },
+    {
+      "id": "firestore",
+      "name": "Firestore",
+      "icon": "database"
+    },
+    {
+      "id": "google-maps",
+      "name": "Google Maps",
+      "icon": "map"
+    },
+    {
+      "id": "jira",
+      "name": "Jira",
+      "icon": "checklist"
+    },
+    {
+      "id": "confluence",
+      "name": "Confluence",
+      "icon": "description"
+    },
+    {
+      "id": "slack",
+      "name": "Slack",
+      "icon": "forum"
+    },
+    {
+      "id": "flutter",
+      "name": "Flutter",
+      "icon": "phone_android"
+    },
+    {
+      "id": "dart",
+      "name": "Dart",
+      "icon": "code"
+    },
+    {
+      "id": "javascript",
+      "name": "JavaScript",
+      "icon": "code"
+    },
+    {
+      "id": "git",
+      "name": "Git",
+      "icon": "fork_right"
+    },
+    {
+      "id": "nhibernate",
+      "name": "NHibernate",
+      "icon": "database"
+    }
+  ],
+  "certificates": [
+    {
+      "id": "451ba756-40aa-4dc5-a4c8-951ce679190a",
+      "title": {
+        "en": "Python: Getting Started with the Language",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "backend",
+      "issued": "2022-03",
+      "url": "https://cursos.alura.com.br/certificate/451ba756-40aa-4dc5-a4c8-951ce679190a"
+    },
+    {
+      "id": "4f8d1715-1848-4dff-8640-4c81f4f31365",
+      "title": {
+        "en": "SOLID with C#: Principles of Object Oriented Programming",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "backend",
+      "issued": "2021-11",
+      "url": "https://cursos.alura.com.br/certificate/4f8d1715-1848-4dff-8640-4c81f4f31365"
+    },
+    {
+      "id": "cdefbf43-621a-4aa0-9512-89976e944e05",
+      "title": {
+        "en": "Vagrant: managing virtual machines",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "devops",
+      "issued": "2021-10",
+      "url": "https://cursos.alura.com.br/certificate/cdefbf43-621a-4aa0-9512-89976e944e05"
+    },
+    {
+      "id": "aa5b84b3-e273-4fd0-8394-55a44d0340cc",
+      "title": {
+        "en": "NHibernate: Data Persistence with C#",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "backend",
+      "issued": "2020-06",
+      "url": "https://cursos.alura.com.br/certificate/aa5b84b3-e273-4fd0-8394-55a44d0340cc"
+    },
+    {
+      "id": "aa4536ee-65ce-424f-a123-adc4eaaf2f49",
+      "title": {
+        "en": "Vue.js Training",
+        "pt": "Formação Vue.js",
+        "fr": "Parcours Vue.js"
+      },
+      "provider": "Alura",
+      "kind": "path",
+      "category": "frontend",
+      "issued": "2020-05",
+      "url": "https://cursos.alura.com.br/degree/certificate/aa4536ee-65ce-424f-a123-adc4eaaf2f49",
+      "hours": 132
+    },
+    {
+      "id": "5f895733-00c4-477a-95af-162833fdf7f2",
+      "title": {
+        "en": "HTML and CSS Training",
+        "pt": "Formação HTML e CSS",
+        "fr": "Parcours HTML et CSS"
+      },
+      "provider": "Alura",
+      "kind": "path",
+      "category": "frontend",
+      "issued": "2020-05",
+      "url": "https://cursos.alura.com.br/degree/certificate/5f895733-00c4-477a-95af-162833fdf7f2",
+      "hours": 173
+    },
+    {
+      "id": "c1ce7cf3-cbdd-40e8-8e4d-dab7f386e924",
+      "title": {
+        "en": "HTML5 and CSS3 part 4: advancing CSS",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "frontend",
+      "issued": "2020-05",
+      "url": "https://cursos.alura.com.br/certificate/c1ce7cf3-cbdd-40e8-8e4d-dab7f386e924"
+    },
+    {
+      "id": "0d961fb3-ebd9-493a-b841-ea421673dfff",
+      "title": {
+        "en": "HTML5 and CSS3 Part 3: Working with Forms and Tables",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "frontend",
+      "issued": "2020-05",
+      "url": "https://cursos.alura.com.br/certificate/0d961fb3-ebd9-493a-b841-ea421673dfff"
+    },
+    {
+      "id": "d78a0ae2-b90f-465e-959b-d3d3f20ab578",
+      "title": {
+        "en": "Performance Web II: Critical Path, HTTP/2 and Resource Hints",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "frontend",
+      "issued": "2020-05",
+      "url": "https://cursos.alura.com.br/certificate/d78a0ae2-b90f-465e-959b-d3d3f20ab578"
+    },
+    {
+      "id": "4b571d86-207e-4db2-856f-1315e95a9187",
+      "title": {
+        "en": "Web Performance I: Optimizing the Frontend",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "frontend",
+      "issued": "2020-03",
+      "url": "https://cursos.alura.com.br/certificate/4b571d86-207e-4db2-856f-1315e95a9187"
+    },
+    {
+      "id": "5ea4ea53-a10e-4737-90ef-8073015eab32",
+      "title": {
+        "en": "Bootstrap 4: Creating a Responsive Landing Page",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "frontend",
+      "issued": "2020-02",
+      "url": "https://cursos.alura.com.br/certificate/5ea4ea53-a10e-4737-90ef-8073015eab32"
+    },
+    {
+      "id": "c93469d0-9099-4e01-b4bd-fb7349787110",
+      "title": {
+        "en": "Protractor: Automated Testing with JavaScript",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "frontend",
+      "issued": "2020-02",
+      "url": "https://cursos.alura.com.br/certificate/c93469d0-9099-4e01-b4bd-fb7349787110"
+    },
+    {
+      "id": "responsive-design",
+      "title": {
+        "en": "Responsive web design: from mobile to desktop",
+        "pt": "Web Design Responsivo: Páginas que se adaptam do mobile ao desk",
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "frontend",
+      "issued": "2020-02",
+      "hours": 10,
+      "url": "https://cursos.alura.com.br/user/arlan-mendes/fullCertificate/197ebca894560654cde4938a283b7c61"
+    },
+    {
+      "id": "9e6ac989-ccb3-456b-8287-74c9d02b8720",
+      "title": {
+        "en": "AngularJS: Build Powerful WebApps",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "frontend",
+      "issued": "2020-01",
+      "url": "https://cursos.alura.com.br/certificate/9e6ac989-ccb3-456b-8287-74c9d02b8720"
+    },
+    {
+      "id": "02c89b5e-1788-4056-bf37-69c4f18bc845",
+      "title": {
+        "en": "CSS Grid: simplifying layouts",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "frontend",
+      "issued": "2020-01",
+      "url": "https://cursos.alura.com.br/certificate/02c89b5e-1788-4056-bf37-69c4f18bc845"
+    },
+    {
+      "id": "85690555-47d4-4bd9-89eb-84118a93372e",
+      "title": {
+        "en": "Flexbox: position elements on screen",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "frontend",
+      "issued": "2020-01",
+      "url": "https://cursos.alura.com.br/certificate/85690555-47d4-4bd9-89eb-84118a93372e"
+    },
+    {
+      "id": "aaa57b0e-64c4-4429-8fde-1d0831de631b",
+      "title": {
+        "en": "HTML5 and CSS3 Part 1: Create a Web Page",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "frontend",
+      "issued": "2020-01",
+      "url": "https://cursos.alura.com.br/certificate/aaa57b0e-64c4-4429-8fde-1d0831de631b"
+    },
+    {
+      "id": "62a79ccf-5de1-4d75-890d-71f63354476f",
+      "title": {
+        "en": "HTML5 and CSS3 Part 2: Positioning, Lists, and Navigation",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "frontend",
+      "issued": "2020-01",
+      "url": "https://cursos.alura.com.br/certificate/62a79ccf-5de1-4d75-890d-71f63354476f"
+    },
+    {
+      "id": "f36984c4-9fb4-4706-824e-1f7dcfb182ab",
+      "title": {
+        "en": "Video production: what's behind the audiovisual world",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "design",
+      "issued": "2020-01",
+      "url": "https://cursos.alura.com.br/certificate/f36984c4-9fb4-4706-824e-1f7dcfb182ab"
+    },
+    {
+      "id": "sass-compass",
+      "title": {
+        "en": "Sass and Compass: simplifying CSS",
+        "pt": "Sass e Compass: Descomplicando o CSS",
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "frontend",
+      "issued": "2020-01",
+      "hours": 8,
+      "url": "https://cursos.alura.com.br/user/arlan-mendes/fullCertificate/197ebca894560654cde4938a283b7c61"
+    },
+    {
+      "id": "9b81bbcb-837d-4269-968a-f77332370da4",
+      "title": {
+        "en": "CSS architecture: making problems uncomplicated",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "frontend",
+      "issued": "2019-10",
+      "url": "https://cursos.alura.com.br/certificate/9b81bbcb-837d-4269-968a-f77332370da4"
+    },
+    {
+      "id": "8cd450e8-9e5b-43d9-8c10-ddb33e944ec1",
+      "title": {
+        "en": "C# Programming Certification Part 11: Multithreading",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "backend",
+      "issued": "2019-10",
+      "url": "https://cursos.alura.com.br/certificate/8cd450e8-9e5b-43d9-8c10-ddb33e944ec1"
+    },
+    {
+      "id": "b5418602-9243-4788-9ade-fb26aba58372",
+      "title": {
+        "en": "Git and Github: Control and Share Your Code",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "devops",
+      "issued": "2019-10",
+      "url": "https://cursos.alura.com.br/certificate/b5418602-9243-4788-9ade-fb26aba58372"
+    },
+    {
+      "id": "c0eebab8-b676-4981-99bc-982e1549e4eb",
+      "title": {
+        "en": "Regular Expressions: Magically Capturing Text",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "frontend",
+      "issued": "2019-10",
+      "url": "https://cursos.alura.com.br/certificate/c0eebab8-b676-4981-99bc-982e1549e4eb"
+    },
+    {
+      "id": "34df8044-bd6e-4f14-bccc-eb0a26062308",
+      "title": {
+        "en": "JavaScript: from patterns to a functional approach",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "frontend",
+      "issued": "2019-10",
+      "url": "https://cursos.alura.com.br/certificate/34df8044-bd6e-4f14-bccc-eb0a26062308"
+    },
+    {
+      "id": "efc63740-70eb-4138-bc8a-96da0320314d",
+      "title": {
+        "en": "UX Writing: User-Focused Content",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "design",
+      "issued": "2019-10",
+      "url": "https://cursos.alura.com.br/certificate/efc63740-70eb-4138-bc8a-96da0320314d"
+    },
+    {
+      "id": "b460322c-1111-47d1-85c4-138edfc624ef",
+      "title": {
+        "en": "Training Develop Accessible Web Applications",
+        "pt": "Desenvolva aplicações Web Acessíveis",
+        "fr": "Développer des applications web accessibles"
+      },
+      "provider": "Alura",
+      "kind": "path",
+      "category": "accessibility",
+      "issued": "2019-09",
+      "url": "https://cursos.alura.com.br/degree/certificate/b460322c-1111-47d1-85c4-138edfc624ef",
+      "hours": 16
+    },
+    {
+      "id": "5504fb0f-ed83-4746-89e6-5f9058c0e213",
+      "title": {
+        "en": "Angular Training",
+        "pt": "Formação Angular",
+        "fr": "Parcours Angular"
+      },
+      "provider": "Alura",
+      "kind": "path",
+      "category": "frontend",
+      "issued": "2019-09",
+      "url": "https://cursos.alura.com.br/degree/certificate/5504fb0f-ed83-4746-89e6-5f9058c0e213",
+      "hours": 76
+    },
+    {
+      "id": "7d5a0044-7746-44c6-8335-23db63109b28",
+      "title": {
+        "en": "Angular part 4: polishing the project",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "frontend",
+      "issued": "2019-09",
+      "url": "https://cursos.alura.com.br/certificate/7d5a0044-7746-44c6-8335-23db63109b28"
+    },
+    {
+      "id": "b4ad9917-3ffb-4863-85e2-913c20dc9294",
+      "title": {
+        "en": "Angular part 3: upload, build and new components",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "frontend",
+      "issued": "2019-09",
+      "url": "https://cursos.alura.com.br/certificate/b4ad9917-3ffb-4863-85e2-913c20dc9294"
+    },
+    {
+      "id": "8cfcbd4e-8a25-4e8c-ad89-06f710c0e33a",
+      "title": {
+        "en": "Angular part 2: Authentication, Forms and lazy loading",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "frontend",
+      "issued": "2019-09",
+      "url": "https://cursos.alura.com.br/certificate/8cfcbd4e-8a25-4e8c-ad89-06f710c0e33a"
+    },
+    {
+      "id": "78ea8890-7215-4d59-8d7e-3108fd196e25",
+      "title": {
+        "en": "C# Programming Certification Part 1: Create Types",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "backend",
+      "issued": "2019-09",
+      "url": "https://cursos.alura.com.br/certificate/78ea8890-7215-4d59-8d7e-3108fd196e25"
+    },
+    {
+      "id": "2a85b80f-a8ba-44b9-b42e-423812d5441d",
+      "title": {
+        "en": "Microinteractions: Enriching the interaction experience",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "design",
+      "issued": "2019-09",
+      "url": "https://cursos.alura.com.br/certificate/2a85b80f-a8ba-44b9-b42e-423812d5441d"
+    },
+    {
+      "id": "0d9e611b-8aa1-45c9-8afe-de7282d617ce",
+      "title": {
+        "en": "Public Speaking part 1: share ideas and stories",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "business",
+      "issued": "2019-09",
+      "url": "https://cursos.alura.com.br/certificate/0d9e611b-8aa1-45c9-8afe-de7282d617ce"
+    },
+    {
+      "id": "add6e56a-ccee-4dc7-b1b0-cf392d18bd61",
+      "title": {
+        "en": "TypeScript part 1: Evolving your JavaScript",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "frontend",
+      "issued": "2019-09",
+      "url": "https://cursos.alura.com.br/certificate/add6e56a-ccee-4dc7-b1b0-cf392d18bd61"
+    },
+    {
+      "id": "204aed7d-5dfb-499d-89e9-14ab7f4ecd08",
+      "title": {
+        "en": "TypeScript part 2: More techniques and best practices",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "frontend",
+      "issued": "2019-09",
+      "url": "https://cursos.alura.com.br/certificate/204aed7d-5dfb-499d-89e9-14ab7f4ecd08"
+    },
+    {
+      "id": "accessible-components",
+      "title": {
+        "en": "Web accessibility part 2: accessible JavaScript components",
+        "pt": "Acessibilidade web parte 2: componentes acessíveis com um pouco de JavaScript",
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "accessibility",
+      "issued": "2019-09",
+      "hours": 4,
+      "url": "https://cursos.alura.com.br/user/arlan-mendes/fullCertificate/197ebca894560654cde4938a283b7c61"
+    },
+    {
+      "id": "webpack",
+      "title": {
+        "en": "Webpack: managing modules in your web app",
+        "pt": "Webpack: Manipulando módulos na sua webapp",
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "frontend",
+      "issued": "2019-09",
+      "hours": 8,
+      "url": "https://cursos.alura.com.br/user/arlan-mendes/fullCertificate/197ebca894560654cde4938a283b7c61"
+    },
+    {
+      "id": "angular-part-one",
+      "title": {
+        "en": "Angular part 1: productivity and organization with an SPA framework",
+        "pt": "Angular parte 1: produtividade e organização com framework SPA",
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "frontend",
+      "issued": "2019-09",
+      "hours": 16,
+      "url": "https://cursos.alura.com.br/user/arlan-mendes/fullCertificate/197ebca894560654cde4938a283b7c61"
+    },
+    {
+      "id": "3fe53557-7bc0-43f5-a433-968942152d33",
+      "title": {
+        "en": "Usability testing part 2: measuring and delivering results",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "design",
+      "issued": "2019-08",
+      "url": "https://cursos.alura.com.br/certificate/3fe53557-7bc0-43f5-a433-968942152d33"
+    },
+    {
+      "id": "f253c131-2d25-4d3f-b1d3-6d491321a61d",
+      "title": {
+        "en": "UX Design Training",
+        "pt": "Formação UX Design",
+        "fr": "Parcours UX Design"
+      },
+      "provider": "Alura",
+      "kind": "path",
+      "category": "design",
+      "issued": "2019-08",
+      "url": "https://cursos.alura.com.br/degree/certificate/f253c131-2d25-4d3f-b1d3-6d491321a61d",
+      "hours": 61
+    },
+    {
+      "id": "e2271535-464e-4aeb-bbf5-84766703fa9f",
+      "title": {
+        "en": "APIs Rest com Asp.NET Core 2.1 Parte 1: Da app MVC para API",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "backend",
+      "issued": "2019-08",
+      "url": "https://cursos.alura.com.br/certificate/e2271535-464e-4aeb-bbf5-84766703fa9f"
+    },
+    {
+      "id": "c145dfc8-1c36-4cb0-8261-45f6a6413cc3",
+      "title": {
+        "en": "Chrome DevTools: Analyze, Inspect, and Debug Your Web Pages",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "frontend",
+      "issued": "2019-08",
+      "url": "https://cursos.alura.com.br/certificate/c145dfc8-1c36-4cb0-8261-45f6a6413cc3"
+    },
+    {
+      "id": "6603e427-dcfc-4780-ae05-50c8bb67bde8",
+      "title": {
+        "en": "Communication: how to express yourself well and be understood",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "business",
+      "issued": "2019-08",
+      "url": "https://cursos.alura.com.br/certificate/6603e427-dcfc-4780-ae05-50c8bb67bde8"
+    },
+    {
+      "id": "6c0cae0f-ec8f-419b-bfe9-6db20939ab16",
+      "title": {
+        "en": "HTML5 and CSS3 I: Your First Web Pages",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "frontend",
+      "issued": "2019-08",
+      "url": "https://cursos.alura.com.br/certificate/6c0cae0f-ec8f-419b-bfe9-6db20939ab16"
+    },
+    {
+      "id": "fb6e1a55-2451-4cf2-ad2b-30f738330546",
+      "title": {
+        "en": "HTML5 and CSS3 II: Powering up your pages",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "frontend",
+      "issued": "2019-08",
+      "url": "https://cursos.alura.com.br/certificate/fb6e1a55-2451-4cf2-ad2b-30f738330546"
+    },
+    {
+      "id": "f181a716-1364-4a3b-967a-0889dce6b6e5",
+      "title": {
+        "en": "JavaScript: programming in the language of the web",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "frontend",
+      "issued": "2019-08",
+      "url": "https://cursos.alura.com.br/certificate/f181a716-1364-4a3b-967a-0889dce6b6e5"
+    },
+    {
+      "id": "d66f8e21-069e-4168-83a7-5c59679dceb6",
+      "title": {
+        "en": "Interpersonal relationship: learn to deal better with yourself and with others",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "business",
+      "issued": "2019-08",
+      "url": "https://cursos.alura.com.br/certificate/d66f8e21-069e-4168-83a7-5c59679dceb6"
+    },
+    {
+      "id": "828a50f1-07ff-4ec6-ac81-871e08d077e2",
+      "title": {
+        "en": "Usability testing part 1: is your product easy to use?",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "design",
+      "issued": "2019-08",
+      "url": "https://cursos.alura.com.br/certificate/828a50f1-07ff-4ec6-ac81-871e08d077e2"
+    },
+    {
+      "id": "accessible-design",
+      "title": {
+        "en": "Web accessibility: inclusive design",
+        "pt": "Acessibilidade web: crie designs inclusivos",
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "accessibility",
+      "issued": "2019-08",
+      "hours": 6,
+      "url": "https://cursos.alura.com.br/user/arlan-mendes/fullCertificate/197ebca894560654cde4938a283b7c61"
+    },
+    {
+      "id": "accessible-frontend",
+      "title": {
+        "en": "Web accessibility part 1: inclusive front-end",
+        "pt": "Acessibilidade web parte 1: tornando seu front-end inclusivo",
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "accessibility",
+      "issued": "2019-08",
+      "hours": 6,
+      "url": "https://cursos.alura.com.br/user/arlan-mendes/fullCertificate/197ebca894560654cde4938a283b7c61"
+    },
+    {
+      "id": "fb0a2ac8-4f96-465f-b0c3-9e50af7d2dda",
+      "title": {
+        "en": "C# and object-oriented training",
+        "pt": "C# e orientação a objetos",
+        "fr": "C# et programmation orientée objet"
+      },
+      "provider": "Alura",
+      "kind": "path",
+      "category": "backend",
+      "issued": "2019-07",
+      "url": "https://cursos.alura.com.br/degree/certificate/fb0a2ac8-4f96-465f-b0c3-9e50af7d2dda",
+      "hours": 72
+    },
+    {
+      "id": "731f2696-f281-4244-a506-699d34936487",
+      "title": {
+        "en": "Asp.NET Core: a web app using the MVC pattern",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "backend",
+      "issued": "2019-07",
+      "url": "https://cursos.alura.com.br/certificate/731f2696-f281-4244-a506-699d34936487"
+    },
+    {
+      "id": "9347fb36-03a4-4f25-966f-c5a68cabd362",
+      "title": {
+        "en": "C# Part 4: Understanding Exceptions",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "backend",
+      "issued": "2019-07",
+      "url": "https://cursos.alura.com.br/certificate/9347fb36-03a4-4f25-966f-c5a68cabd362"
+    },
+    {
+      "id": "9621ea2d-d00c-4deb-a40d-57f83937c362",
+      "title": {
+        "en": "C# Part 3: Understanding Inheritance and Interface",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "backend",
+      "issued": "2019-07",
+      "url": "https://cursos.alura.com.br/certificate/9621ea2d-d00c-4deb-a40d-57f83937c362"
+    },
+    {
+      "id": "5d312c2f-87d8-4b7e-a707-d538f665197b",
+      "title": {
+        "en": "C# Part 2: Understanding Object Orientation",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "backend",
+      "issued": "2019-07",
+      "url": "https://cursos.alura.com.br/certificate/5d312c2f-87d8-4b7e-a707-d538f665197b"
+    },
+    {
+      "id": "05cbc3af-7ca8-4469-ad4a-1a0a1892ba73",
+      "title": {
+        "en": "C# Part 1: Getting Started",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "backend",
+      "issued": "2019-07",
+      "url": "https://cursos.alura.com.br/certificate/05cbc3af-7ca8-4469-ad4a-1a0a1892ba73"
+    },
+    {
+      "id": "76da448b-9bb2-46b7-aeb7-3495acb7bc0b",
+      "title": {
+        "en": "C# Part 5: DLL Libraries, Documentation, and Using NuGet",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "backend",
+      "issued": "2019-07",
+      "url": "https://cursos.alura.com.br/certificate/76da448b-9bb2-46b7-aeb7-3495acb7bc0b"
+    },
+    {
+      "id": "34794ae0-7522-45c1-9fb9-d84ac29d3068",
+      "title": {
+        "en": "C# Part 6: Strings, Regular Expressions, and the Object Class",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "backend",
+      "issued": "2019-07",
+      "url": "https://cursos.alura.com.br/certificate/34794ae0-7522-45c1-9fb9-d84ac29d3068"
+    },
+    {
+      "id": "716676ea-6974-4b45-9b72-ca65af0e079b",
+      "title": {
+        "en": "C# Part 7: Array and Generic Types",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "backend",
+      "issued": "2019-07",
+      "url": "https://cursos.alura.com.br/certificate/716676ea-6974-4b45-9b72-ca65af0e079b"
+    },
+    {
+      "id": "78c5b595-181a-46dd-abf1-b55ed3f2bb37",
+      "title": {
+        "en": "C# part 8: List, lambda, linq",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "backend",
+      "issued": "2019-07",
+      "url": "https://cursos.alura.com.br/certificate/78c5b595-181a-46dd-abf1-b55ed3f2bb37"
+    },
+    {
+      "id": "0ae359a5-5a18-4cc7-ad02-f6cb9cc9eac5",
+      "title": {
+        "en": "C# Part 9: Input and Output (I/O) with Streams",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "backend",
+      "issued": "2019-07",
+      "url": "https://cursos.alura.com.br/certificate/0ae359a5-5a18-4cc7-ad02-f6cb9cc9eac5"
+    },
+    {
+      "id": "bc2a2318-6bf1-4643-af08-780114be9d0a",
+      "title": {
+        "en": "Presentation Design Part 1: Visual Principles and Techniques",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "design",
+      "issued": "2019-07",
+      "url": "https://cursos.alura.com.br/certificate/bc2a2318-6bf1-4643-af08-780114be9d0a"
+    },
+    {
+      "id": "8adcb345-a8cb-4236-b138-02f3d8a14c9d",
+      "title": {
+        "en": "Presentation Design Part 2: Script, Visual, and Impact Presenter",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "design",
+      "issued": "2019-07",
+      "url": "https://cursos.alura.com.br/certificate/8adcb345-a8cb-4236-b138-02f3d8a14c9d"
+    },
+    {
+      "id": "98a96e96-32eb-40da-800c-c68adfd4fdea",
+      "title": {
+        "en": "Habits: from productivity to personal goals",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "business",
+      "issued": "2019-07",
+      "url": "https://cursos.alura.com.br/certificate/98a96e96-32eb-40da-800c-c68adfd4fdea"
+    },
+    {
+      "id": "6f697026-b170-4f03-bbfe-944de406dd3f",
+      "title": {
+        "en": "HTTP: Understanding the web under the hood",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "frontend",
+      "issued": "2019-07",
+      "url": "https://cursos.alura.com.br/certificate/6f697026-b170-4f03-bbfe-944de406dd3f"
+    },
+    {
+      "id": "6df7b51b-3446-452a-9a31-e39b4c088a7b",
+      "title": {
+        "en": "Prototyping and UX Part 1: High Fidelity with Adobe XD",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "design",
+      "issued": "2019-07",
+      "url": "https://cursos.alura.com.br/certificate/6df7b51b-3446-452a-9a31-e39b4c088a7b"
+    },
+    {
+      "id": "a80a9f55-223a-4fb1-8491-086b8c3026af",
+      "title": {
+        "en": "UX review: tools from briefing to prototype",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "design",
+      "issued": "2019-07",
+      "url": "https://cursos.alura.com.br/certificate/a80a9f55-223a-4fb1-8491-086b8c3026af"
+    },
+    {
+      "id": "dddd8990-6916-41a0-9345-b498803d39de",
+      "title": {
+        "en": "Prototyping and UX part 2: linking screens in Adobe XD",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "design",
+      "issued": "2019-07",
+      "url": "https://cursos.alura.com.br/certificate/dddd8990-6916-41a0-9345-b498803d39de"
+    },
+    {
+      "id": "120f0a80-2ac4-437b-84b0-26765bd87f9a",
+      "title": {
+        "en": "UI Design Patterns: usability in mobile interfaces",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "design",
+      "issued": "2019-07",
+      "url": "https://cursos.alura.com.br/certificate/120f0a80-2ac4-437b-84b0-26765bd87f9a"
+    },
+    {
+      "id": "ux-usability-practices",
+      "title": {
+        "en": "UX: common usability mistakes and good practices",
+        "pt": "UX: os erros frequentes de usabilidade e as boas práticas",
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "design",
+      "issued": "2019-07",
+      "hours": 6,
+      "url": "https://cursos.alura.com.br/user/arlan-mendes/fullCertificate/197ebca894560654cde4938a283b7c61"
+    },
+    {
+      "id": "bfecd5b3-992d-4fff-a910-f057df4c913a",
+      "title": {
+        "en": "Oracle SQL and PL/SQL Training",
+        "pt": "Oracle SQL e PL/SQL",
+        "fr": "Oracle SQL et PL/SQL"
+      },
+      "provider": "Alura",
+      "kind": "path",
+      "category": "data",
+      "issued": "2019-06",
+      "url": "https://cursos.alura.com.br/degree/certificate/bfecd5b3-992d-4fff-a910-f057df4c913a",
+      "hours": 40
+    },
+    {
+      "id": "5d8be13c-0408-46b3-b624-56b7188eb110",
+      "title": {
+        "en": "Oracle I: Learn sql using this famous database",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "data",
+      "issued": "2019-06",
+      "url": "https://cursos.alura.com.br/certificate/5d8be13c-0408-46b3-b624-56b7188eb110"
+    },
+    {
+      "id": "4c3052ac-cf69-4abb-aa4f-946fa0b8f934",
+      "title": {
+        "en": "Oracle II: Complex Queries",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "data",
+      "issued": "2019-06",
+      "url": "https://cursos.alura.com.br/certificate/4c3052ac-cf69-4abb-aa4f-946fa0b8f934"
+    },
+    {
+      "id": "a8d1e088-4dc3-485a-882b-fa89fa04b820",
+      "title": {
+        "en": "PL/SQL: Mastering packages",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "data",
+      "issued": "2019-06",
+      "url": "https://cursos.alura.com.br/certificate/a8d1e088-4dc3-485a-882b-fa89fa04b820"
+    },
+    {
+      "id": "1aa4b6e7-0236-41ea-9eaa-5e326485b0b1",
+      "title": {
+        "en": "PL/SQL: Master the language of the Oracle database",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "data",
+      "issued": "2019-06",
+      "url": "https://cursos.alura.com.br/certificate/1aa4b6e7-0236-41ea-9eaa-5e326485b0b1"
+    },
+    {
+      "id": "ecb08ec7-d05b-4a6c-8cf8-a64b4a1d095b",
+      "title": {
+        "en": "UX Strategy: diverging and narrowing ideas",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "design",
+      "issued": "2019-06",
+      "url": "https://cursos.alura.com.br/certificate/ecb08ec7-d05b-4a6c-8cf8-a64b4a1d095b"
+    },
+    {
+      "id": "4ed8883c-4ef5-4bf1-bceb-9b9811e2ab6e",
+      "title": {
+        "en": "UX Product: monitor, measure and test your project",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "design",
+      "issued": "2019-06",
+      "url": "https://cursos.alura.com.br/certificate/4ed8883c-4ef5-4bf1-bceb-9b9811e2ab6e"
+    },
+    {
+      "id": "532cef0d-9cdf-4c31-bf75-bce37bd19104",
+      "title": {
+        "en": "UX Usability: make your user's life easier on mobile",
+        "pt": null,
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "design",
+      "issued": "2019-06",
+      "url": "https://cursos.alura.com.br/certificate/532cef0d-9cdf-4c31-bf75-bce37bd19104"
+    },
+    {
+      "id": "ux-introduction",
+      "title": {
+        "en": "UX: understanding user experience",
+        "pt": "UX: o que é experiência de usuário",
+        "fr": null
+      },
+      "provider": "Alura",
+      "kind": "course",
+      "category": "design",
+      "issued": "2019-06",
+      "hours": 5,
+      "url": "https://cursos.alura.com.br/user/arlan-mendes/fullCertificate/197ebca894560654cde4938a283b7c61"
+    }
+  ]
 }

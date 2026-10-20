@@ -1,0 +1,17 @@
+<a
+  class="connection-card"
+  [href]="link().url"
+  [attr.target]="link().url.startsWith('mailto:') ? null : '_blank'"
+  rel="noopener noreferrer"
+>
+  <span class="connection-icon"><app-icon [name]="link().icon" /></span>
+  <div>
+    <h3>{{ link().label }}</h3>
+    <p>{{ link().description | localize: locale.current() }}</p>
+  </div>
+  <span class="arrow" aria-hidden="true">↗</span>
+  <span class="sr-only"
+    >{{ (link().url.startsWith('mailto:') ? 'connections.email' : 'common.external') | translate
+    }}</span
+  >
+</a>

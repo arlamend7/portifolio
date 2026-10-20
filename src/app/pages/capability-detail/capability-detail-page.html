@@ -1,0 +1,19 @@
+<main id="main-content" class="container document-page" tabindex="-1">
+  <nav class="breadcrumbs">
+    <a routerLink="/">{{ 'nav.home' | translate }}</a><span aria-hidden="true">/</span
+    ><a routerLink="/" fragment="capabilities">{{ 'home.capabilitiesTitle' | translate }}</a>
+  </nav>
+  @if (capability(); as item) {
+  <p class="eyebrow">{{ item.eyebrow | localize: locale.current() }}</p>
+  <app-document-content
+    [title]="item.title | localize: locale.current()"
+    [description]="item.description | localize: locale.current()"
+    [markdown]="item.markdown"
+  />
+  } @else {
+  <h1>{{ 'common.notFound' | translate }}</h1>
+  }
+  <a class="pill back-link" routerLink="/" fragment="capabilities"
+    >{{ 'capabilities.back' | translate }}</a
+  >
+</main>

@@ -1,0 +1,41 @@
+:host {
+  display: block;
+  height: 100%;
+}
+.certificate-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 196px;
+  gap: 14px;
+  padding: 24px;
+  border: 1px solid var(--surface-high);
+  border-radius: 8px;
+  background: var(--surface-card);
+}
+a:hover {
+  border-color: var(--accent);
+  text-decoration: none;
+}
+header,
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+}
+header app-icon {
+  color: var(--accent);
+}
+h3 {
+  font: 500 17px/25px var(--font-body);
+}
+.category,
+.card-bottom {
+  color: var(--text-muted);
+  font-size: 12px;
+  line-height: 20px;
+}
+.card-bottom {
+  margin-top: auto;
+}

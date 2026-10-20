@@ -5,10 +5,15 @@ import { PortfolioStore } from '../../core/content/portfolio-store';
 import { LocaleStore } from '../../core/i18n/locale-store';
 import { LocalizedTextPipe } from '../../core/i18n/localized-text.pipe';
 import { FeatureCard } from '../../shared/feature-card/feature-card';
+import { CertificateCard } from '../../shared/certificate-card/certificate-card';
+import { ConnectionCard } from './connection-card/connection-card';
+import { JobPreview } from './job-preview/job-preview';
+import { TechnologyList } from '../../shared/technology-list/technology-list';
 import { Icon } from '../../shared/icon/icon';
-import { ProjectCard } from '../../shared/project-card/project-card';
+import { ProjectGrid } from '../../shared/project-grid/project-grid';
 import { SectionHeading } from '../../shared/section-heading/section-heading';
-import { ReadingPreferencesStore } from '../../core/preferences/reading-preferences-store';
+import { SportsAchievement } from '../../shared/sports-achievement/sports-achievement';
+import { SportsPhoto } from '../../shared/sports-photo/sports-photo';
 
 @Component({
   selector: 'app-home-page',
@@ -18,21 +23,42 @@ import { ReadingPreferencesStore } from '../../core/preferences/reading-preferen
     LocalizedTextPipe,
     FeatureCard,
     Icon,
-    ProjectCard,
+    ProjectGrid,
     SectionHeading,
+    SportsAchievement,
+    SportsPhoto,
+    CertificateCard,
+    ConnectionCard,
+    JobPreview,
+    TechnologyList,
   ],
   templateUrl: './home-page.html',
   styleUrl: './home-page.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HomePage {
-  protected readonly preferences = inject(ReadingPreferencesStore);
   protected readonly store = inject(PortfolioStore);
   protected readonly locale = inject(LocaleStore);
-  protected readonly steam = computed(() =>
-    this.store.portfolio()?.profile.socialLinks.find((link) => link.label === 'Steam'),
+  protected readonly recentCompanies = computed(
+    () => this.store.portfolio()?.companies.slice(0, 3) ?? [],
   );
-  protected readonly packages = computed(
-    () => this.store.portfolio()?.projects.filter((project) => project.kind === 'package') ?? [],
+  protected readonly featuredCertificates = computed(() => {
+    const content = this.store.portfolio();
+    return (
+      content?.home.certificateIds
+        .slice(0, 3)
+        .flatMap((id) => content.certificates.filter((item) => item.id === id)) ?? []
+    );
+  });
+  protected readonly featuredProjects = computed(
+    () => this.store.portfolio()?.projects.slice(0, 4) ?? [],
   );
+  protected readonly sportsHighlights = computed(() => {
+    const sports = this.store.portfolio()?.sports;
+    return (
+      sports?.highlightIds
+        .slice(0, 3)
+        .flatMap((id) => sports.achievements.filter((item) => item.id === id)) ?? []
+    );
+  });
 }

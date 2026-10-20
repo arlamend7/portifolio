@@ -4,7 +4,6 @@
     "experience": "Experience",
     "projects": "Projects",
     "sports": "Sports",
-    "personal": "Personal & Steam",
     "skip": "Skip to content",
     "menu": "Navigation"
   },
@@ -31,20 +30,21 @@
     "recognitionLabel": "02 / Distinction",
     "recognitionTitle": "Professional Recognition & Selections",
     "recognitionDescription": "Professional selections, international learning, and performance-focused engineering.",
-    "sportsLabel": "03 / Athletic Performance",
+    "sportsLabel": "05 / Athletic Performance",
     "sportsTitle": "Endurance, Discipline, and Competition",
-    "disciplineTitle": "Dual Discipline Balance",
-    "disciplineText": "Swimming, running and cycling — a sporting journey alongside engineering.",
     "ecosystemLabel": "04 / Ecosystem & Exploration",
-    "ecosystemTitle": "Open Modules, Personal Rigor & Gaming",
-    "independentProjects": "Independent projects & packages",
+    "ecosystemTitle": "Libraries & Projects",
     "viewProjects": "View all projects",
-    "steamCommunity": "Steam Community",
-    "steamTitle": "Personal Cadence • Gaming",
-    "steamLink": "View my Steam profile",
-    "publicProfile": "Public profile",
-    "readingDescription": "Adjust theme, accent color, and language.",
-    "sportsDiscipline": "Aquathlon & Triathlon"
+    "sportsDiscipline": "Aquathlon & Triathlon",
+    "libraries": "Libraries",
+    "projects": "Projects",
+    "workLabel": "03 / Known Professional Experience",
+    "workTitle": "Jobs & Certificates",
+    "recentJobs": "Recent experience",
+    "viewWork": "View all experience",
+    "viewCertificates": "View all certificates",
+    "connectionLabel": "06 / Connection",
+    "connectionTitle": "Social Media & Game Party"
   },
   "experience": {
     "eyebrow": "Career Cadence",
@@ -66,7 +66,7 @@
   "projects": {
     "title": "Projects & Open Source",
     "introduction": "Packages link to their libraries. Projects have dedicated pages with full Markdown documentation.",
-    "package": "Package",
+    "package": "Library",
     "project": "Project",
     "openLibrary": "Visit library",
     "linkPending": "Library link to be supplied",
@@ -96,5 +96,52 @@
   "footer": {
     "signature": "Engineering • Athletics • Open Source",
     "rights": "All rights reserved."
+  },
+  "sports": {
+    "eyebrow": "Sporting record",
+    "title": "Sports achievements",
+    "journeyTitle": "My sporting journey",
+    "viewAll": "Explore all achievements",
+    "viewPhoto": "View photo on Instagram",
+    "browseYears": "Browse achievements by year",
+    "eventResults": "Results by event"
+  },
+  "capabilities": {
+    "read": "Explore this expertise",
+    "back": "Back to professional differentiators"
+  },
+  "technologies": {
+    "title": "Technologies I’ve worked with",
+    "hint": "Scroll to explore languages, systems and services.",
+    "horizontalHint": "Scroll horizontally to explore languages, systems and services."
+  },
+  "certificates": {
+    "title": "Certificates & learning",
+    "description": "Courses and learning paths, with links to their credentials.",
+    "search": "Search certificates",
+    "category": "Subject",
+    "kind": "Type",
+    "all": "All",
+    "course": "Course",
+    "path": "Learning path",
+    "open": "View certificate",
+    "count": "{{count}} certificates",
+    "empty": "No certificates match these filters.",
+    "reset": "Clear filters",
+    "issued": "Issued",
+    "loadMore": "Show more certificates"
+  },
+  "certificateCategories": {
+    "backend": "Back-end",
+    "frontend": "Front-end",
+    "accessibility": "Accessibility",
+    "design": "UX & Design",
+    "data": "Data & SQL",
+    "devops": "DevOps",
+    "business": "Communication & business"
+  },
+  "connections": {
+    "open": "Visit profile",
+    "email": "Send an email"
   }
 }

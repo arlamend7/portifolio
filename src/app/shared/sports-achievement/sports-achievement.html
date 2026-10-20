@@ -1,0 +1,22 @@
+<article class="achievement">
+  <span class="icon-tile"><app-icon [name]="achievement().icon" /></span>
+  <div class="achievement-content">
+    <p class="eyebrow">
+      @if (achievement().result; as result) { {{ result | localize: locale.current() }} · } {{
+      achievement().year }}
+    </p>
+    <h3>{{ achievement().title | localize: locale.current() }}</h3>
+    @if (achievement().description; as description) {
+    <p class="description">{{ description | localize: locale.current() }}</p>
+    } @if (achievement().placements?.length) {
+    <ul class="result-badges" [attr.aria-label]="'sports.eventResults' | translate">
+      @for (placement of achievement().placements; track placement.id) {
+      <li class="result-badge">
+        <strong>{{ placement.result | localize: locale.current() }}</strong>
+        <span>{{ placement.event | localize: locale.current() }}</span>
+      </li>
+      }
+    </ul>
+    }
+  </div>
+</article>

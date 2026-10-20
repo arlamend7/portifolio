@@ -19,7 +19,7 @@
       <div class="hero-actions">
         <a class="button primary" routerLink="/work" [fragment]="content.initialCompanyId"
           >{{ 'home.exploreWork' | translate }}<app-icon name="arrow_forward" /></a
-        ><a class="button secondary" routerLink="/" fragment="sports"
+        ><a class="button secondary" routerLink="/sports"
           ><app-icon name="sprint" />{{ 'home.sportsAction' | translate }}</a
         >
       </div>
@@ -39,111 +39,109 @@
       <span class="eyebrow">{{ content.profile.location }}</span>
     </aside>
   </section>
-  <section class="page-section">
+
+  <section class="page-section" id="capabilities">
     <app-section-heading
       [eyebrow]="'home.capabilitiesLabel' | translate"
       [title]="'home.capabilitiesTitle' | translate"
       [description]="'home.capabilitiesDescription' | translate"
     />
     <div class="three-columns">
-      @for(feature of content.home.capabilities;track feature.id){<app-feature-card
+      @for (feature of content.home.capabilities; track feature.id) {<app-feature-card
         [feature]="feature"
+        [documentationLink]="['/capabilities', feature.id]"
       />}
     </div>
   </section>
-  <section class="page-section recognition">
+  <section class="page-section" id="recognition">
     <app-section-heading
       [eyebrow]="'home.recognitionLabel' | translate"
       [title]="'home.recognitionTitle' | translate"
       [description]="'home.recognitionDescription' | translate"
     />
     <div class="three-columns">
-      @for(feature of content.home.recognitions;track feature.id){<app-feature-card
+      @for (feature of content.home.recognitions; track feature.id) {<app-feature-card
         [feature]="feature"
-        [compact]="true"
       />}
     </div>
+  </section>
+  <section class="page-section" id="experience">
+    <app-section-heading
+      [eyebrow]="'home.workLabel' | translate"
+      [title]="'home.workTitle' | translate"
+    />
+    <div class="experience-layout">
+      <div>
+        <h3 class="subsection-title">{{ 'home.recentJobs' | translate }}</h3>
+        <div class="recent-jobs">
+          @for (company of recentCompanies(); track company.id) {<app-job-preview
+            [company]="company"
+          />}
+        </div>
+        <a routerLink="/work" class="text-link"
+          >{{ 'home.viewWork' | translate }} <span aria-hidden="true">→</span></a
+        >
+      </div>
+      <app-technology-list [technologies]="content.technologies" />
+    </div>
+    <div class="certificate-preview">
+      <div class="subsection-header">
+        <h3 class="subsection-title">{{ 'certificates.title' | translate }}</h3>
+        <a routerLink="/work" fragment="certificates" class="text-link"
+          >{{ 'home.viewCertificates' | translate }} <span aria-hidden="true">→</span></a
+        >
+      </div>
+      <div class="three-columns">
+        @for (certificate of featuredCertificates(); track certificate.id) {<app-certificate-card
+          [certificate]="certificate"
+        />}
+      </div>
+    </div>
+  </section>
+  <section class="page-section" id="ecosystem">
+    <app-section-heading
+      [eyebrow]="'home.ecosystemLabel' | translate"
+      [title]="'home.ecosystemTitle' | translate"
+    />
+    <app-project-grid [projects]="featuredProjects()" />
+    <a routerLink="/projects" class="text-link"
+      >{{ 'home.viewProjects' | translate }} <span aria-hidden="true">→</span></a
+    >
   </section>
   <section class="page-section" id="sports">
     <app-section-heading
       [eyebrow]="'home.sportsLabel' | translate"
       [title]="'home.sportsTitle' | translate"
-      [description]="content.home.sportsIntroduction | localize: locale.current()"
     />
+    
     <div class="sports-layout">
       <div class="sports-results">
-        @for(achievement of content.home.sports;track achievement.id){
-        <article class="sports-result">
-          <span class="icon-tile"><app-icon [name]="achievement.icon" /></span>
-          <div>
-            <p class="eyebrow">
-              {{ achievement.result | localize: locale.current() }} · {{ achievement.year }}
-            </p>
-            <h3>{{ achievement.title | localize: locale.current() }}</h3>
-            <p>{{ achievement.description | localize: locale.current() }}</p>
-          </div>
-        </article>
-        }
+        @for (achievement of sportsHighlights(); track achievement.id) {<app-sports-achievement
+          [achievement]="achievement"
+        />}
       </div>
-      <aside>
-        <figure class="sports-photo">
-          <img
-            [src]="content.home.sportsImage.src"
-            [alt]="content.home.sportsImage.alt | localize: locale.current()"
-            loading="lazy"
-          />
-          <figcaption>
-            {{ content.home.sportsImage.caption | localize: locale.current() }}
-          </figcaption>
-        </figure>
-        <div class="discipline-card">
-          <p class="eyebrow">{{ 'home.dualDiscipline' | translate }}</p>
-          <h3>{{ 'home.disciplineTitle' | translate }}</h3>
-          <div class="decorative-cadence" aria-hidden="true">
-            <span></span><span></span><span></span><span></span><span></span><span></span>
-          </div>
-          <p>{{ 'home.disciplineText' | translate }}</p>
-        </div>
-      </aside>
+      <app-sports-photo [photo]="content.sports.image" />
+    </div>
+     <div class="journey-card">
+      <div>
+        <h3>{{ 'sports.journeyTitle' | translate }}</h3>
+        <p>{{ content.sports.journey | localize: locale.current() }}</p>
+      </div>
+      <a class="button primary" routerLink="/sports"
+        >{{ 'sports.viewAll' | translate }} <app-icon name="arrow_forward"
+      /></a>
     </div>
   </section>
-  <section class="page-section" id="personal">
+  <section class="page-section" id="connections">
     <app-section-heading
-      [eyebrow]="'home.ecosystemLabel' | translate"
-      [title]="'home.ecosystemTitle' | translate"
+      [eyebrow]="'home.connectionLabel' | translate"
+      [title]="'home.connectionTitle' | translate"
     />
-    <div class="ecosystem-layout">
-      <div class="projects-panel">
-        <p class="eyebrow">{{ 'home.independentProjects' | translate }}</p>
-        <div class="project-list">
-          @for(project of packages();track project.id){<app-project-card [project]="project" />}
-        </div>
-        <a routerLink="/projects" class="text-link">{{ 'home.viewProjects' | translate }} →</a>
-      </div>
-      <aside class="personal-panel">
-        <div class="gaming-card">
-          <p class="eyebrow accent-text">
-            <app-icon name="sports_esports" />{{ 'home.steamCommunity' | translate }}
-          </p>
-          <h3>{{ 'home.steamTitle' | translate }}</h3>
-          <p>{{ content.home.gaming | localize: locale.current() }}</p>
-          @if(steam();as link){<a
-            [href]="link.url"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="button"
-            >{{ 'home.steamLink' | translate }}<app-icon name="open_in_new" /></a
-          >}
-        </div>
-        <button type="button" class="preferences-banner" (click)="preferences.open()">
-          <app-icon name="tune" /><span
-            ><strong>{{ 'preferences.title' | translate }}</strong
-            ><small>{{ 'home.readingDescription' | translate }}</small></span
-          >
-        </button>
-      </aside>
+    <div class="three-columns">
+      @for (link of content.profile.socialLinks; track link.url) {<app-connection-card
+        [link]="link"
+      />}
     </div>
   </section>
 </main>
-
 }

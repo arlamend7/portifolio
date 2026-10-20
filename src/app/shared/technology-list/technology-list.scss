@@ -1,0 +1,63 @@
+.technology-scroll.horizontal {
+  max-height: none;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  padding: 0 0 12px;
+
+  ul {
+    grid-template-columns: none;
+    grid-template-rows: repeat(2, minmax(60px, auto));
+    grid-auto-flow: column;
+    grid-auto-columns: 180px;
+  }
+}
+
+.technology-panel {
+  padding: 24px;
+  border-radius: 8px;
+  background: var(--surface-low);
+}
+h3 {
+  font: 500 17px/25px var(--font-body);
+}
+p {
+  margin: 8px 0 16px;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--text-muted);
+}
+.technology-scroll {
+  max-height: 252px;
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  scrollbar-color: var(--text-muted) var(--surface-low);
+  scrollbar-width: thin;
+  padding-right: 10px;
+}
+.technology-scroll:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 8px;
+}
+li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background: var(--surface-card);
+  border-radius: 4px;
+  min-width: 0;
+  font-size: 12px;
+  line-height: 18px;
+}
+app-icon {
+  color: var(--accent);
+}

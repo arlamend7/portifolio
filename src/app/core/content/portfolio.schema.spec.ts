@@ -20,11 +20,33 @@ function keys(value: object, prefix = ''): string[] {
 describe('Portfolio content contract', () => {
   it('validates supplied content and all configured Markdown files', () => {
     const result = parse(portfolioSchema, content);
+    expect(existsSync(resolve('src', result.sports.image.src))).toBe(true);
     for (const project of result.projects) {
       if (project.kind !== 'project') continue;
       for (const path of Object.values(project.markdown)) {
         if (path) expect(existsSync(resolve('src', path)), path).toBe(true);
       }
+    }
+    for (const capability of result.home.capabilities) {
+      for (const path of Object.values(capability.markdown)) {
+        if (path) expect(existsSync(resolve('src', path)), path).toBe(true);
+      }
+    }
+  });
+
+  it('rejects missing or repeated sports highlights and duplicate achievement IDs', () => {
+    for (const sports of [
+      { ...content.sports, highlightIds: ['missing-achievement'] },
+      {
+        ...content.sports,
+        highlightIds: [content.sports.highlightIds[0], content.sports.highlightIds[0]],
+      },
+      {
+        ...content.sports,
+        achievements: [...content.sports.achievements, content.sports.achievements[0]],
+      },
+    ]) {
+      expect(safeParse(portfolioSchema, { ...content, sports }).success).toBe(false);
     }
   });
 
@@ -74,5 +96,39 @@ describe('Portfolio content contract', () => {
   it('keeps EN, PT and FR UI dictionaries complete and aligned', () => {
     expect(keys(pt)).toEqual(keys(en));
     expect(keys(fr)).toEqual(keys(en));
+  });
+
+  it('validates contact links, certificate references and credential URLs', () => {
+    expect(
+      safeParse(portfolioSchema, {
+        ...content,
+        home: { ...content.home, certificateIds: ['missing'] },
+      }).success,
+    ).toBe(false);
+    expect(
+      safeParse(portfolioSchema, {
+        ...content,
+        certificates: content.certificates.map((item, index) =>
+          index === 0 ? { ...item, url: 'javascript:alert(1)' } : item,
+        ),
+      }).success,
+    ).toBe(false);
+    expect(
+      safeParse(portfolioSchema, {
+        ...content,
+        profile: {
+          ...content.profile,
+          socialLinks: [
+            {
+              label: 'Email',
+              icon: 'mail',
+              description: { en: '' },
+              url: 'mailto:person@example.com?bcc=hidden@example.com',
+            },
+          ],
+        },
+      }).success,
+    ).toBe(false);
+    expect(safeParse(portfolioSchema, content).success).toBe(true);
   });
 });

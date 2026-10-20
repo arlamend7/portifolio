@@ -1,0 +1,6 @@
+<h1>{{ title() }}</h1>
+<p class="description">{{ description() }}</p>
+@if (usingFallback()) {
+<p class="notice">{{ 'projects.fallback' | translate }}</p>
+}
+<app-markdown-reader [source]="source()" />

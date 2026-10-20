@@ -4,7 +4,6 @@
     "experience": "Experiência",
     "projects": "Projetos",
     "sports": "Esportes",
-    "personal": "Pessoal & Steam",
     "skip": "Ir para o conteúdo",
     "menu": "Navegação"
   },
@@ -31,20 +30,21 @@
     "recognitionLabel": "02 / Reconhecimento",
     "recognitionTitle": "Reconhecimento e seleções profissionais",
     "recognitionDescription": "Seleções profissionais, aprendizado internacional e engenharia com foco em desempenho.",
-    "sportsLabel": "03 / Desempenho esportivo",
+    "sportsLabel": "05 / Desempenho esportivo",
     "sportsTitle": "Resistência, disciplina e competição",
-    "disciplineTitle": "Equilíbrio entre disciplinas",
-    "disciplineText": "Natação, corrida e ciclismo — uma trajetória esportiva ao lado da engenharia.",
     "ecosystemLabel": "04 / Ecossistema e exploração",
-    "ecosystemTitle": "Código aberto, interesses pessoais e jogos",
-    "independentProjects": "Projetos e pacotes independentes",
+    "ecosystemTitle": "Bibliotecas e projetos",
     "viewProjects": "Ver todos os projetos",
-    "steamCommunity": "Comunidade Steam",
-    "steamTitle": "Interesses pessoais • Jogos",
-    "steamLink": "Ver meu perfil Steam",
-    "publicProfile": "Perfil público",
-    "readingDescription": "Ajuste o tema, a cor de destaque e o idioma.",
-    "sportsDiscipline": "Aquathlon e Triathlon"
+    "sportsDiscipline": "Aquathlon e Triathlon",
+    "libraries": "Bibliotecas",
+    "projects": "Projetos",
+    "workLabel": "03 / Experiência profissional",
+    "workTitle": "Experiências e certificados",
+    "recentJobs": "Experiências recentes",
+    "viewWork": "Ver todas as experiências",
+    "viewCertificates": "Ver todos os certificados",
+    "connectionLabel": "06 / Conexão",
+    "connectionTitle": "Redes sociais e partidas juntos"
   },
   "experience": {
     "eyebrow": "Trajetória profissional",
@@ -66,7 +66,7 @@
   "projects": {
     "title": "Projetos e código aberto",
     "introduction": "Pacotes direcionam para suas bibliotecas. Projetos têm páginas com documentação em Markdown.",
-    "package": "Pacote",
+    "package": "Biblioteca",
     "project": "Projeto",
     "openLibrary": "Visitar biblioteca",
     "linkPending": "Link da biblioteca a fornecer",
@@ -96,5 +96,52 @@
   "footer": {
     "signature": "Engenharia • Esportes • Código aberto",
     "rights": "Todos os direitos reservados."
+  },
+  "sports": {
+    "eyebrow": "Trajetória esportiva",
+    "title": "Conquistas esportivas",
+    "journeyTitle": "Minha trajetória no esporte",
+    "viewAll": "Ver todas as conquistas",
+    "viewPhoto": "Ver foto no Instagram",
+    "browseYears": "Ver conquistas por ano",
+    "eventResults": "Resultados por prova"
+  },
+  "capabilities": {
+    "read": "Conheça este diferencial",
+    "back": "Voltar aos diferenciais profissionais"
+  },
+  "technologies": {
+    "title": "Tecnologias com que já trabalhei",
+    "hint": "Role para explorar linguagens, sistemas e serviços.",
+    "horizontalHint": "Role horizontalmente para explorar linguagens, sistemas e serviços."
+  },
+  "certificates": {
+    "title": "Certificados e formação",
+    "description": "Cursos e formações, com links para seus certificados.",
+    "search": "Buscar certificados",
+    "category": "Área",
+    "kind": "Tipo",
+    "all": "Todos",
+    "course": "Curso",
+    "path": "Formação",
+    "open": "Ver certificado",
+    "count": "{{count}} certificados",
+    "empty": "Nenhum certificado corresponde a estes filtros.",
+    "reset": "Limpar filtros",
+    "issued": "Emitido em",
+    "loadMore": "Mostrar mais certificados"
+  },
+  "certificateCategories": {
+    "backend": "Back-end",
+    "frontend": "Front-end",
+    "accessibility": "Acessibilidade",
+    "design": "UX e Design",
+    "data": "Dados e SQL",
+    "devops": "DevOps",
+    "business": "Comunicação e negócios"
+  },
+  "connections": {
+    "open": "Visitar perfil",
+    "email": "Enviar um email"
   }
 }

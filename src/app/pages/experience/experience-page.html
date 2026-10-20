@@ -23,6 +23,11 @@
       <p>{{ 'experience.overviewDescription' | translate }}</p>
     </div>
   </div>
+  @if (store.portfolio(); as content) {
+  <div class="work-technologies">
+    <app-technology-list [technologies]="content.technologies" [horizontal]="true" />
+  </div>
+  }
   <div class="company-list">
     @for(view of companyViews();track view.company.id){<app-company-card
       [company]="view.company"
@@ -31,4 +36,13 @@
       (toggled)="toggleCompany($event)"
     />}
   </div>
+  @if (store.portfolio(); as content) {
+  <section class="certificates-section" id="certificates">
+    <app-section-heading
+      [title]="'certificates.title' | translate"
+      [description]="'certificates.description' | translate"
+    />
+    <app-certificate-catalog [certificates]="content.certificates" />
+  </section>
+  }
 </main>

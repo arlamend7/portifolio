@@ -1,0 +1,17 @@
+<a routerLink="/work" [fragment]="company().id" class="job-preview">
+  <span class="period eyebrow"
+    >{{ company().period.startYear }}–{{ company().period.current ? ('experience.present' |
+    translate) : company().period.endYear }}</span
+  >
+  <div class="job-content">
+    <div class="job-heading">
+      <h3>{{ company().name }}</h3>
+      @if (company().period.current) {<span class="current"
+        >{{ 'experience.current' | translate }}</span
+      >}
+    </div>
+    <p class="role">{{ company().role | localize: locale.current() }}</p>
+    <p class="summary">{{ company().summary | localize: locale.current() }}</p>
+  </div>
+  <app-icon name="arrow_forward" />
+</a>

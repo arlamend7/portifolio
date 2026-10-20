@@ -23,6 +23,17 @@ export const routes: Routes = [
       ),
   },
   {
+    path: 'capabilities/:id',
+    loadComponent: () =>
+      import('./pages/capability-detail/capability-detail-page').then(
+        (module) => module.CapabilityDetailPage,
+      ),
+  },
+  {
+    path: 'sports',
+    loadComponent: () => import('./pages/sports/sports-page').then((module) => module.SportsPage),
+  },
+  {
     path: '**',
     loadComponent: () =>
       import('./pages/not-found/not-found-page').then((module) => module.NotFoundPage),

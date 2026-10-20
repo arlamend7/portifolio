@@ -1,0 +1,54 @@
+<div class="filters">
+  <div class="filter">
+    <label for="certificate-search">{{ 'certificates.search' | translate }}</label
+    ><input
+      id="certificate-search"
+      #search
+      type="search"
+      [value]="query()"
+      (input)="setQuery(search.value)"
+    />
+  </div>
+  <div class="filter">
+    <label for="certificate-category">{{ 'certificates.category' | translate }}</label
+    ><select
+      id="certificate-category"
+      #subject
+      [value]="category()"
+      (change)="setCategory(subject.value)"
+    >
+      <option value="">{{ 'certificates.all' | translate }}</option>
+      @for (category of categories; track category) {
+      <option [value]="category">{{ 'certificateCategories.' + category | translate }}</option>
+      }
+    </select>
+  </div>
+  <div class="filter">
+    <label for="certificate-kind">{{ 'certificates.kind' | translate }}</label
+    ><select id="certificate-kind" #type [value]="kind()" (change)="setKind(type.value)">
+      <option value="">{{ 'certificates.all' | translate }}</option>
+      <option value="course">{{ 'certificates.course' | translate }}</option>
+      <option value="path">{{ 'certificates.path' | translate }}</option>
+    </select>
+  </div>
+</div>
+<div class="filter-status">
+  <p role="status">{{ 'certificates.count' | translate: { count: filtered().length } }}</p>
+  @if (query() || category() || kind()) {<button type="button" (click)="reset()">
+    {{ 'certificates.reset' | translate }}</button
+  >}
+</div>
+<div class="three-columns">
+  @for (certificate of visible(); track certificate.id) {<app-certificate-card
+    [certificate]="certificate"
+  />} @empty {
+  <p class="empty-state">{{ 'certificates.empty' | translate }}</p>
+  }
+</div>
+@if (visible().length < filtered().length) {<button
+  class="button show-more"
+  type="button"
+  (click)="showMore()"
+>
+  {{ 'certificates.loadMore' | translate }}</button
+>}

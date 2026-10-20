@@ -1,16 +1,16 @@
-<article
-  class="feature-card"
-  [class.compact]="compact()"
-  [class.accent]="feature().tone === 'accent'"
->
-  <div>
-    @if (!compact()) { <span class="icon-tile"><app-icon [name]="feature().icon" /></span> }
+<article class="feature-card" [class.compact]="feature().selection">
+  <header>
     <p class="eyebrow">{{ feature().eyebrow | localize: locale.current() }}</p>
-    <h3>{{ feature().title | localize: locale.current() }}</h3>
-    <p class="description">{{ feature().description | localize: locale.current() }}</p>
-  </div>
-  <div class="card-footer">
-    <span class="eyebrow">{{ feature().footerLabel | localize: locale.current() }}</span>
-    <p>{{ feature().footer | localize: locale.current() }}</p>
-  </div>
+    @if (feature().selection; as selection) {
+    <p class="selection">
+      <span>{{ selection.label | localize: locale.current() }}</span
+      ><strong>{{ selection.value | localize: locale.current() }}</strong>
+    </p>
+    }
+  </header>
+  <h3>{{ feature().title | localize: locale.current() }}</h3>
+  <p class="description">{{ feature().description | localize: locale.current() }}</p>
+  @if (documentationLink(); as link) {
+  <a [routerLink]="link">{{ 'capabilities.read' | translate }} <span aria-hidden="true">↗</span></a>
+  }
 </article>

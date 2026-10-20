@@ -1,0 +1,17 @@
+<div class="technology-panel">
+  <h3>{{ 'technologies.title' | translate }}</h3>
+  <p>{{ (horizontal() ? 'technologies.horizontalHint' : 'technologies.hint') | translate }}</p>
+  <div
+    class="technology-scroll"
+    [class.horizontal]="horizontal()"
+    tabindex="0"
+    role="region"
+    [attr.aria-label]="'technologies.title' | translate"
+  >
+    <ul>
+      @for (technology of technologies(); track technology.id) {
+      <li><app-icon [name]="technology.icon" /><span>{{ technology.name }}</span></li>
+      }
+    </ul>
+  </div>
+</div>

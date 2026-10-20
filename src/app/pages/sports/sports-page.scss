@@ -1,0 +1,76 @@
+.sports-page {
+  padding-top: 56px;
+  padding-bottom: 96px;
+}
+.sports-hero {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 64px;
+  align-items: center;
+  margin-bottom: 72px;
+}
+h1 {
+  font: var(--display);
+  margin: 16px 0 24px;
+}
+.introduction > p:not(.eyebrow) {
+  color: var(--text-muted);
+  max-width: 640px;
+}
+.lead {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+.season-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 32px;
+}
+.seasons {
+  display: grid;
+  gap: 56px;
+}
+.season {
+  scroll-margin-top: 32px;
+}
+.season h2 {
+  font: 400 36px/44px var(--font-heading);
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--surface-high);
+  margin-bottom: 24px;
+}
+.achievement-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 20px;
+}
+.back-link {
+  display: inline-block;
+  margin-top: 48px;
+  font: var(--mono-small);
+}
+@media (max-width: 900px) {
+  .sports-hero {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  app-sports-photo {
+    max-width: 480px;
+  }
+  .achievement-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+}
+@media (max-width: 520px) {
+  .sports-page {
+    padding-top: 32px;
+    padding-bottom: 64px;
+  }
+  .sports-hero {
+    margin-bottom: 48px;
+  }
+}

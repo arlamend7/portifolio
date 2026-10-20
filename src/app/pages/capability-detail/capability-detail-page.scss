@@ -1,0 +1,20 @@
+.document-page {
+  max-width: 1200px;
+  padding-block: 48px 80px;
+  min-height: 65vh;
+}
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 48px;
+}
+h1 {
+  font: var(--display);
+}
+.back-link {
+  display: inline-block;
+  margin-top: 48px;
+}

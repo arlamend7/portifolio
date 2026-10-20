@@ -1,0 +1,56 @@
+:host {
+  display: block;
+}
+.job-preview {
+  display: grid;
+  grid-template-columns: 100px minmax(0, 1fr) 20px;
+  align-items: center;
+  gap: 20px;
+  padding: 24px;
+  background: var(--surface-card);
+  border: 1px solid var(--surface-high);
+  border-radius: 8px;
+}
+a:hover {
+  border-color: var(--accent);
+  text-decoration: none;
+}
+.job-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+h3 {
+  font: 400 26px/32px var(--font-heading);
+}
+.current {
+  font: var(--mono-small);
+  color: var(--brand);
+  background: var(--surface-high);
+  padding: 2px 6px;
+}
+.role {
+  color: var(--accent);
+  font-size: 14px;
+  margin-top: 4px;
+}
+.summary {
+  color: var(--text-muted);
+  font-size: 12px;
+  line-height: 20px;
+  margin-top: 4px;
+}
+app-icon {
+  color: var(--accent);
+}
+@media (max-width: 600px) {
+  .job-preview {
+    grid-template-columns: minmax(0, 1fr) 20px;
+    gap: 12px;
+    padding: 20px;
+  }
+  .period {
+    grid-column: 1/-1;
+  }
+}

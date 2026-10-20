@@ -1,4 +1,10 @@
+:host {
+  display: grid;
+  min-width: 0;
+}
+
 .project-card {
+  min-height: 168px;
   padding: 20px;
   background: var(--surface-card);
   border-radius: 4px;
@@ -7,6 +13,9 @@
   justify-content: space-between;
   gap: 20px;
   box-shadow: var(--shadow);
+}
+.project-card > div {
+  min-width: 0;
 }
 h3 {
   font: 500 18px/26px var(--font-mono);

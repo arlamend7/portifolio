@@ -27,7 +27,7 @@ No application-wide catch-all utility or generic base component was introduced. 
 
 ## Reader boundary
 
-The project page chooses the document; `MarkdownReader` loads and presents it; the pure `markdown-engine.ts` handles parsing and safe output. It uses current markdown-it and a limited set of highlight.js languages, loaded with the project route. Unsupported languages remain readable escaped code.
+Project and capability detail pages choose the document; shared `DocumentContent` selects the localized Markdown path and presents its title and fallback state; `MarkdownReader` loads and presents it; the pure `markdown-engine.ts` handles parsing and safe output. It uses current markdown-it and a limited set of highlight.js languages, loaded with the project route. Unsupported languages remain readable escaped code.
 
 Raw HTML is disabled, so Markdown cannot introduce script, event-handler, iframe or form elements. The engine escapes generated attribute values, permits only HTTP(S) resource URLs and mail links, resolves relative paths, and adds safe external-link attributes. Its output passes through one documented Angular trusted-HTML boundary to preserve generated anchor IDs and code controls. Unit and browser tests exercise this boundary.
 
@@ -35,7 +35,7 @@ Raw HTML is disabled, so Markdown cannot introduce script, event-handler, iframe
 
 The Stitch typography and palette are represented by CSS custom properties. Components have scoped SCSS. Light, dark and custom modes share the same layout. Custom filled controls choose black or white text using relative luminance. The preferences dialog uses the browser's modal focus behavior and Escape handling. Accordions expose `aria-expanded`, panel relationships and keyboard-operable native buttons.
 
-The cadence bars are decorative and hidden from assistive technology. Source content and actual sports results remain separate. UI translations are complete; personal translations and project documentation remain supplied-content tasks.
+The sports homepage highlights and the lazy-loaded `/sports` page share achievement and photo components. A single JSON record holds the results; homepage highlights reference their IDs. The sports page groups those results by year. The supplied photograph is stored locally with its attribution, without depending on an expiring Instagram image URL. UI translations are complete; personal translations and project documentation remain supplied-content tasks.
 
 ## Verification
 
@@ -45,7 +45,7 @@ The cadence bars are decorative and hidden from assistive technology. Source con
 - Unit tests for content integrity, URL-only package entries, translated document paths, language fallback, Markdown safety, heading uniqueness, syntax highlighting and custom-theme contrast.
 - Browser tests for shared navigation, single-open employers, direct links, close-all persistence, all three languages, theme persistence, external package links, company project navigation, Markdown copying, loading failures, retry and mobile overflow.
 
-A compatible isolated Node 24 runtime was used for local verification; no system Node installation was changed. Dependency versions and resolved integrity hashes are retained in `package-lock.json`.
+The initial refactor was verified with an isolated Node 24 runtime. The October 19 homepage update also passes on the installed Node 25.9.0, which emits an Angular support warning. Use a supported runtime from `package.json` for CI and production; no system Node installation was changed. Dependency versions and resolved integrity hashes are retained in `package-lock.json`.
 
 ## References
 
@@ -54,3 +54,11 @@ A compatible isolated Node 24 runtime was used for local verification; no system
 - [markdown-it](https://github.com/markdown-it/markdown-it)
 - [User's web-markdown-wiki package manifest](https://github.com/arlamend7/web-markdown-wiki/blob/master/package.json)
 - [ngx-translate configuration](https://ngx-translate.org/reference/configuration/)
+
+## Homepage directory and professional catalog
+
+Home composes six ordered sections with bounded previews. Jobs and connection cards are page-specific components under `pages/home`; shared feature, technology, certificate, project, sports and document components cover repeated presentation. The experience page owns the certificate filtering UI. Filters are signals, matching/visible lists are computed, and additional results are revealed without duplicating the JSON source. Native inputs/selects have explicit accessible labels.
+
+Company fragments remain the single source of accordion state; home cards link to these existing routes. Certificate previews reference IDs checked by the content schema. HTTPS-only credential URLs and a separately validated plain-mailto contact schema prevent the new social links from broadening the package/document URL policy.
+
+Browser checks cover preview limits, section order, employer expansion/scrolling, capability documents and return links, certificate search/filter combinations and empty/reset states, mobile overflow and translated controls. All configured Markdown paths and featured credential references are validated in unit tests.

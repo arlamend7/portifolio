@@ -7,12 +7,11 @@
   </nav>
   @if(documentProject();as item) {
   <p class="eyebrow">{{ company()?.name || ('projects.project' | translate) }}</p>
-  <h1>{{ item.name }}</h1>
-  <p class="description">{{ item.description | localize: locale.current() }}</p>
-  @if(usingFallback()){
-  <p class="notice">{{ 'projects.fallback' | translate }}</p>
-  }
-  <app-markdown-reader [source]="markdownPath()" />
+  <app-document-content
+    [title]="item.name"
+    [description]="item.description | localize: locale.current()"
+    [markdown]="item.markdown"
+  />
   } @else {
   <h1>{{ 'common.notFound' | translate }}</h1>
   }

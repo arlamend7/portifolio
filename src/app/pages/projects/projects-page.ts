@@ -1,11 +1,11 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
 import { PortfolioStore } from '../../core/content/portfolio-store';
-import { ProjectCard } from '../../shared/project-card/project-card';
+import { ProjectGrid } from '../../shared/project-grid/project-grid';
 
 @Component({
   selector: 'app-projects-page',
-  imports: [TranslatePipe, ProjectCard],
+  imports: [TranslatePipe, ProjectGrid],
   templateUrl: './projects-page.html',
   styleUrl: './projects-page.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

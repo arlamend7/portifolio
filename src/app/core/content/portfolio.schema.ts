@@ -22,6 +22,16 @@ const markdownPathSchema = v.pipe(
     'Project documents must be Markdown files inside assets/.',
   ),
 );
+const localizedMarkdownSchema = v.object({
+  en: markdownPathSchema,
+  pt: v.optional(v.nullable(markdownPathSchema)),
+  fr: v.optional(v.nullable(markdownPathSchema)),
+});
+export type LocalizedMarkdown = v.InferOutput<typeof localizedMarkdownSchema>;
+const contactUrlSchema = v.union([
+  externalUrlSchema,
+  v.pipe(v.string(), v.regex(/^mailto:[^\s?@]+@[^\s?@]+\.[^\s?@]+$/)),
+]);
 
 const packageSchema = v.pipe(
   v.object({
@@ -49,27 +59,65 @@ const projectSchema = v.object({
   id: idSchema,
   name: v.string(),
   description: localizedTextSchema,
-  markdown: v.object({
-    en: markdownPathSchema,
-    pt: v.optional(v.nullable(markdownPathSchema)),
-    fr: v.optional(v.nullable(markdownPathSchema)),
-  }),
+  markdown: localizedMarkdownSchema,
 });
 export const projectEntrySchema = v.union([packageSchema, projectSchema]);
 export type ProjectEntry = v.InferOutput<typeof projectEntrySchema>;
 export type DocumentProject = Extract<ProjectEntry, { kind: 'project' }>;
 
 const featureSchema = v.object({
-  id: v.string(),
-  icon: v.string(),
+  id: idSchema,
   eyebrow: localizedTextSchema,
   title: localizedTextSchema,
   description: localizedTextSchema,
-  footerLabel: localizedTextSchema,
-  footer: localizedTextSchema,
-  tone: v.picklist(['primary', 'accent']),
+  selection: v.optional(v.object({ label: localizedTextSchema, value: localizedTextSchema })),
 });
 export type Feature = v.InferOutput<typeof featureSchema>;
+const capabilitySchema = v.object({ ...featureSchema.entries, markdown: localizedMarkdownSchema });
+
+const technologySchema = v.object({ id: idSchema, name: v.string(), icon: v.string() });
+export type Technology = v.InferOutput<typeof technologySchema>;
+export const certificateCategories = [
+  'backend',
+  'frontend',
+  'accessibility',
+  'design',
+  'data',
+  'devops',
+  'business',
+] as const;
+const certificateSchema = v.object({
+  id: idSchema,
+  title: localizedTextSchema,
+  provider: v.string(),
+  kind: v.picklist(['course', 'path']),
+  category: v.picklist(certificateCategories),
+  issued: v.pipe(v.string(), v.regex(/^\d{4}-(0[1-9]|1[0-2])$/)),
+  hours: v.optional(v.pipe(v.number(), v.minValue(1))),
+  url: v.nullable(externalUrlSchema),
+});
+export type Certificate = v.InferOutput<typeof certificateSchema>;
+
+const sportsAchievementSchema = v.object({
+  id: idSchema,
+  icon: v.string(),
+  year: v.pipe(v.number(), v.integer()),
+  title: localizedTextSchema,
+  result: v.optional(localizedTextSchema),
+  description: v.optional(localizedTextSchema),
+  placements: v.optional(
+    v.array(v.object({ id: idSchema, event: localizedTextSchema, result: localizedTextSchema })),
+  ),
+});
+export type SportsAchievement = v.InferOutput<typeof sportsAchievementSchema>;
+
+const sportsPhotoSchema = v.object({
+  src: v.string(),
+  alt: localizedTextSchema,
+  caption: localizedTextSchema,
+  sourceUrl: externalUrlSchema,
+});
+export type SportsPhotoContent = v.InferOutput<typeof sportsPhotoSchema>;
 
 const companySchema = v.object({
   id: idSchema,
@@ -100,7 +148,12 @@ export const portfolioSchema = v.pipe(
       location: v.string(),
       summary: localizedTextSchema,
       socialLinks: v.array(
-        v.object({ label: v.string(), icon: v.string(), url: externalUrlSchema }),
+        v.object({
+          label: v.string(),
+          icon: v.string(),
+          url: contactUrlSchema,
+          description: localizedTextSchema,
+        }),
       ),
     }),
     home: v.object({
@@ -112,36 +165,53 @@ export const portfolioSchema = v.pipe(
       stack: localizedTextSchema,
       stackDescription: localizedTextSchema,
       sportsSummary: localizedTextSchema,
-      capabilities: v.array(featureSchema),
+      capabilities: v.array(capabilitySchema),
       recognitions: v.array(featureSchema),
-      sports: v.array(
-        v.object({
-          id: idSchema,
-          icon: v.string(),
-          year: v.number(),
-          title: localizedTextSchema,
-          result: localizedTextSchema,
-          description: localizedTextSchema,
-        }),
-      ),
-      sportsIntroduction: localizedTextSchema,
-      sportsImage: v.object({
-        src: v.string(),
-        alt: localizedTextSchema,
-        caption: localizedTextSchema,
-      }),
-      gaming: localizedTextSchema,
+      certificateIds: v.array(idSchema),
+    }),
+    sports: v.object({
+      introduction: localizedTextSchema,
+      journey: localizedTextSchema,
+      image: sportsPhotoSchema,
+      highlightIds: v.array(idSchema),
+      achievements: v.array(sportsAchievementSchema),
     }),
     companies: v.array(companySchema),
     projects: v.array(projectEntrySchema),
+    technologies: v.array(technologySchema),
+    certificates: v.array(certificateSchema),
     initialCompanyId: idSchema,
   }),
   v.check(
     (content) =>
-      [content.companies, content.projects].every(
+      [
+        content.companies,
+        content.projects,
+        content.sports.achievements,
+        content.technologies,
+        content.certificates,
+        content.home.capabilities,
+        content.home.recognitions,
+      ].every(
         (collection) => new Set(collection.map((item) => item.id)).size === collection.length,
       ),
     'Content IDs must be unique.',
+  ),
+  v.check(
+    (content) =>
+      new Set(content.home.certificateIds).size === content.home.certificateIds.length &&
+      content.home.certificateIds.every((id) =>
+        content.certificates.some((item) => item.id === id),
+      ),
+    'Featured certificates must reference unique, existing certificates.',
+  ),
+  v.check(
+    (content) =>
+      new Set(content.sports.highlightIds).size === content.sports.highlightIds.length &&
+      content.sports.highlightIds.every((id) =>
+        content.sports.achievements.some((achievement) => achievement.id === id),
+      ),
+    'Sports highlights must reference unique, existing achievements.',
   ),
   v.check(
     (content) => content.companies.some((company) => company.id === content.initialCompanyId),

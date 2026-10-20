@@ -1,0 +1,37 @@
+@if (store.portfolio(); as content) {
+<main id="main-content" class="container sports-page" tabindex="-1">
+  <header class="sports-hero">
+    <div class="introduction">
+      <p class="eyebrow">{{ 'sports.eyebrow' | translate }}</p>
+      <h1>{{ 'sports.title' | translate }}</h1>
+      <p class="lead">{{ content.sports.introduction | localize: locale.current() }}</p>
+      <p>{{ content.sports.journey | localize: locale.current() }}</p>
+      <nav class="season-links" [attr.aria-label]="'sports.browseYears' | translate">
+        @for (season of seasons(); track season.year) {
+        <a class="pill" routerLink="/sports" [fragment]="'season-' + season.year"
+          >{{ season.year }}</a
+        >
+        }
+      </nav>
+    </div>
+    <app-sports-photo [photo]="content.sports.image" />
+  </header>
+  <div class="seasons">
+    @for (season of seasons(); track season.year) {
+    <section
+      class="season"
+      [id]="'season-' + season.year"
+      [attr.aria-labelledby]="'season-title-' + season.year"
+    >
+      <h2 [id]="'season-title-' + season.year">{{ season.year }}</h2>
+      <div class="achievement-grid">
+        @for (achievement of season.achievements; track achievement.id) {
+        <app-sports-achievement [achievement]="achievement" />
+        }
+      </div>
+    </section>
+    }
+  </div>
+  <a class="back-link" routerLink="/" fragment="sports">← {{ 'common.backHome' | translate }}</a>
+</main>
+}
