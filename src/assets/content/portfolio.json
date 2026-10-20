@@ -154,9 +154,9 @@
           "fr": "Optimisation des requêtes SQL et des procédures stockées, refactorisation de l’accès aux données et systèmes de tarification exigeants en matière de performance."
         },
         "markdown": {
-          "en": "assets/capabilities/performance-engineering.md",
-          "pt": null,
-          "fr": null
+          "en": "assets/capabilities/performance-engineering/performance-engineering.en.md",
+          "pt": "assets/capabilities/performance-engineering/performance-engineering.pt.md",
+          "fr": "assets/capabilities/performance-engineering/performance-engineering.fr.md"
         }
       },
       {
@@ -177,9 +177,9 @@
           "fr": "Développement pratique, analyse des solutions, architecture, assurance qualité, documentation et coordination tout au long de ma carrière."
         },
         "markdown": {
-          "en": "assets/capabilities/end-to-end-delivery.md",
-          "pt": null,
-          "fr": null
+          "en": "assets/capabilities/end-to-end-delivery/end-to-end-delivery.en.md",
+          "pt": "assets/capabilities/end-to-end-delivery/end-to-end-delivery.pt.md",
+          "fr": "assets/capabilities/end-to-end-delivery/end-to-end-delivery.fr.md"
         }
       },
       {
@@ -200,9 +200,9 @@
           "fr": "Je rends les travaux complexes compréhensibles grâce à des propositions, des cas d’utilisation, des diagrammes, des priorités communes et une documentation technique claire."
         },
         "markdown": {
-          "en": "assets/capabilities/business-and-engineering.md",
-          "pt": null,
-          "fr": null
+          "en": "assets/capabilities/business-and-engineering/business-and-engineering.en.md",
+          "pt": "assets/capabilities/business-and-engineering/business-and-engineering.pt.md",
+          "fr": "assets/capabilities/business-and-engineering/business-and-engineering.fr.md"
         }
       }
     ],
@@ -375,7 +375,12 @@
             "value": "B1"
           }
         ],
-        "pdf": "assets/documents/french-tcf-2026.pdf"
+        "pdf": "assets/documents/french-tcf-2026.pdf",
+        "gradeNote": {
+          "en": "Test taken at Alliance française · Belo Horizonte",
+          "pt": "Teste realizado na Alliance française · Belo Horizonte",
+          "fr": "Test passé à l’Alliance française · Belo Horizonte"
+        }
       }
     ]
   },
@@ -1357,8 +1362,8 @@
       "name": "flutter_client_factory",
       "description": {
         "en": "HTTP clients for Dart and Flutter with streaming, browser and native transports, and configurable resilience policies.",
-        "pt": null,
-        "fr": null
+        "pt": "Clientes HTTP para Dart e Flutter com streaming, transportes para navegador e plataformas nativas e políticas de resiliência configuráveis.",
+        "fr": "Clients HTTP pour Dart et Flutter avec streaming, transports pour navigateur et plateformes natives, et politiques de résilience configurables."
       },
       "url": "https://pub.dev/packages/flutter_client_factory"
     },
@@ -1368,8 +1373,8 @@
       "name": "envx",
       "description": {
         "en": "Environment configuration for Dart and Flutter using typed selection and layered JSON, dotenv, memory, and process values.",
-        "pt": null,
-        "fr": null
+        "pt": "Configuração de ambiente para Dart e Flutter com seleção tipada e valores em camadas de JSON, dotenv, memória e processos.",
+        "fr": "Configuration d’environnement pour Dart et Flutter avec sélection typée et valeurs en couches issues de JSON, dotenv, de la mémoire et des processus."
       },
       "url": "https://pub.dev/packages/envx"
     },
@@ -1379,8 +1384,8 @@
       "name": "flutter_client_factory_widgets",
       "description": {
         "en": "Flutter adapters for managing resource state with flutter_client_factory.",
-        "pt": null,
-        "fr": null
+        "pt": "Adaptadores Flutter para gerenciar o estado de recursos com flutter_client_factory.",
+        "fr": "Adaptateurs Flutter pour gérer l’état des ressources avec flutter_client_factory."
       },
       "url": "https://pub.dev/packages/flutter_client_factory_widgets"
     },
@@ -1390,8 +1395,8 @@
       "name": "universal_ble_server",
       "description": {
         "en": "Bluetooth Low Energy clients and servers with typed fields, message framing, and optional sessions.",
-        "pt": null,
-        "fr": null
+        "pt": "Clientes e servidores Bluetooth Low Energy com campos tipados, enquadramento de mensagens e sessões opcionais.",
+        "fr": "Clients et serveurs Bluetooth Low Energy avec champs typés, tramage des messages et sessions facultatives."
       },
       "url": "https://pub.dev/packages/universal_ble_server"
     },
@@ -1416,9 +1421,9 @@
         "fr": "Documentation du projet à venir."
       },
       "markdown": {
-        "en": "assets/voar-prime.md",
-        "pt": "assets/voar-prime.md",
-        "fr": "assets/voar-prime.md"
+        "en": "assets/projects/voar-prime/voar-prime.en.md",
+        "pt": "assets/projects/voar-prime/voar-prime.pt.md",
+        "fr": "assets/projects/voar-prime/voar-prime.fr.md"
       }
     },
     {
@@ -1455,9 +1460,9 @@
         "fr": "Documentation du projet à venir."
       },
       "markdown": {
-        "en": "assets/discord-bot.md",
-        "pt": null,
-        "fr": null
+        "en": "assets/projects/discord-bot/discord-bot.en.md",
+        "pt": "assets/projects/discord-bot/discord-bot.pt.md",
+        "fr": "assets/projects/discord-bot/discord-bot.fr.md"
       }
     },
     {
@@ -1470,9 +1475,9 @@
         "fr": "Documentation du projet à venir."
       },
       "markdown": {
-        "en": "assets/mendes-advogados.md",
-        "pt": null,
-        "fr": null
+        "en": "assets/projects/mendes-advogados/mendes-advogados.en.md",
+        "pt": "assets/projects/mendes-advogados/mendes-advogados.pt.md",
+        "fr": "assets/projects/mendes-advogados/mendes-advogados.fr.md"
       }
     },
     {
@@ -1485,9 +1490,9 @@
         "fr": "Documentation du projet à venir."
       },
       "markdown": {
-        "en": "assets/techinnov-account-management-platform.md",
-        "pt": null,
-        "fr": null
+        "en": "assets/projects/techinnov-account-management-platform/techinnov-account-management-platform.en.md",
+        "pt": "assets/projects/techinnov-account-management-platform/techinnov-account-management-platform.pt.md",
+        "fr": "assets/projects/techinnov-account-management-platform/techinnov-account-management-platform.fr.md"
       }
     },
     {
@@ -1500,9 +1505,9 @@
         "fr": "Documentation du projet à venir."
       },
       "markdown": {
-        "en": "assets/techinnov-language-learning-platform.md",
-        "pt": null,
-        "fr": null
+        "en": "assets/projects/techinnov-language-learning-platform/techinnov-language-learning-platform.en.md",
+        "pt": "assets/projects/techinnov-language-learning-platform/techinnov-language-learning-platform.pt.md",
+        "fr": "assets/projects/techinnov-language-learning-platform/techinnov-language-learning-platform.fr.md"
       }
     },
     {
@@ -1515,9 +1520,9 @@
         "fr": "Documentation du projet à venir."
       },
       "markdown": {
-        "en": "assets/gft-life-insurance-sales-platform.md",
-        "pt": null,
-        "fr": null
+        "en": "assets/projects/gft-life-insurance-sales-platform/gft-life-insurance-sales-platform.en.md",
+        "pt": "assets/projects/gft-life-insurance-sales-platform/gft-life-insurance-sales-platform.pt.md",
+        "fr": "assets/projects/gft-life-insurance-sales-platform/gft-life-insurance-sales-platform.fr.md"
       }
     },
     {
@@ -1530,9 +1535,9 @@
         "fr": "Documentation du projet à venir."
       },
       "markdown": {
-        "en": "assets/gft-event-driven-data-synchronization-system.md",
-        "pt": null,
-        "fr": null
+        "en": "assets/projects/gft-event-driven-data-synchronization-system/gft-event-driven-data-synchronization-system.en.md",
+        "pt": "assets/projects/gft-event-driven-data-synchronization-system/gft-event-driven-data-synchronization-system.pt.md",
+        "fr": "assets/projects/gft-event-driven-data-synchronization-system/gft-event-driven-data-synchronization-system.fr.md"
       }
     },
     {
@@ -1545,9 +1550,9 @@
         "fr": "Documentation du projet à venir."
       },
       "markdown": {
-        "en": "assets/telegestao-telecom-management-platform.md",
-        "pt": null,
-        "fr": null
+        "en": "assets/projects/telegestao-telecom-management-platform/telegestao-telecom-management-platform.en.md",
+        "pt": "assets/projects/telegestao-telecom-management-platform/telegestao-telecom-management-platform.pt.md",
+        "fr": "assets/projects/telegestao-telecom-management-platform/telegestao-telecom-management-platform.fr.md"
       }
     },
     {
@@ -1560,9 +1565,9 @@
         "fr": "Documentation du projet à venir."
       },
       "markdown": {
-        "en": "assets/telegestao-single-sign-on-sso-platform.md",
-        "pt": null,
-        "fr": null
+        "en": "assets/projects/telegestao-single-sign-on-sso-platform/telegestao-single-sign-on-sso-platform.en.md",
+        "pt": "assets/projects/telegestao-single-sign-on-sso-platform/telegestao-single-sign-on-sso-platform.pt.md",
+        "fr": "assets/projects/telegestao-single-sign-on-sso-platform/telegestao-single-sign-on-sso-platform.fr.md"
       }
     },
     {
@@ -1575,9 +1580,9 @@
         "fr": "Documentation du projet à venir."
       },
       "markdown": {
-        "en": "assets/telegestao-document-management-system.md",
-        "pt": null,
-        "fr": null
+        "en": "assets/projects/telegestao-document-management-system/telegestao-document-management-system.en.md",
+        "pt": "assets/projects/telegestao-document-management-system/telegestao-document-management-system.pt.md",
+        "fr": "assets/projects/telegestao-document-management-system/telegestao-document-management-system.fr.md"
       }
     },
     {
@@ -1590,9 +1595,9 @@
         "fr": "Documentation du projet à venir."
       },
       "markdown": {
-        "en": "assets/autoglass-product-quotation-platform.md",
-        "pt": null,
-        "fr": null
+        "en": "assets/projects/autoglass-product-quotation-platform/autoglass-product-quotation-platform.en.md",
+        "pt": "assets/projects/autoglass-product-quotation-platform/autoglass-product-quotation-platform.pt.md",
+        "fr": "assets/projects/autoglass-product-quotation-platform/autoglass-product-quotation-platform.fr.md"
       }
     },
     {
@@ -1605,9 +1610,9 @@
         "fr": "Documentation du projet à venir."
       },
       "markdown": {
-        "en": "assets/autoglass-internal-business-management-system.md",
-        "pt": null,
-        "fr": null
+        "en": "assets/projects/autoglass-internal-business-management-system/autoglass-internal-business-management-system.en.md",
+        "pt": "assets/projects/autoglass-internal-business-management-system/autoglass-internal-business-management-system.pt.md",
+        "fr": "assets/projects/autoglass-internal-business-management-system/autoglass-internal-business-management-system.fr.md"
       }
     }
   ],
@@ -1799,8 +1804,8 @@
       "id": "451ba756-40aa-4dc5-a4c8-951ce679190a",
       "title": {
         "en": "Python: Getting Started with the Language",
-        "pt": null,
-        "fr": null
+        "pt": "Python: começando com a linguagem",
+        "fr": "Python : découvrir le langage"
       },
       "provider": "Alura",
       "kind": "course",
@@ -1812,8 +1817,8 @@
       "id": "4f8d1715-1848-4dff-8640-4c81f4f31365",
       "title": {
         "en": "SOLID with C#: Principles of Object Oriented Programming",
-        "pt": null,
-        "fr": null
+        "pt": "SOLID com C#: princípios da programação orientada a objetos",
+        "fr": "SOLID avec C# : principes de la programmation orientée objet"
       },
       "provider": "Alura",
       "kind": "course",
@@ -1825,8 +1830,8 @@
       "id": "cdefbf43-621a-4aa0-9512-89976e944e05",
       "title": {
         "en": "Vagrant: managing virtual machines",
-        "pt": null,
-        "fr": null
+        "pt": "Vagrant: gerenciamento de máquinas virtuais",
+        "fr": "Vagrant : gérer des machines virtuelles"
       },
       "provider": "Alura",
       "kind": "course",
@@ -1838,8 +1843,8 @@
       "id": "aa5b84b3-e273-4fd0-8394-55a44d0340cc",
       "title": {
         "en": "NHibernate: Data Persistence with C#",
-        "pt": null,
-        "fr": null
+        "pt": "NHibernate: persistência de dados com C#",
+        "fr": "NHibernate : persistance des données avec C#"
       },
       "provider": "Alura",
       "kind": "course",
@@ -1879,8 +1884,8 @@
       "id": "c1ce7cf3-cbdd-40e8-8e4d-dab7f386e924",
       "title": {
         "en": "HTML5 and CSS3 part 4: advancing CSS",
-        "pt": null,
-        "fr": null
+        "pt": "HTML5 e CSS3 parte 4: avançando no CSS",
+        "fr": "HTML5 et CSS3, partie 4 : approfondir CSS"
       },
       "provider": "Alura",
       "kind": "course",
@@ -1892,8 +1897,8 @@
       "id": "0d961fb3-ebd9-493a-b841-ea421673dfff",
       "title": {
         "en": "HTML5 and CSS3 Part 3: Working with Forms and Tables",
-        "pt": null,
-        "fr": null
+        "pt": "HTML5 e CSS3 parte 3: trabalhando com formulários e tabelas",
+        "fr": "HTML5 et CSS3, partie 3 : formulaires et tableaux"
       },
       "provider": "Alura",
       "kind": "course",
@@ -1905,8 +1910,8 @@
       "id": "d78a0ae2-b90f-465e-959b-d3d3f20ab578",
       "title": {
         "en": "Performance Web II: Critical Path, HTTP/2 and Resource Hints",
-        "pt": null,
-        "fr": null
+        "pt": "Performance Web II: caminho crítico, HTTP/2 e dicas de recursos",
+        "fr": "Performance Web II : chemin critique, HTTP/2 et indications de ressources"
       },
       "provider": "Alura",
       "kind": "course",
@@ -1918,8 +1923,8 @@
       "id": "4b571d86-207e-4db2-856f-1315e95a9187",
       "title": {
         "en": "Web Performance I: Optimizing the Frontend",
-        "pt": null,
-        "fr": null
+        "pt": "Performance Web I: otimizando o front-end",
+        "fr": "Performance Web I : optimiser le front-end"
       },
       "provider": "Alura",
       "kind": "course",
@@ -1931,8 +1936,8 @@
       "id": "5ea4ea53-a10e-4737-90ef-8073015eab32",
       "title": {
         "en": "Bootstrap 4: Creating a Responsive Landing Page",
-        "pt": null,
-        "fr": null
+        "pt": "Bootstrap 4: criando uma landing page responsiva",
+        "fr": "Bootstrap 4 : créer une page de destination adaptative"
       },
       "provider": "Alura",
       "kind": "course",
@@ -1944,8 +1949,8 @@
       "id": "c93469d0-9099-4e01-b4bd-fb7349787110",
       "title": {
         "en": "Protractor: Automated Testing with JavaScript",
-        "pt": null,
-        "fr": null
+        "pt": "Protractor: testes automatizados com JavaScript",
+        "fr": "Protractor : tests automatisés avec JavaScript"
       },
       "provider": "Alura",
       "kind": "course",
@@ -1958,7 +1963,7 @@
       "title": {
         "en": "Responsive web design: from mobile to desktop",
         "pt": "Web Design Responsivo: Páginas que se adaptam do mobile ao desk",
-        "fr": null
+        "fr": "Conception web adaptative : du mobile à l’ordinateur"
       },
       "provider": "Alura",
       "kind": "course",
@@ -1971,8 +1976,8 @@
       "id": "9e6ac989-ccb3-456b-8287-74c9d02b8720",
       "title": {
         "en": "AngularJS: Build Powerful WebApps",
-        "pt": null,
-        "fr": null
+        "pt": "AngularJS: crie aplicações web poderosas",
+        "fr": "AngularJS : créer des applications web puissantes"
       },
       "provider": "Alura",
       "kind": "course",
@@ -1984,8 +1989,8 @@
       "id": "02c89b5e-1788-4056-bf37-69c4f18bc845",
       "title": {
         "en": "CSS Grid: simplifying layouts",
-        "pt": null,
-        "fr": null
+        "pt": "CSS Grid: simplificando layouts",
+        "fr": "CSS Grid : simplifier les mises en page"
       },
       "provider": "Alura",
       "kind": "course",
@@ -1997,8 +2002,8 @@
       "id": "85690555-47d4-4bd9-89eb-84118a93372e",
       "title": {
         "en": "Flexbox: position elements on screen",
-        "pt": null,
-        "fr": null
+        "pt": "Flexbox: posicione elementos na tela",
+        "fr": "Flexbox : positionner les éléments à l’écran"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2010,8 +2015,8 @@
       "id": "aaa57b0e-64c4-4429-8fde-1d0831de631b",
       "title": {
         "en": "HTML5 and CSS3 Part 1: Create a Web Page",
-        "pt": null,
-        "fr": null
+        "pt": "HTML5 e CSS3 parte 1: crie uma página web",
+        "fr": "HTML5 et CSS3, partie 1 : créer une page web"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2023,8 +2028,8 @@
       "id": "62a79ccf-5de1-4d75-890d-71f63354476f",
       "title": {
         "en": "HTML5 and CSS3 Part 2: Positioning, Lists, and Navigation",
-        "pt": null,
-        "fr": null
+        "pt": "HTML5 e CSS3 parte 2: posicionamento, listas e navegação",
+        "fr": "HTML5 et CSS3, partie 2 : positionnement, listes et navigation"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2036,8 +2041,8 @@
       "id": "f36984c4-9fb4-4706-824e-1f7dcfb182ab",
       "title": {
         "en": "Video production: what's behind the audiovisual world",
-        "pt": null,
-        "fr": null
+        "pt": "Produção de vídeo: os bastidores do mundo audiovisual",
+        "fr": "Production vidéo : les coulisses de l’audiovisuel"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2050,7 +2055,7 @@
       "title": {
         "en": "Sass and Compass: simplifying CSS",
         "pt": "Sass e Compass: Descomplicando o CSS",
-        "fr": null
+        "fr": "Sass et Compass : simplifier CSS"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2063,8 +2068,8 @@
       "id": "9b81bbcb-837d-4269-968a-f77332370da4",
       "title": {
         "en": "CSS architecture: making problems uncomplicated",
-        "pt": null,
-        "fr": null
+        "pt": "Arquitetura CSS: descomplicando os problemas",
+        "fr": "Architecture CSS : simplifier les problèmes"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2076,8 +2081,8 @@
       "id": "8cd450e8-9e5b-43d9-8c10-ddb33e944ec1",
       "title": {
         "en": "C# Programming Certification Part 11: Multithreading",
-        "pt": null,
-        "fr": null
+        "pt": "Certificação em programação C# parte 11: multithreading",
+        "fr": "Préparation à la certification C#, partie 11 : multithreading"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2089,8 +2094,8 @@
       "id": "b5418602-9243-4788-9ade-fb26aba58372",
       "title": {
         "en": "Git and Github: Control and Share Your Code",
-        "pt": null,
-        "fr": null
+        "pt": "Git e GitHub: controle e compartilhe seu código",
+        "fr": "Git et GitHub : gérer et partager son code"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2102,8 +2107,8 @@
       "id": "c0eebab8-b676-4981-99bc-982e1549e4eb",
       "title": {
         "en": "Regular Expressions: Magically Capturing Text",
-        "pt": null,
-        "fr": null
+        "pt": "Expressões regulares: capturando textos de forma mágica",
+        "fr": "Expressions régulières : capturer du texte comme par magie"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2115,8 +2120,8 @@
       "id": "34df8044-bd6e-4f14-bccc-eb0a26062308",
       "title": {
         "en": "JavaScript: from patterns to a functional approach",
-        "pt": null,
-        "fr": null
+        "pt": "JavaScript: dos padrões à abordagem funcional",
+        "fr": "JavaScript : des modèles à l’approche fonctionnelle"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2128,8 +2133,8 @@
       "id": "efc63740-70eb-4138-bc8a-96da0320314d",
       "title": {
         "en": "UX Writing: User-Focused Content",
-        "pt": null,
-        "fr": null
+        "pt": "UX Writing: conteúdo focado no usuário",
+        "fr": "Rédaction UX : du contenu centré sur l’utilisateur"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2169,8 +2174,8 @@
       "id": "7d5a0044-7746-44c6-8335-23db63109b28",
       "title": {
         "en": "Angular part 4: polishing the project",
-        "pt": null,
-        "fr": null
+        "pt": "Angular parte 4: refinando o projeto",
+        "fr": "Angular, partie 4 : peaufiner le projet"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2182,8 +2187,8 @@
       "id": "b4ad9917-3ffb-4863-85e2-913c20dc9294",
       "title": {
         "en": "Angular part 3: upload, build and new components",
-        "pt": null,
-        "fr": null
+        "pt": "Angular parte 3: upload, build e novos componentes",
+        "fr": "Angular, partie 3 : téléversement, compilation et nouveaux composants"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2195,8 +2200,8 @@
       "id": "8cfcbd4e-8a25-4e8c-ad89-06f710c0e33a",
       "title": {
         "en": "Angular part 2: Authentication, Forms and lazy loading",
-        "pt": null,
-        "fr": null
+        "pt": "Angular parte 2: autenticação, formulários e carregamento sob demanda",
+        "fr": "Angular, partie 2 : authentification, formulaires et chargement différé"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2208,8 +2213,8 @@
       "id": "78ea8890-7215-4d59-8d7e-3108fd196e25",
       "title": {
         "en": "C# Programming Certification Part 1: Create Types",
-        "pt": null,
-        "fr": null
+        "pt": "Certificação em programação C# parte 1: criação de tipos",
+        "fr": "Préparation à la certification C#, partie 1 : créer des types"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2221,8 +2226,8 @@
       "id": "2a85b80f-a8ba-44b9-b42e-423812d5441d",
       "title": {
         "en": "Microinteractions: Enriching the interaction experience",
-        "pt": null,
-        "fr": null
+        "pt": "Microinterações: enriquecendo a experiência de interação",
+        "fr": "Micro-interactions : enrichir l’expérience d’interaction"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2234,8 +2239,8 @@
       "id": "0d9e611b-8aa1-45c9-8afe-de7282d617ce",
       "title": {
         "en": "Public Speaking part 1: share ideas and stories",
-        "pt": null,
-        "fr": null
+        "pt": "Oratória parte 1: compartilhe ideias e histórias",
+        "fr": "Prise de parole, partie 1 : partager des idées et des histoires"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2247,8 +2252,8 @@
       "id": "add6e56a-ccee-4dc7-b1b0-cf392d18bd61",
       "title": {
         "en": "TypeScript part 1: Evolving your JavaScript",
-        "pt": null,
-        "fr": null
+        "pt": "TypeScript parte 1: evoluindo seu JavaScript",
+        "fr": "TypeScript, partie 1 : faire évoluer son JavaScript"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2260,8 +2265,8 @@
       "id": "204aed7d-5dfb-499d-89e9-14ab7f4ecd08",
       "title": {
         "en": "TypeScript part 2: More techniques and best practices",
-        "pt": null,
-        "fr": null
+        "pt": "TypeScript parte 2: mais técnicas e boas práticas",
+        "fr": "TypeScript, partie 2 : techniques et bonnes pratiques"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2274,7 +2279,7 @@
       "title": {
         "en": "Web accessibility part 2: accessible JavaScript components",
         "pt": "Acessibilidade web parte 2: componentes acessíveis com um pouco de JavaScript",
-        "fr": null
+        "fr": "Accessibilité web, partie 2 : composants JavaScript accessibles"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2288,7 +2293,7 @@
       "title": {
         "en": "Webpack: managing modules in your web app",
         "pt": "Webpack: Manipulando módulos na sua webapp",
-        "fr": null
+        "fr": "Webpack : gérer les modules d’une application web"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2302,7 +2307,7 @@
       "title": {
         "en": "Angular part 1: productivity and organization with an SPA framework",
         "pt": "Angular parte 1: produtividade e organização com framework SPA",
-        "fr": null
+        "fr": "Angular, partie 1 : productivité et organisation avec un framework SPA"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2315,8 +2320,8 @@
       "id": "3fe53557-7bc0-43f5-a433-968942152d33",
       "title": {
         "en": "Usability testing part 2: measuring and delivering results",
-        "pt": null,
-        "fr": null
+        "pt": "Teste de usabilidade parte 2: medindo e apresentando resultados",
+        "fr": "Tests d’utilisabilité, partie 2 : mesurer et présenter les résultats"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2341,9 +2346,9 @@
     {
       "id": "e2271535-464e-4aeb-bbf5-84766703fa9f",
       "title": {
-        "en": "APIs Rest com Asp.NET Core 2.1 Parte 1: Da app MVC para API",
-        "pt": null,
-        "fr": null
+        "en": "REST APIs with ASP.NET Core 2.1 Part 1: From an MVC App to an API",
+        "pt": "APIs REST com ASP.NET Core 2.1 parte 1: da aplicação MVC à API",
+        "fr": "API REST avec ASP.NET Core 2.1, partie 1 : de l’application MVC à l’API"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2355,8 +2360,8 @@
       "id": "c145dfc8-1c36-4cb0-8261-45f6a6413cc3",
       "title": {
         "en": "Chrome DevTools: Analyze, Inspect, and Debug Your Web Pages",
-        "pt": null,
-        "fr": null
+        "pt": "Chrome DevTools: analise, inspecione e depure suas páginas web",
+        "fr": "Chrome DevTools : analyser, inspecter et déboguer ses pages web"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2368,8 +2373,8 @@
       "id": "6603e427-dcfc-4780-ae05-50c8bb67bde8",
       "title": {
         "en": "Communication: how to express yourself well and be understood",
-        "pt": null,
-        "fr": null
+        "pt": "Comunicação: como se expressar bem e ser compreendido",
+        "fr": "Communication : bien s’exprimer et se faire comprendre"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2381,8 +2386,8 @@
       "id": "6c0cae0f-ec8f-419b-bfe9-6db20939ab16",
       "title": {
         "en": "HTML5 and CSS3 I: Your First Web Pages",
-        "pt": null,
-        "fr": null
+        "pt": "HTML5 e CSS3 I: suas primeiras páginas web",
+        "fr": "HTML5 et CSS3 I : ses premières pages web"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2394,8 +2399,8 @@
       "id": "fb6e1a55-2451-4cf2-ad2b-30f738330546",
       "title": {
         "en": "HTML5 and CSS3 II: Powering up your pages",
-        "pt": null,
-        "fr": null
+        "pt": "HTML5 e CSS3 II: aprimorando suas páginas",
+        "fr": "HTML5 et CSS3 II : enrichir ses pages"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2407,8 +2412,8 @@
       "id": "f181a716-1364-4a3b-967a-0889dce6b6e5",
       "title": {
         "en": "JavaScript: programming in the language of the web",
-        "pt": null,
-        "fr": null
+        "pt": "JavaScript: programando na linguagem da web",
+        "fr": "JavaScript : programmer avec le langage du Web"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2420,8 +2425,8 @@
       "id": "d66f8e21-069e-4168-83a7-5c59679dceb6",
       "title": {
         "en": "Interpersonal relationship: learn to deal better with yourself and with others",
-        "pt": null,
-        "fr": null
+        "pt": "Relacionamento interpessoal: lidando melhor consigo e com os outros",
+        "fr": "Relations interpersonnelles : mieux interagir avec soi-même et les autres"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2433,8 +2438,8 @@
       "id": "828a50f1-07ff-4ec6-ac81-871e08d077e2",
       "title": {
         "en": "Usability testing part 1: is your product easy to use?",
-        "pt": null,
-        "fr": null
+        "pt": "Teste de usabilidade parte 1: seu produto é fácil de usar?",
+        "fr": "Tests d’utilisabilité, partie 1 : votre produit est-il facile à utiliser ?"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2447,7 +2452,7 @@
       "title": {
         "en": "Web accessibility: inclusive design",
         "pt": "Acessibilidade web: crie designs inclusivos",
-        "fr": null
+        "fr": "Accessibilité web : conception inclusive"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2461,7 +2466,7 @@
       "title": {
         "en": "Web accessibility part 1: inclusive front-end",
         "pt": "Acessibilidade web parte 1: tornando seu front-end inclusivo",
-        "fr": null
+        "fr": "Accessibilité web, partie 1 : un front-end inclusif"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2488,8 +2493,8 @@
       "id": "731f2696-f281-4244-a506-699d34936487",
       "title": {
         "en": "Asp.NET Core: a web app using the MVC pattern",
-        "pt": null,
-        "fr": null
+        "pt": "ASP.NET Core: uma aplicação web com o padrão MVC",
+        "fr": "ASP.NET Core : une application web avec le modèle MVC"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2501,8 +2506,8 @@
       "id": "9347fb36-03a4-4f25-966f-c5a68cabd362",
       "title": {
         "en": "C# Part 4: Understanding Exceptions",
-        "pt": null,
-        "fr": null
+        "pt": "C# parte 4: entendendo exceções",
+        "fr": "C#, partie 4 : comprendre les exceptions"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2514,8 +2519,8 @@
       "id": "9621ea2d-d00c-4deb-a40d-57f83937c362",
       "title": {
         "en": "C# Part 3: Understanding Inheritance and Interface",
-        "pt": null,
-        "fr": null
+        "pt": "C# parte 3: entendendo herança e interfaces",
+        "fr": "C#, partie 3 : comprendre l’héritage et les interfaces"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2527,8 +2532,8 @@
       "id": "5d312c2f-87d8-4b7e-a707-d538f665197b",
       "title": {
         "en": "C# Part 2: Understanding Object Orientation",
-        "pt": null,
-        "fr": null
+        "pt": "C# parte 2: entendendo orientação a objetos",
+        "fr": "C#, partie 2 : comprendre la programmation orientée objet"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2540,8 +2545,8 @@
       "id": "05cbc3af-7ca8-4469-ad4a-1a0a1892ba73",
       "title": {
         "en": "C# Part 1: Getting Started",
-        "pt": null,
-        "fr": null
+        "pt": "C# parte 1: primeiros passos",
+        "fr": "C#, partie 1 : premiers pas"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2553,8 +2558,8 @@
       "id": "76da448b-9bb2-46b7-aeb7-3495acb7bc0b",
       "title": {
         "en": "C# Part 5: DLL Libraries, Documentation, and Using NuGet",
-        "pt": null,
-        "fr": null
+        "pt": "C# parte 5: bibliotecas DLL, documentação e NuGet",
+        "fr": "C#, partie 5 : bibliothèques DLL, documentation et NuGet"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2566,8 +2571,8 @@
       "id": "34794ae0-7522-45c1-9fb9-d84ac29d3068",
       "title": {
         "en": "C# Part 6: Strings, Regular Expressions, and the Object Class",
-        "pt": null,
-        "fr": null
+        "pt": "C# parte 6: strings, expressões regulares e a classe Object",
+        "fr": "C#, partie 6 : chaînes, expressions régulières et classe Object"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2579,8 +2584,8 @@
       "id": "716676ea-6974-4b45-9b72-ca65af0e079b",
       "title": {
         "en": "C# Part 7: Array and Generic Types",
-        "pt": null,
-        "fr": null
+        "pt": "C# parte 7: arrays e tipos genéricos",
+        "fr": "C#, partie 7 : tableaux et types génériques"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2592,8 +2597,8 @@
       "id": "78c5b595-181a-46dd-abf1-b55ed3f2bb37",
       "title": {
         "en": "C# part 8: List, lambda, linq",
-        "pt": null,
-        "fr": null
+        "pt": "C# parte 8: listas, lambda e LINQ",
+        "fr": "C#, partie 8 : listes, lambda et LINQ"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2605,8 +2610,8 @@
       "id": "0ae359a5-5a18-4cc7-ad02-f6cb9cc9eac5",
       "title": {
         "en": "C# Part 9: Input and Output (I/O) with Streams",
-        "pt": null,
-        "fr": null
+        "pt": "C# parte 9: entrada e saída (I/O) com streams",
+        "fr": "C#, partie 9 : entrées et sorties (E/S) avec les flux"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2618,8 +2623,8 @@
       "id": "bc2a2318-6bf1-4643-af08-780114be9d0a",
       "title": {
         "en": "Presentation Design Part 1: Visual Principles and Techniques",
-        "pt": null,
-        "fr": null
+        "pt": "Design de apresentações parte 1: princípios e técnicas visuais",
+        "fr": "Conception de présentations, partie 1 : principes et techniques visuels"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2631,8 +2636,8 @@
       "id": "8adcb345-a8cb-4236-b138-02f3d8a14c9d",
       "title": {
         "en": "Presentation Design Part 2: Script, Visual, and Impact Presenter",
-        "pt": null,
-        "fr": null
+        "pt": "Design de apresentações parte 2: roteiro, visual e apresentação de impacto",
+        "fr": "Conception de présentations, partie 2 : scénario, visuels et présentation percutante"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2644,8 +2649,8 @@
       "id": "98a96e96-32eb-40da-800c-c68adfd4fdea",
       "title": {
         "en": "Habits: from productivity to personal goals",
-        "pt": null,
-        "fr": null
+        "pt": "Hábitos: da produtividade aos objetivos pessoais",
+        "fr": "Habitudes : de la productivité aux objectifs personnels"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2657,8 +2662,8 @@
       "id": "6f697026-b170-4f03-bbfe-944de406dd3f",
       "title": {
         "en": "HTTP: Understanding the web under the hood",
-        "pt": null,
-        "fr": null
+        "pt": "HTTP: entendendo o funcionamento da web",
+        "fr": "HTTP : comprendre les mécanismes du Web"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2670,8 +2675,8 @@
       "id": "6df7b51b-3446-452a-9a31-e39b4c088a7b",
       "title": {
         "en": "Prototyping and UX Part 1: High Fidelity with Adobe XD",
-        "pt": null,
-        "fr": null
+        "pt": "Prototipagem e UX parte 1: alta fidelidade com Adobe XD",
+        "fr": "Prototypage et UX, partie 1 : haute fidélité avec Adobe XD"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2683,8 +2688,8 @@
       "id": "a80a9f55-223a-4fb1-8491-086b8c3026af",
       "title": {
         "en": "UX review: tools from briefing to prototype",
-        "pt": null,
-        "fr": null
+        "pt": "Revisão de UX: ferramentas do briefing ao protótipo",
+        "fr": "Revue UX : outils du cahier des charges au prototype"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2696,8 +2701,8 @@
       "id": "dddd8990-6916-41a0-9345-b498803d39de",
       "title": {
         "en": "Prototyping and UX part 2: linking screens in Adobe XD",
-        "pt": null,
-        "fr": null
+        "pt": "Prototipagem e UX parte 2: conectando telas no Adobe XD",
+        "fr": "Prototypage et UX, partie 2 : relier les écrans dans Adobe XD"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2709,8 +2714,8 @@
       "id": "120f0a80-2ac4-437b-84b0-26765bd87f9a",
       "title": {
         "en": "UI Design Patterns: usability in mobile interfaces",
-        "pt": null,
-        "fr": null
+        "pt": "Padrões de UI Design: usabilidade em interfaces móveis",
+        "fr": "Modèles de conception UI : utilisabilité des interfaces mobiles"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2723,7 +2728,7 @@
       "title": {
         "en": "UX: common usability mistakes and good practices",
         "pt": "UX: os erros frequentes de usabilidade e as boas práticas",
-        "fr": null
+        "fr": "UX : erreurs fréquentes d’utilisabilité et bonnes pratiques"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2750,8 +2755,8 @@
       "id": "5d8be13c-0408-46b3-b624-56b7188eb110",
       "title": {
         "en": "Oracle I: Learn sql using this famous database",
-        "pt": null,
-        "fr": null
+        "pt": "Oracle I: aprenda SQL usando este banco de dados",
+        "fr": "Oracle I : apprendre SQL avec cette base de données"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2763,8 +2768,8 @@
       "id": "4c3052ac-cf69-4abb-aa4f-946fa0b8f934",
       "title": {
         "en": "Oracle II: Complex Queries",
-        "pt": null,
-        "fr": null
+        "pt": "Oracle II: consultas complexas",
+        "fr": "Oracle II : requêtes complexes"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2776,8 +2781,8 @@
       "id": "a8d1e088-4dc3-485a-882b-fa89fa04b820",
       "title": {
         "en": "PL/SQL: Mastering packages",
-        "pt": null,
-        "fr": null
+        "pt": "PL/SQL: dominando pacotes",
+        "fr": "PL/SQL : maîtriser les packages"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2789,8 +2794,8 @@
       "id": "1aa4b6e7-0236-41ea-9eaa-5e326485b0b1",
       "title": {
         "en": "PL/SQL: Master the language of the Oracle database",
-        "pt": null,
-        "fr": null
+        "pt": "PL/SQL: domine a linguagem do banco de dados Oracle",
+        "fr": "PL/SQL : maîtriser le langage de la base de données Oracle"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2802,8 +2807,8 @@
       "id": "ecb08ec7-d05b-4a6c-8cf8-a64b4a1d095b",
       "title": {
         "en": "UX Strategy: diverging and narrowing ideas",
-        "pt": null,
-        "fr": null
+        "pt": "Estratégia UX: expandindo e refinando ideias",
+        "fr": "Stratégie UX : explorer et affiner les idées"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2815,8 +2820,8 @@
       "id": "4ed8883c-4ef5-4bf1-bceb-9b9811e2ab6e",
       "title": {
         "en": "UX Product: monitor, measure and test your project",
-        "pt": null,
-        "fr": null
+        "pt": "Produto UX: monitore, meça e teste seu projeto",
+        "fr": "Produit UX : suivre, mesurer et tester son projet"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2828,8 +2833,8 @@
       "id": "532cef0d-9cdf-4c31-bf75-bce37bd19104",
       "title": {
         "en": "UX Usability: make your user's life easier on mobile",
-        "pt": null,
-        "fr": null
+        "pt": "Usabilidade UX: facilite a vida do usuário no celular",
+        "fr": "Utilisabilité UX : faciliter la vie de l’utilisateur sur mobile"
       },
       "provider": "Alura",
       "kind": "course",
@@ -2842,7 +2847,7 @@
       "title": {
         "en": "UX: understanding user experience",
         "pt": "UX: o que é experiência de usuário",
-        "fr": null
+        "fr": "UX : comprendre l’expérience utilisateur"
       },
       "provider": "Alura",
       "kind": "course",

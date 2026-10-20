@@ -86,7 +86,7 @@ test('packages use external links; company projects share the Markdown reader', 
   await page.route('**/assets/content/portfolio.json', (route) =>
     route.fulfill({ json: configured }),
   );
-  await page.route('**/assets/voar-prime.md', (route) =>
+  await page.route('**/assets/projects/voar-prime/voar-prime.*.md', (route) =>
     route.fulfill({ contentType: 'text/markdown', body: markdownFixture }),
   );
   await page.route('**/assets/images/test.svg', (route) =>
@@ -135,7 +135,7 @@ test('document failure can be retried and unknown routes have an explicit state'
   page,
 }) => {
   let fail = true;
-  await page.route('**/assets/voar-prime.md', (route) =>
+  await page.route('**/assets/projects/voar-prime/voar-prime.*.md', (route) =>
     fail
       ? route.fulfill({ status: 404 })
       : route.fulfill({ contentType: 'text/markdown', body: '# Recovered' }),

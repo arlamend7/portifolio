@@ -35,7 +35,7 @@ export class MarkdownReader {
     combineLatest([toObservable(this.source), toObservable(this.attempt)]).pipe(
       switchMap(([path]) => {
         const baseUrl = new URL(path, this.document.baseURI).href;
-        if (!/^assets\/[a-zA-Z0-9/_-]+\.md$/.test(path)) {
+        if (!/^assets\/[a-zA-Z0-9/_-]+(?:\.(?:en|pt|fr))?\.md$/.test(path)) {
           return of<LoadResult>({ status: 'error', source: '', baseUrl });
         }
         return this.http.get(path, { responseType: 'text', observe: 'response' }).pipe(

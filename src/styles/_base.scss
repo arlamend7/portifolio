@@ -128,15 +128,11 @@ img {
   background: var(--surface-low);
   border-radius: 4px;
 }
-.notice,
-.translation-notice {
+.notice {
   background: var(--accent-soft);
   color: var(--text);
   padding: 12px 20px;
   font-size: 13px;
-}
-.translation-notice {
-  text-align: center;
 }
 .loading-state {
   padding-block: 64px;

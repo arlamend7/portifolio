@@ -92,3 +92,12 @@ dd {
   font-size: 12px;
   color: var(--text-muted);
 }
+
+@media (min-width: 701px) {
+  .language-card {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 4;
+    row-gap: 12px;
+  }
+}

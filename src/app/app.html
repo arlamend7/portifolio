@@ -10,9 +10,6 @@
 </main>
 } @if(content.status() === 'ready') { @if(content.portfolio();as portfolio) {
 <app-site-header [profile]="portfolio.profile" (preferencesRequested)="settings.open()" />
-@if(showTranslationNotice()){
-<p class="translation-notice">{{ 'common.translationFallback' | translate }}</p>
-}
 <router-outlet />
 <app-site-footer [profile]="portfolio.profile" />
 <app-reading-preferences #settings />

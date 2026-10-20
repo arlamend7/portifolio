@@ -18,7 +18,7 @@ const externalUrlSchema = v.pipe(
 const markdownPathSchema = v.pipe(
   v.string(),
   v.regex(
-    /^assets\/[a-zA-Z0-9/_-]+\.md$/,
+    /^assets\/[a-zA-Z0-9/_-]+(?:\.(?:en|pt|fr))?\.md$/,
     'Project documents must be Markdown files inside assets/.',
   ),
 );
