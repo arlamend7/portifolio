@@ -143,5 +143,10 @@
   "connections": {
     "open": "Voir le profil",
     "email": "Envoyer un e-mail"
+  },
+  "languageTests": {
+    "title": "Langues",
+    "description": "Évaluations linguistiques en anglais et en français.",
+    "viewReport": "Voir les résultats du test (PDF)"
   }
 }

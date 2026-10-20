@@ -151,6 +151,9 @@ export const portfolioSchema = v.pipe(
         v.object({
           label: v.string(),
           icon: v.string(),
+          brand: v.optional(
+            v.picklist(['linkedin', 'github', 'gmail', 'instagram', 'steam', 'buymeacoffee']),
+          ),
           url: contactUrlSchema,
           description: localizedTextSchema,
         }),
@@ -168,6 +171,17 @@ export const portfolioSchema = v.pipe(
       capabilities: v.array(capabilitySchema),
       recognitions: v.array(featureSchema),
       certificateIds: v.array(idSchema),
+      languageTests: v.array(
+        v.object({
+          id: idSchema,
+          language: localizedTextSchema,
+          test: v.string(),
+          date: v.string(),
+          summary: localizedTextSchema,
+          scores: v.array(v.object({ label: localizedTextSchema, value: v.string() })),
+          pdf: v.pipe(v.string(), v.regex(/^assets\/documents\/[a-z0-9-]+\.pdf$/)),
+        }),
+      ),
     }),
     sports: v.object({
       introduction: localizedTextSchema,

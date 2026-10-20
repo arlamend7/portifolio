@@ -1,0 +1,28 @@
+<section id="languages" aria-labelledby="languages-title">
+  <header>
+    <h2 id="languages-title">{{ 'languageTests.title' | translate }}</h2>
+    <p>{{ 'languageTests.description' | translate }}</p>
+  </header>
+  <div class="language-grid">
+    @for (test of tests(); track test.id) {
+    <a class="language-card" [href]="test.pdf" target="_blank" rel="noopener">
+      <div class="card-heading">
+        <h3>{{ test.language | localize: locale.current() }}</h3>
+        <span class="eyebrow">{{ test.test }} · {{ test.date | date:'yyyy' }}</span>
+      </div>
+      <p>{{ test.summary | localize: locale.current() }}</p>
+      <dl>
+        @for (score of test.scores; track $index) {
+        <div>
+          <dt>{{ score.label | localize: locale.current() }}</dt>
+          <dd>{{ score.value }}</dd>
+        </div>
+        }
+      </dl>
+      <span class="report-link"
+        >{{ 'languageTests.viewReport' | translate }} <app-icon name="open_in_new"
+      /></span>
+    </a>
+    }
+  </div>
+</section>

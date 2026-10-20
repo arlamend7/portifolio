@@ -11,8 +11,10 @@ import { Icon } from '../icon/icon';
   templateUrl: './sports-photo.html',
   styleUrl: './sports-photo.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
+  host: { '[class.match-height]': 'matchHeight()' },
 })
 export class SportsPhoto {
   readonly photo = input.required<SportsPhotoContent>();
+  readonly matchHeight = input(false);
   protected readonly locale = inject(LocaleStore);
 }

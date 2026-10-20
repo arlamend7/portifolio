@@ -13,6 +13,7 @@ import { Icon } from '../../shared/icon/icon';
 import { ProjectGrid } from '../../shared/project-grid/project-grid';
 import { SectionHeading } from '../../shared/section-heading/section-heading';
 import { SportsAchievement } from '../../shared/sports-achievement/sports-achievement';
+import { LanguageTests } from './language-tests/language-tests';
 import { SportsPhoto } from '../../shared/sports-photo/sports-photo';
 
 @Component({
@@ -31,6 +32,7 @@ import { SportsPhoto } from '../../shared/sports-photo/sports-photo';
     ConnectionCard,
     JobPreview,
     TechnologyList,
+    LanguageTests,
   ],
   templateUrl: './home-page.html',
   styleUrl: './home-page.scss',

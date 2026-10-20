@@ -101,7 +101,7 @@
     "eyebrow": "Sporting record",
     "title": "Sports achievements",
     "journeyTitle": "My sporting journey",
-    "viewAll": "Explore all achievements",
+    "viewAll": "View all achievements",
     "viewPhoto": "View photo on Instagram",
     "browseYears": "Browse achievements by year",
     "eventResults": "Results by event"
@@ -143,5 +143,10 @@
   "connections": {
     "open": "Visit profile",
     "email": "Send an email"
+  },
+  "languageTests": {
+    "title": "Languages",
+    "description": "English and French language assessments.",
+    "viewReport": "View test report (PDF)"
   }
 }

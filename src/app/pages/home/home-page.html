@@ -40,6 +40,8 @@
     </aside>
   </section>
 
+  <app-language-tests [tests]="content.home.languageTests" />
+
   <section class="page-section" id="capabilities">
     <app-section-heading
       [eyebrow]="'home.capabilitiesLabel' | translate"
@@ -70,31 +72,31 @@
       [eyebrow]="'home.workLabel' | translate"
       [title]="'home.workTitle' | translate"
     />
+    <div class="home-technologies">
+      <app-technology-list [technologies]="content.technologies" [horizontal]="true" />
+    </div>
     <div class="experience-layout">
-      <div>
+      <div class="experience-column">
         <h3 class="subsection-title">{{ 'home.recentJobs' | translate }}</h3>
         <div class="recent-jobs">
-          @for (company of recentCompanies(); track company.id) {<app-job-preview
-            [company]="company"
-          />}
+          @for (company of recentCompanies(); track company.id) {
+          <app-job-preview [company]="company" />
+          }
         </div>
         <a routerLink="/work" class="text-link"
           >{{ 'home.viewWork' | translate }} <span aria-hidden="true">→</span></a
         >
       </div>
-      <app-technology-list [technologies]="content.technologies" />
-    </div>
-    <div class="certificate-preview">
-      <div class="subsection-header">
+      <div class="experience-column certificate-preview">
         <h3 class="subsection-title">{{ 'certificates.title' | translate }}</h3>
+        <div class="certificate-list">
+          @for (certificate of featuredCertificates(); track certificate.id) {
+          <app-certificate-card [certificate]="certificate" />
+          }
+        </div>
         <a routerLink="/work" fragment="certificates" class="text-link"
           >{{ 'home.viewCertificates' | translate }} <span aria-hidden="true">→</span></a
         >
-      </div>
-      <div class="three-columns">
-        @for (certificate of featuredCertificates(); track certificate.id) {<app-certificate-card
-          [certificate]="certificate"
-        />}
       </div>
     </div>
   </section>
@@ -112,25 +114,20 @@
     <app-section-heading
       [eyebrow]="'home.sportsLabel' | translate"
       [title]="'home.sportsTitle' | translate"
+      [description]="content.sports.journey | localize: locale.current()"
     />
-    
+
     <div class="sports-layout">
       <div class="sports-results">
         @for (achievement of sportsHighlights(); track achievement.id) {<app-sports-achievement
           [achievement]="achievement"
         />}
       </div>
-      <app-sports-photo [photo]="content.sports.image" />
+      <app-sports-photo [photo]="content.sports.image" [matchHeight]="true" />
     </div>
-     <div class="journey-card">
-      <div>
-        <h3>{{ 'sports.journeyTitle' | translate }}</h3>
-        <p>{{ content.sports.journey | localize: locale.current() }}</p>
-      </div>
-      <a class="button primary" routerLink="/sports"
-        >{{ 'sports.viewAll' | translate }} <app-icon name="arrow_forward"
-      /></a>
-    </div>
+    <a routerLink="/sports" class="text-link"
+      >{{ 'sports.viewAll' | translate }} <span aria-hidden="true">→</span></a
+    >
   </section>
   <section class="page-section" id="connections">
     <app-section-heading

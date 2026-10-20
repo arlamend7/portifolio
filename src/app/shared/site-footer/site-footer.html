@@ -17,7 +17,7 @@
           [href]="link.url"
           [attr.target]="link.url.startsWith('mailto:') ? null : '_blank'"
           rel="noopener noreferrer"
-          ><app-icon [name]="link.icon" />{{ link.label }}</a
+          ><app-icon [name]="link.icon" [brand]="link.brand" />{{ link.label }}</a
         >}
       </div>
     </div>

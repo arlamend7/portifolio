@@ -71,33 +71,32 @@ h1 em {
   color: var(--text-muted);
 }
 
+.home-technologies {
+  margin-bottom: 32px;
+}
 .experience-layout {
   display: grid;
-  grid-template-columns: minmax(0, 7fr) minmax(0, 4fr);
-  gap: 32px;
-  align-items: start;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 1fr);
+  gap: 20px 32px;
 }
-.recent-jobs {
+.experience-column {
   display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 3;
+  min-width: 0;
+}
+.recent-jobs,
+.certificate-list {
+  display: grid;
+  grid-auto-rows: 1fr;
   gap: 12px;
 }
 .subsection-title {
   font: 500 19px/28px var(--font-body);
-  margin-bottom: 20px;
 }
-.certificate-preview {
-  margin-top: 40px;
-}
-.subsection-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-  margin-bottom: 20px;
-}
-.subsection-header .subsection-title,
-.subsection-header .text-link {
-  margin: 0;
+.experience-column .text-link {
+  margin-top: 0;
+  align-self: start;
 }
 .sports-layout {
   display: grid;
@@ -163,10 +162,5 @@ h1 em {
   .hero-actions .button {
     width: 100%;
     justify-content: center;
-  }
-  .subsection-header {
-    align-items: start;
-    flex-direction: column;
-    gap: 12px;
   }
 }

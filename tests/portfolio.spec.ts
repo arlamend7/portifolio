@@ -251,7 +251,7 @@ test('home is a concise directory with employer deep links and individual Markdo
   );
   const technologyScroll = page.locator('#experience .technology-scroll');
   expect(
-    await technologyScroll.evaluate((element) => element.scrollHeight > element.clientHeight),
+    await technologyScroll.evaluate((element) => element.scrollWidth > element.clientWidth),
   ).toBe(true);
   await page.locator('#experience a[href="/work#gft"]').click();
   await expect(page.locator('#panel-gft')).toBeVisible();

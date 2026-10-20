@@ -22,7 +22,8 @@
           "en": "Professional connections",
           "pt": "Conexões profissionais",
           "fr": "Réseau professionnel"
-        }
+        },
+        "brand": "linkedin"
       },
       {
         "label": "GitHub",
@@ -32,7 +33,8 @@
           "en": "Code, libraries & collaboration",
           "pt": "Código, bibliotecas e colaboração",
           "fr": "Code, bibliothèques et collaboration"
-        }
+        },
+        "brand": "github"
       },
       {
         "label": "Email",
@@ -42,7 +44,8 @@
           "en": "Start a conversation",
           "pt": "Vamos conversar",
           "fr": "Parlons ensemble"
-        }
+        },
+        "brand": "gmail"
       },
       {
         "label": "Instagram",
@@ -52,7 +55,8 @@
           "en": "Life beyond the screen",
           "pt": "A vida além da tela",
           "fr": "La vie au-delà de l’écran"
-        }
+        },
+        "brand": "instagram"
       },
       {
         "label": "Steam",
@@ -62,17 +66,19 @@
           "en": "Let’s play together",
           "pt": "Vamos jogar juntos",
           "fr": "Jouons ensemble"
-        }
+        },
+        "brand": "steam"
       },
       {
-        "label": "Alura",
-        "icon": "school",
-        "url": "https://cursos.alura.com.br/user/arlan-mendes/fullCertificate/197ebca894560654cde4938a283b7c61",
+        "label": "Buy Me a Coffee",
+        "icon": "local_cafe",
+        "url": "https://buymeacoffee.com/arlamend7",
         "description": {
-          "en": "Learning & certificates",
-          "pt": "Aprendizado e certificados",
-          "fr": "Formation et certificats"
-        }
+          "en": "Support my work",
+          "pt": "Apoie meu trabalho",
+          "fr": "Soutenez mon travail"
+        },
+        "brand": "buymeacoffee"
       }
     ]
   },
@@ -296,6 +302,108 @@
       "5504fb0f-ed83-4746-89e6-5f9058c0e213",
       "fb0a2ac8-4f96-465f-b0c3-9e50af7d2dda",
       "b460322c-1111-47d1-85c4-138edfc624ef"
+    ],
+    "languageTests": [
+      {
+        "id": "english",
+        "language": {
+          "en": "English",
+          "pt": "Inglês",
+          "fr": "Anglais"
+        },
+        "test": "Avant STAMP 4S",
+        "date": "2022-07-22",
+        "summary": {
+          "en": "Composite score: 6.25. Results reflect the test taken in 2022.",
+          "pt": "Pontuação composta: 6,25. Resultados referentes ao teste realizado em 2022.",
+          "fr": "Score composite : 6,25. Résultats du test passé en 2022."
+        },
+        "scores": [
+          {
+            "label": {
+              "en": "Reading",
+              "pt": "Leitura",
+              "fr": "Compréhension écrite"
+            },
+            "value": "8 · Advanced Mid"
+          },
+          {
+            "label": {
+              "en": "Writing",
+              "pt": "Escrita",
+              "fr": "Expression écrite"
+            },
+            "value": "5 · Intermediate Mid"
+          },
+          {
+            "label": {
+              "en": "Listening",
+              "pt": "Compreensão oral",
+              "fr": "Compréhension orale"
+            },
+            "value": "6 · Intermediate High"
+          },
+          {
+            "label": {
+              "en": "Speaking",
+              "pt": "Expressão oral",
+              "fr": "Expression orale"
+            },
+            "value": "6 · Intermediate High"
+          }
+        ],
+        "pdf": "assets/documents/english-stamp-2022.pdf"
+      },
+      {
+        "id": "french",
+        "language": {
+          "en": "French",
+          "pt": "Francês",
+          "fr": "Français"
+        },
+        "test": "TCF Canada",
+        "date": "2026-07-24",
+        "summary": {
+          "en": "B2 in comprehension; B1 in expression. Valid until 30 July 2028.",
+          "pt": "B2 em compreensão; B1 em expressão. Válido até 30 de julho de 2028.",
+          "fr": "B2 en compréhension ; B1 en expression. Valable jusqu’au 30 juillet 2028."
+        },
+        "scores": [
+          {
+            "label": {
+              "en": "Reading",
+              "pt": "Leitura",
+              "fr": "Compréhension écrite"
+            },
+            "value": "472/699 · B2"
+          },
+          {
+            "label": {
+              "en": "Writing",
+              "pt": "Escrita",
+              "fr": "Expression écrite"
+            },
+            "value": "8/20 · B1"
+          },
+          {
+            "label": {
+              "en": "Listening",
+              "pt": "Compreensão oral",
+              "fr": "Compréhension orale"
+            },
+            "value": "498/699 · B2"
+          },
+          {
+            "label": {
+              "en": "Speaking",
+              "pt": "Expressão oral",
+              "fr": "Expression orale"
+            },
+            "value": "8/20 · B1"
+          }
+        ],
+        "pdf": "assets/documents/french-tcf-2026.pdf"
+      }
     ]
   },
   "sports": {
@@ -1039,7 +1147,14 @@
           "fr": "Sélectionné parmi dix employés brésiliens pour un programme international d’anglais aux États-Unis financé par GFT."
         }
       ],
-      "technologies": ["Angular", ".NET", "Azure", "Azure DevOps", "Microservices", "CQRS"],
+      "technologies": [
+        "Angular",
+        ".NET",
+        "Azure",
+        "Azure DevOps",
+        "Microservices",
+        "CQRS"
+      ],
       "projectIds": []
     },
     {
@@ -1111,7 +1226,13 @@
           "fr": "J’ai combiné la conception architecturale avec des bibliothèques, des modèles et de la documentation pratiques pour faciliter la mise en œuvre."
         }
       ],
-      "technologies": ["Angular", "ASP.NET Web API", "Azure", "Microservices", "Multi-tenancy"],
+      "technologies": [
+        "Angular",
+        "ASP.NET Web API",
+        "Azure",
+        "Microservices",
+        "Multi-tenancy"
+      ],
       "projectIds": []
     },
     {
