@@ -115,7 +115,6 @@ const sportsPhotoSchema = v.object({
   src: v.string(),
   alt: localizedTextSchema,
   caption: localizedTextSchema,
-  sourceUrl: externalUrlSchema,
 });
 export type SportsPhotoContent = v.InferOutput<typeof sportsPhotoSchema>;
 
@@ -145,7 +144,6 @@ export const portfolioSchema = v.pipe(
     profile: v.object({
       name: v.string(),
       tagline: localizedTextSchema,
-      location: v.string(),
       summary: localizedTextSchema,
       socialLinks: v.array(
         v.object({

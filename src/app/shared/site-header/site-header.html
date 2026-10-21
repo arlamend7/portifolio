@@ -33,11 +33,19 @@
       <button
         type="button"
         class="icon-button"
-        [attr.aria-label]="'preferences.open' | translate"
-        (click)="preferencesRequested.emit()"
+        [attr.aria-label]="(theme.theme() === 'dark' ? 'preferences.switchLight' : 'preferences.switchDark') | translate"
+        (click)="toggleTheme()"
       >
-        <app-icon name="tune" />
+        <app-icon [name]="theme.theme() === 'dark' ? 'light_mode' : 'dark_mode'" />
       </button>
+      <input
+        class="accent-picker"
+        type="color"
+        [value]="theme.accent()"
+        [attr.aria-label]="'preferences.accent' | translate"
+        [title]="'preferences.accent' | translate"
+        (input)="changeAccent($event)"
+      />
     </div>
   </div>
 </header>

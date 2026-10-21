@@ -102,3 +102,26 @@ nav a.active {
     gap: 4px;
   }
 }
+
+.accent-picker {
+  appearance: none;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  background: transparent;
+}
+.accent-picker::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+.accent-picker::-webkit-color-swatch {
+  border: 0;
+  border-radius: 50%;
+}
+.accent-picker::-moz-color-swatch {
+  border: 0;
+  border-radius: 50%;
+}

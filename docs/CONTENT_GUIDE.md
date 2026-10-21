@@ -31,7 +31,20 @@ The name and ID are derived from the URL. You can supply `id`, `name`, and local
 
 These URLs are examples. Replace them with your actual library links. A `null` URL is only for an existing named package whose link has not been supplied yet; it is displayed without a fake clickable destination.
 
-### A project: a local Markdown document
+### A project: one folder, three languages
+
+Each project has a folder under `src/assets/projects/{project-id}/`:
+
+```text
+voar-prime/
+  voar-prime.en.md
+  voar-prime.pt.md
+  voar-prime.fr.md
+  images/
+    .gitkeep
+```
+
+Edit each language independently. English originals were preserved during migration; translated templates contain no invented project facts. The site's language selector switches the document automatically.
 
 ```json
 {
@@ -40,28 +53,26 @@ These URLs are examples. Replace them with your actual library links. A `null` U
   "name": "Voar Prime",
   "description": {
     "en": "Your description",
-    "pt": null,
-    "fr": null
+    "pt": "Sua descrição",
+    "fr": "Votre description"
   },
   "markdown": {
-    "en": "assets/voar-prime.md",
-    "pt": null,
-    "fr": null
+    "en": "assets/projects/voar-prime/voar-prime.en.md",
+    "pt": "assets/projects/voar-prime/voar-prime.pt.md",
+    "fr": "assets/projects/voar-prime/voar-prime.fr.md"
   }
 }
 ```
 
-Write the full document in `src/assets/voar-prime.md`. It is served at `/assets/voar-prime.md` and rendered at `/projects/voar-prime`. No component changes are required.
-
-For translations, create files such as `src/assets/pt/voar-prime.md` and `src/assets/fr/voar-prime.md`, then set the corresponding JSON paths. Until those files exist, leave their paths `null`; the reader displays the English document with a translated fallback notice.
-
-Relative assets resolve against the Markdown file:
+The reader route remains `/projects/voar-prime`. Add your images to that project's `images/` folder and reference them in any of its documents:
 
 ```md
-![Architecture diagram](images/voar-prime-architecture.svg)
+![Architecture diagram](images/architecture.svg)
 ```
 
-For `assets/voar-prime.md`, place that image at `src/assets/images/voar-prime-architecture.svg`. Use a meaningful alt description. A link to another Markdown file is a normal asset link; use `/projects/project-id` when you want a link to another portfolio reader page.
+Translate the image's alternative text in each language. The image file is shared between all three documents. Images placed directly beside a document also work: `![Description](screenshot.png)`. Use portfolio routes such as `/projects/project-id` for links to other project pages.
+
+All displayed localized fields must have EN, PT and FR values. The content tests reject missing translations and missing document files. Project names, library identifiers and official event names remain their original proper names.
 
 ### Attach a project to an employer
 
@@ -135,9 +146,9 @@ The home sections follow this order: capabilities, recognition, experience/certi
 
 Each `home.capabilities` entry has a stable, semantic ID and a localized `markdown` object, with the same rules as project documentation. Its route is `/capabilities/{id}`. The three starting templates are:
 
-- `src/assets/capabilities/performance-engineering.md`
-- `src/assets/capabilities/end-to-end-delivery.md`
-- `src/assets/capabilities/business-and-engineering.md`
+- `src/assets/capabilities/performance-engineering/performance-engineering.en.md`
+- `src/assets/capabilities/end-to-end-delivery/end-to-end-delivery.en.md`
+- `src/assets/capabilities/business-and-engineering/business-and-engineering.en.md`
 
 These are writing prompts, not completed case studies. Replace the bracketed prompts with your own examples and evidence. Set `markdown.pt` and `markdown.fr` when translated files are ready. Capability cards have no icons or secondary footer. Recognition cards use `selection.label` and `selection.value` in their header.
 
@@ -165,3 +176,5 @@ See `docs/CERTIFICATE_SOURCES.md` for the initial catalog provenance. Learning p
 ### Connections
 
 `profile.socialLinks` drives the connection cards and footer links. Each entry contains `label`, `icon`, localized `description`, and `url`. Use HTTPS for profiles or a plain `mailto:address` for email. Email opens the user's email handler; profiles open a new tab. The same validation does not permit email links as library or certificate URLs.
+
+Capability documents follow the same naming convention: `src/assets/capabilities/{id}/{id}.{language}.md`, with a shared `images/` folder.

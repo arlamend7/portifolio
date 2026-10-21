@@ -1,4 +1,5 @@
-import { ChangeDetectionStrategy, Component, inject, input, output } from '@angular/core';
+import { ThemeStore } from '../../core/preferences/theme-store';
+import { ChangeDetectionStrategy, Component, inject, input } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
 import { Portfolio } from '../../core/content/portfolio.schema';
@@ -15,7 +16,15 @@ import { Icon } from '../icon/icon';
 })
 export class SiteHeader {
   readonly profile = input.required<Portfolio['profile']>();
-  readonly preferencesRequested = output<void>();
+  protected readonly theme = inject(ThemeStore);
+
+  protected toggleTheme(): void {
+    this.theme.select(this.theme.theme() === 'dark' ? 'light' : 'dark');
+  }
+
+  protected changeAccent(event: Event): void {
+    if (event.target instanceof HTMLInputElement) this.theme.changeAccent(event.target.value);
+  }
   protected readonly locale = inject(LocaleStore);
   protected readonly activeOptions = {
     paths: 'exact',

@@ -1,7 +1,7 @@
 # Refactor plan and acceptance criteria
 
 1. Audit and toolchain: preserve a backup; upgrade to Angular 22.2.3, TypeScript 6, Node 24 LTS. Remove obsolete styling/import dependencies.
-2. Content contracts: validated discriminated package/project types, localized editorial content, EN/PT/FR UI dictionaries, explicit English fallback. Packages only require a URL. Project documents live at assets/{slug}.md.
+2. Content contracts: validated discriminated package/project types, localized editorial content, EN/PT/FR UI dictionaries, explicit English fallback. Packages only require a URL. Project documents live at assets/projects/{slug}/{slug}.{language}.md.
 3. Architecture: lazy-loaded pages; focused shared header/footer, section heading, content cards, employer accordion and Markdown reader; signals, OnPush and managed subscriptions.
 4. Markdown: current markdown-it and highlight.js, disabled raw HTML, validated links/images, stable unique heading anchors, code copying, loading/error/empty states. Keep the reader reusable and independent of page routing.
 5. Verification: strict production build, formatting/linting, unit tests for content and Markdown, browser tests for navigation, language/theme persistence, responsive layouts and accessibility. Document editing and extension workflows.

@@ -8,13 +8,5 @@
   />
   <figcaption>
     <span>{{ photo().caption | localize: locale.current() }}</span>
-    <a
-      [href]="photo().sourceUrl"
-      target="_blank"
-      rel="noopener noreferrer"
-      [attr.aria-label]="('sports.viewPhoto' | translate) + ' — ' + ('common.external' | translate)"
-    >
-      {{ 'sports.viewPhoto' | translate }} <app-icon name="open_in_new" />
-    </a>
   </figcaption>
 </figure>

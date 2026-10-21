@@ -45,7 +45,7 @@ src/
     i18n/fr.json
     themes/_tokens.scss
     images/
-    voar-prime.md
+    projects/voar-prime/voar-prime.{en,pt,fr}.md
   styles/            # Base layout and scoped rendered-Markdown styles
 ```
 
@@ -59,10 +59,10 @@ Read [the content guide](docs/CONTENT_GUIDE.md) for complete examples.
 - **Interface translations:** `src/assets/i18n/{en,pt,fr}.json`.
 - **Personal translations:** each editorial value has `en`, `pt` and `fr` fields. Missing translations explicitly fall back to English.
 - **Packages:** provide an HTTPS library URL. A name is inferred from it unless you supply one. Packages always open their external URL; they do not create README pages.
-- **Projects:** create `src/assets/{project}.md` and reference it in a project entry. Optional translated Markdown paths are supported.
+- **Projects:** create `src/assets/projects/{project}/{project}.{language}.md` for EN, PT and FR, plus an `images/` folder, and reference each file in the JSON entry.
 - **Employer projects:** add project IDs to an employer's `projectIds`; the same project is reused by the company card, catalog and detail page.
 
-Voar Prime has a placeholder document at `src/assets/voar-prime.md`. Its employer, description and work details have not been invented. The existing library names remain with `url: null` until their actual links are supplied. Empty employer project lists show a pending state.
+All projects and capability documents have separate EN/PT/FR files. Fill in the translated templates with your verified details; project images live beside the documents in each folder’s `images/` directory.
 
 ## Markdown
 
@@ -93,3 +93,5 @@ See [architecture and verification notes](docs/ARCHITECTURE.md) and the [complet
 Angular Material was not needed: the existing design is preserved with SCSS tokens, semantic controls and a native modal dialog. This avoids a second visual system and unnecessary component dependencies. The only global content styles are scoped to `.markdown-content`; ordinary components use Angular style encapsulation.
 
 Reference fonts and the illustrative sports image still use their original external providers. Replace the image in the JSON when the real photograph is supplied. The decorative cadence bars do not represent measured performance.
+
+Header controls switch light/dark mode and set the accent color independently. Public language-test PDFs have personal identifiers redacted; originals remain outside this repository.

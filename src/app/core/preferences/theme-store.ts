@@ -3,7 +3,7 @@ import { Injectable, effect, inject, signal } from '@angular/core';
 import { accentTextColor, isAccentColor } from './accent-color';
 import { BrowserStorage } from './browser-storage';
 
-export type Theme = 'light' | 'dark' | 'custom';
+export type Theme = 'light' | 'dark';
 
 @Injectable({ providedIn: 'root' })
 export class ThemeStore {
@@ -11,6 +11,8 @@ export class ThemeStore {
   private readonly document = inject(DOCUMENT);
   private readonly selectedTheme = signal<Theme>(this.readTheme());
   private readonly selectedAccent = signal(this.readAccent());
+
+  private readonly customAccent = signal(isAccentColor(this.storage.read('accent')));
 
   readonly theme = this.selectedTheme.asReadonly();
   readonly accent = this.selectedAccent.asReadonly();
@@ -21,19 +23,20 @@ export class ThemeStore {
       root.dataset['theme'] = this.theme();
       root.style.setProperty('--custom-accent', this.accent());
       root.style.setProperty('--custom-on-accent', accentTextColor(this.accent()));
-      this.storage.write('theme', this.theme());
-      this.storage.write('accent', this.accent());
+      root.dataset['customAccent'] = String(this.customAccent());
     });
   }
 
   select(theme: Theme): void {
+    this.storage.write('theme', theme);
     this.selectedTheme.set(theme);
   }
 
   changeAccent(value: string): void {
     if (!isAccentColor(value)) return;
+    this.storage.write('accent', value);
     this.selectedAccent.set(value);
-    this.selectedTheme.set('custom');
+    this.customAccent.set(true);
   }
 
   private readAccent(): string {
@@ -43,6 +46,6 @@ export class ThemeStore {
 
   private readTheme(): Theme {
     const saved = this.storage.read('theme');
-    return saved === 'dark' || saved === 'custom' ? saved : 'light';
+    return saved === 'dark' ? 'dark' : 'light';
   }
 }

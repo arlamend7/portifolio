@@ -35,8 +35,10 @@
   --border: #4c6658;
   --header-bg: #101c17ed;
 }
-:root[data-theme='custom'] {
+:root[data-custom-accent='true'] {
   --brand: var(--custom-accent, #245b45);
+  --accent: color-mix(in srgb, var(--custom-accent) 65%, var(--text));
+  --accent-soft: color-mix(in srgb, var(--custom-accent) 20%, var(--surface));
   --on-brand: var(--custom-on-accent, #fff);
 }
 @media (max-width: 640px) {

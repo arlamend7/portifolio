@@ -91,7 +91,9 @@
     "language": "Language",
     "en": "English",
     "pt": "Português",
-    "fr": "Français"
+    "fr": "Français",
+    "switchLight": "Switch to light mode",
+    "switchDark": "Switch to dark mode"
   },
   "footer": {
     "signature": "Engineering • Athletics • Open Source",
@@ -102,7 +104,6 @@
     "title": "Sports achievements",
     "journeyTitle": "My sporting journey",
     "viewAll": "View all achievements",
-    "viewPhoto": "View photo on Instagram",
     "browseYears": "Browse achievements by year",
     "eventResults": "Results by event"
   },

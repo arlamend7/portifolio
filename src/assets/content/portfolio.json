@@ -7,7 +7,6 @@
       "pt": "Engenheiro de Software e Atleta Competitivo",
       "fr": "Ingénieur logiciel et athlète de compétition"
     },
-    "location": "Regina, SK, Canada",
     "summary": {
       "en": "Bridging enterprise systems architecture and endurance athletic rigor.",
       "pt": "Unindo a arquitetura de sistemas corporativos ao rigor dos esportes de resistência.",
@@ -48,17 +47,6 @@
         "brand": "gmail"
       },
       {
-        "label": "Instagram",
-        "icon": "photo_camera",
-        "url": "https://www.instagram.com/arlamend7/",
-        "description": {
-          "en": "Life beyond the screen",
-          "pt": "A vida além da tela",
-          "fr": "La vie au-delà de l’écran"
-        },
-        "brand": "instagram"
-      },
-      {
         "label": "Steam",
         "icon": "sports_esports",
         "url": "https://steamcommunity.com/profiles/76561198277951568/",
@@ -90,14 +78,9 @@
         "fr": "Cycle complet de livraison"
       },
       {
-        "en": "SQL & C#/.NET & Angular",
-        "pt": "SQL e C#/.NET e Angular",
-        "fr": "SQL, C#/.NET et Angular"
-      },
-      {
-        "en": "State Champion & World Aquathlon Qualifier",
-        "pt": "Campeão estadual e classificado para o Mundial de Aquatlo",
-        "fr": "Champion régional et qualifié pour les Championnats du monde d’aquathlon"
+        "en": ".NET • Angular • Flutter",
+        "pt": ".NET • Angular • Flutter",
+        "fr": ".NET • Angular • Flutter"
       }
     ],
     "eyebrow": {
@@ -121,19 +104,14 @@
       "fr": "Je relie les besoins métier à la réalisation technique, de l’analyse des solutions et de l’architecture au développement, à l’assurance qualité, à la documentation et à la coordination d’équipes."
     },
     "stack": {
-      "en": "C# • .NET • Angular",
-      "pt": "C# • .NET • Angular",
-      "fr": "C# • .NET • Angular"
+      "en": ".NET • Angular • Flutter",
+      "pt": ".NET • Angular • Flutter",
+      "fr": ".NET • Angular • Flutter"
     },
     "stackDescription": {
       "en": "Enterprise systems, databases & APIs",
       "pt": "Sistemas corporativos, bancos de dados e APIs",
       "fr": "Systèmes d’entreprise, bases de données et API"
-    },
-    "sportsSummary": {
-      "en": "State Champion • World Championship Qualifier (2017)",
-      "pt": "Campeão estadual • Classificado para o Mundial (2017)",
-      "fr": "Champion régional • Qualifié pour les Championnats du monde (2017)"
     },
     "capabilities": [
       {
@@ -382,7 +360,12 @@
           "fr": "Test passé à l’Alliance française · Belo Horizonte"
         }
       }
-    ]
+    ],
+    "sportsSummary": {
+      "en": "State Champion • World Championship Qualifier (2017)",
+      "pt": "Campeão estadual • Classificado para o Mundial (2017)",
+      "fr": "Champion régional • Qualifié pour les Championnats du monde (2017)"
+    }
   },
   "sports": {
     "introduction": {
@@ -406,8 +389,7 @@
         "en": "Photo: Wagner Araujo / International Triathlon Union.",
         "pt": "Foto: Wagner Araujo / International Triathlon Union.",
         "fr": "Photo : Wagner Araujo / International Triathlon Union."
-      },
-      "sourceUrl": "https://www.instagram.com/p/BYO-ilggp-Y45XkLsN76s8EI4nSJKmAODq-uXY0/"
+      }
     },
     "highlightIds": [
       "world-qualification-2017",
@@ -421,19 +403,19 @@
         "icon": "public",
         "year": 2017,
         "title": {
-          "en": "World Aquathlon Championship qualifier",
-          "pt": "Classificado para o Campeonato Mundial de Aquatlo",
-          "fr": "Qualifié pour les Championnats du monde d’aquathlon"
+          "en": "World Aquathlon Championship",
+          "pt": "Campeonato Mundial de Aquatlo",
+          "fr": "Championnats du monde d’aquathlon"
         },
         "result": {
-          "en": "Qualified",
-          "pt": "Classificado",
-          "fr": "Qualifié"
+          "en": "21st overall · 5th Junior Elite",
+          "pt": "21º geral · 5º na elite júnior",
+          "fr": "21e au classement général · 5e en élite junior"
         },
         "description": {
-          "en": "Qualified for the World Aquathlon Championship in Penticton, Canada, scheduled for August 2017.",
-          "pt": "Classificado para o Campeonato Mundial de Aquatlo em Penticton, Canadá, previsto para agosto de 2017.",
-          "fr": "Qualifié pour les Championnats du monde d’aquathlon à Penticton, au Canada, prévus en août 2017."
+          "en": "Finished 21st overall and 5th in Junior Elite at the World Aquathlon Championship in Penticton, Canada, in August 2017.",
+          "pt": "Conquistei o 21º lugar geral e o 5º lugar na elite júnior no Campeonato Mundial de Aquatlo em Penticton, Canadá, em agosto de 2017.",
+          "fr": "21e au classement général et 5e en élite junior aux Championnats du monde d’aquathlon à Penticton, au Canada, en août 2017."
         }
       },
       {
@@ -1619,99 +1601,9 @@
   "initialCompanyId": "techinnov",
   "technologies": [
     {
-      "id": "angular",
-      "name": "Angular",
-      "icon": "web"
-    },
-    {
-      "id": "typescript",
-      "name": "TypeScript",
-      "icon": "code"
-    },
-    {
-      "id": "c",
-      "name": "C#",
-      "icon": "code"
-    },
-    {
-      "id": "net",
-      "name": ".NET",
-      "icon": "deployed_code"
-    },
-    {
-      "id": "net-framework",
-      "name": ".NET Framework",
-      "icon": "deployed_code"
-    },
-    {
-      "id": "mvc",
-      "name": "MVC",
-      "icon": "account_tree"
-    },
-    {
-      "id": "sql-server",
-      "name": "SQL Server",
-      "icon": "database"
-    },
-    {
-      "id": "entity-framework",
-      "name": "Entity Framework",
-      "icon": "database"
-    },
-    {
-      "id": "playwright",
-      "name": "Playwright",
-      "icon": "fact_check"
-    },
-    {
-      "id": "itextsharp",
-      "name": "iTextSharp",
-      "icon": "description"
-    },
-    {
-      "id": "azure-speech-services",
-      "name": "Azure speech services",
-      "icon": "record_voice_over"
-    },
-    {
       "id": "azure",
       "name": "Azure",
       "icon": "cloud"
-    },
-    {
-      "id": "azure-devops",
-      "name": "Azure DevOps",
-      "icon": "cloud_sync"
-    },
-    {
-      "id": "microservices",
-      "name": "Microservices",
-      "icon": "hub"
-    },
-    {
-      "id": "cqrs",
-      "name": "CQRS",
-      "icon": "account_tree"
-    },
-    {
-      "id": "asp-net-web-api",
-      "name": "ASP.NET Web API",
-      "icon": "api"
-    },
-    {
-      "id": "multi-tenancy",
-      "name": "Multi-tenancy",
-      "icon": "domain"
-    },
-    {
-      "id": "delphi",
-      "name": "Delphi",
-      "icon": "code"
-    },
-    {
-      "id": "angularjs",
-      "name": "AngularJS",
-      "icon": "web"
     },
     {
       "id": "aws",
@@ -1719,34 +1611,14 @@
       "icon": "cloud"
     },
     {
-      "id": "jest",
-      "name": "Jest",
-      "icon": "fact_check"
+      "id": "azure-speech-services",
+      "name": "Azure speech services",
+      "icon": "record_voice_over"
     },
     {
-      "id": "cypress",
-      "name": "Cypress",
-      "icon": "fact_check"
-    },
-    {
-      "id": "protractor",
-      "name": "Protractor",
-      "icon": "fact_check"
-    },
-    {
-      "id": "kibana",
-      "name": "Kibana",
-      "icon": "monitoring"
-    },
-    {
-      "id": "docker",
-      "name": "Docker",
-      "icon": "deployed_code"
-    },
-    {
-      "id": "mongodb",
-      "name": "MongoDB",
-      "icon": "database"
+      "id": "google-maps",
+      "name": "Google Maps",
+      "icon": "map"
     },
     {
       "id": "firestore",
@@ -1754,9 +1626,19 @@
       "icon": "database"
     },
     {
-      "id": "google-maps",
-      "name": "Google Maps",
-      "icon": "map"
+      "id": "azure-devops",
+      "name": "Azure DevOps",
+      "icon": "cloud_sync"
+    },
+    {
+      "id": "docker",
+      "name": "Docker",
+      "icon": "deployed_code"
+    },
+    {
+      "id": "kibana",
+      "name": "Kibana",
+      "icon": "monitoring"
     },
     {
       "id": "jira",
@@ -1774,13 +1656,113 @@
       "icon": "forum"
     },
     {
+      "id": "git",
+      "name": "Git",
+      "icon": "fork_right"
+    },
+    {
+      "id": "sql-server",
+      "name": "SQL Server",
+      "icon": "database"
+    },
+    {
+      "id": "mongodb",
+      "name": "MongoDB",
+      "icon": "database"
+    },
+    {
+      "id": "microservices",
+      "name": "Microservices",
+      "icon": "hub"
+    },
+    {
+      "id": "cqrs",
+      "name": "CQRS",
+      "icon": "account_tree"
+    },
+    {
+      "id": "multi-tenancy",
+      "name": "Multi-tenancy",
+      "icon": "domain"
+    },
+    {
+      "id": "mvc",
+      "name": "MVC",
+      "icon": "account_tree"
+    },
+    {
+      "id": "net",
+      "name": ".NET",
+      "icon": "deployed_code"
+    },
+    {
+      "id": "net-framework",
+      "name": ".NET Framework",
+      "icon": "deployed_code"
+    },
+    {
+      "id": "asp-net-web-api",
+      "name": "ASP.NET Web API",
+      "icon": "api"
+    },
+    {
+      "id": "angular",
+      "name": "Angular",
+      "icon": "web"
+    },
+    {
+      "id": "angularjs",
+      "name": "AngularJS",
+      "icon": "web"
+    },
+    {
       "id": "flutter",
       "name": "Flutter",
       "icon": "phone_android"
     },
     {
-      "id": "dart",
-      "name": "Dart",
+      "id": "entity-framework",
+      "name": "Entity Framework",
+      "icon": "database"
+    },
+    {
+      "id": "nhibernate",
+      "name": "NHibernate",
+      "icon": "database"
+    },
+    {
+      "id": "itextsharp",
+      "name": "iTextSharp",
+      "icon": "description"
+    },
+    {
+      "id": "playwright",
+      "name": "Playwright",
+      "icon": "fact_check"
+    },
+    {
+      "id": "jest",
+      "name": "Jest",
+      "icon": "fact_check"
+    },
+    {
+      "id": "cypress",
+      "name": "Cypress",
+      "icon": "fact_check"
+    },
+    {
+      "id": "protractor",
+      "name": "Protractor",
+      "icon": "fact_check"
+    },
+    {
+      "id": "c",
+      "name": "C#",
+      "icon": "code"
+    },
+    {
+      "id": "typescript",
+      "name": "TypeScript",
       "icon": "code"
     },
     {
@@ -1789,14 +1771,14 @@
       "icon": "code"
     },
     {
-      "id": "git",
-      "name": "Git",
-      "icon": "fork_right"
+      "id": "dart",
+      "name": "Dart",
+      "icon": "code"
     },
     {
-      "id": "nhibernate",
-      "name": "NHibernate",
-      "icon": "database"
+      "id": "delphi",
+      "name": "Delphi",
+      "icon": "code"
     }
   ],
   "certificates": [

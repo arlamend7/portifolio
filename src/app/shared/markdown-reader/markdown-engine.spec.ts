@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { renderMarkdown, resolveMarkdownUrl } from './markdown-engine';
 
-const baseUrl = 'https://portfolio.example/assets/voar-prime.md';
+const baseUrl = 'https://portfolio.example/assets/projects/voar-prime/voar-prime.fr.md';
 
 describe('Markdown rendering boundary', () => {
   it('renders tables and code, preserves copy text, and makes unique heading anchors', () => {
@@ -38,7 +38,9 @@ describe('Markdown rendering boundary', () => {
       baseUrl,
       'Copy',
     );
-    expect(result.html).toContain('src="https://portfolio.example/assets/images/diagram.svg"');
+    expect(result.html).toContain(
+      'src="https://portfolio.example/assets/projects/voar-prime/images/diagram.svg"',
+    );
     expect(result.html).toContain('rel="noopener noreferrer"');
     expect(result.html).toContain('href="#readme-heading"');
   });

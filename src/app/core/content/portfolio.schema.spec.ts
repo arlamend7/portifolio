@@ -18,6 +18,37 @@ function keys(value: object, prefix = ''): string[] {
 }
 
 describe('Portfolio content contract', () => {
+  it('has complete translations and dedicated locale files for every document', () => {
+    function check(value: unknown, path = 'content'): void {
+      if (Array.isArray(value)) {
+        value.forEach((item, i) => check(item, `${path}[${i}]`));
+        return;
+      }
+      if (!value || typeof value !== 'object') return;
+      const record = value as Record<string, unknown>;
+      if (typeof record['en'] === 'string') {
+        for (const language of ['en', 'pt', 'fr']) {
+          expect(typeof record[language], `${path}.${language}`).toBe('string');
+          if (record['en'].trim())
+            expect(String(record[language]).trim(), `${path}.${language}`).not.toBe('');
+        }
+      } else Object.entries(record).forEach(([key, item]) => check(item, `${path}.${key}`));
+    }
+    check(content);
+    for (const item of [
+      ...content.projects.filter((item) => item.kind === 'project'),
+      ...content.home.capabilities,
+    ]) {
+      const documents = item.markdown!;
+      for (const language of ['en', 'pt', 'fr'] as const) {
+        const path = documents[language]!;
+        expect(path.endsWith(`${item.id}.${language}.md`)).toBe(true);
+        expect(existsSync(resolve('src', path))).toBe(true);
+        expect(existsSync(resolve('src', path, '..', 'images'))).toBe(true);
+      }
+    }
+  });
+
   it('validates supplied content and all configured Markdown files', () => {
     const result = parse(portfolioSchema, content);
     expect(existsSync(resolve('src', result.sports.image.src))).toBe(true);

@@ -21,6 +21,9 @@ import { ChangeDetectionStrategy, Component, input } from '@angular/core';
     }
     span {
       font-size: 20px;
+      width: 20px;
+      height: 20px;
+      overflow: hidden;
     }
     .brand-icon {
       display: block;

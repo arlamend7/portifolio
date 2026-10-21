@@ -40,9 +40,7 @@ test('shared layout, single-open employers, deep links and close-all persistence
   expect(errors).toEqual([]);
 });
 
-test('EN/PT/FR and theme preferences persist; one accessible dialog is shared', async ({
-  page,
-}) => {
+test('EN/PT/FR and header theme controls persist', async ({ page }) => {
   await page.goto('/');
   await page.getByRole('button', { name: 'FR', exact: true }).click();
   await expect(page.locator('html')).toHaveAttribute('lang', 'fr');
@@ -57,12 +55,10 @@ test('EN/PT/FR and theme preferences persist; one accessible dialog is shared', 
     page.getByRole('heading', { name: 'Experiência profissional', exact: true }),
   ).toBeVisible();
   await page.getByRole('button', { name: 'EN', exact: true }).click();
-  await page.getByRole('button', { name: 'Reading preferences and display settings' }).click();
-  await expect(page.locator('dialog')).toHaveCount(1);
-  await page.getByRole('button', { name: 'Dark', exact: true }).click();
+  await page.getByRole('button', { name: 'Switch to dark mode' }).click();
   await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
-  await page.keyboard.press('Escape');
-  await expect(page.getByRole('dialog')).toBeHidden();
+  await page.getByLabel('Accent color', { exact: true }).fill('#336699');
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
   await page.reload();
   await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
   await page.screenshot({ path: 'test-results/dark-theme.png', fullPage: true });
@@ -89,7 +85,7 @@ test('packages use external links; company projects share the Markdown reader', 
   await page.route('**/assets/projects/voar-prime/voar-prime.*.md', (route) =>
     route.fulfill({ contentType: 'text/markdown', body: markdownFixture }),
   );
-  await page.route('**/assets/images/test.svg', (route) =>
+  await page.route('**/assets/projects/voar-prime/images/test.svg', (route) =>
     route.fulfill({
       contentType: 'image/svg+xml',
       body: '<svg xmlns="http://www.w3.org/2000/svg" width="100" height="60"><rect width="100" height="60" fill="green"/></svg>',
@@ -97,20 +93,23 @@ test('packages use external links; company projects share the Markdown reader', 
   );
   await page.goto('/');
   const catalog = page.locator('#ecosystem');
-  await expect(catalog.getByRole('link', { name: /libs-csharp/ })).toHaveAttribute(
+  await expect(catalog.getByRole('link', { name: /route_definer/ })).toHaveAttribute(
     'href',
     'https://example.org/library',
   );
   await catalog.getByRole('link', { name: 'View all projects' }).click();
-  await page.getByRole('link', { name: /Read documentation/ }).click();
+  await page.locator('a[href="/projects/voar-prime"]').click();
   await expect(page).toHaveURL(/projects\/voar-prime/);
   await expect(page.locator('.markdown-content table')).toBeVisible();
   await page.goto('/projects');
-  await expect(page.getByRole('link', { name: /libs-csharp/ })).toHaveAttribute(
+  await expect(page.getByRole('link', { name: /route_definer/ })).toHaveAttribute(
     'href',
     'https://example.org/library',
   );
-  await expect(page.getByRole('link', { name: /libs-csharp/ })).toHaveAttribute('target', '_blank');
+  await expect(page.getByRole('link', { name: /route_definer/ })).toHaveAttribute(
+    'target',
+    '_blank',
+  );
   await page.goto('/work#techinnov');
   await page
     .locator('#panel-techinnov')
@@ -120,7 +119,7 @@ test('packages use external links; company projects share the Markdown reader', 
   await expect(page.locator('.markdown-content table')).toBeVisible();
   await expect(page.locator('.markdown-content img')).toHaveAttribute(
     'src',
-    /assets\/images\/test.svg/,
+    /assets\/projects\/voar-prime\/images\/test.svg/,
   );
   await expect(page.locator('#readme-features-1')).toBeVisible();
   await expect(page.locator('.markdown-content script')).toHaveCount(0);
@@ -154,9 +153,9 @@ test('sports highlights open the complete record with a local photo and translat
 }) => {
   await page.goto('/');
   await expect(page.locator('#sports app-sports-achievement')).toHaveCount(
-    Math.min(2, portfolio.sports.highlightIds.length),
+    Math.min(3, portfolio.sports.highlightIds.length),
   );
-  await page.getByRole('link', { name: 'Explore all achievements', exact: false }).click();
+  await page.getByRole('link', { name: 'View all achievements', exact: false }).click();
   await expect(page).toHaveURL(/\/sports$/);
   await expect(
     page.getByRole('heading', { name: 'Sports achievements', exact: true }),
@@ -301,4 +300,33 @@ test('certificate catalog combines search and filters and retains verified crede
   await expect(catalog.locator('app-certificate-card')).toHaveCount(2);
   await page.getByRole('button', { name: 'FR', exact: true }).click();
   await expect(catalog.getByLabel('Rechercher des certificats')).toBeVisible();
+});
+
+test('localized documents switch in place and header controls keep accent across themes', async ({
+  page,
+}) => {
+  await page.goto('/projects/techinnov-account-management-platform');
+  for (const [locale, heading] of [
+    ['EN', 'Overview'],
+    ['PT', 'Visão geral'],
+    ['FR', 'Vue d’ensemble'],
+  ]) {
+    await page.getByRole('button', { name: locale, exact: true }).click();
+    await expect(
+      page.locator('.markdown-content').getByRole('heading', { name: heading, exact: true }),
+    ).toBeVisible();
+  }
+  await page.goto('/');
+  await expect(page.locator('a[href*="instagram.com"]')).toHaveCount(0);
+  await expect(page.locator('body')).not.toContainText('Regina, SK, Canada');
+  await page.getByRole('button', { name: 'EN', exact: true }).click();
+  await page.getByRole('button', { name: 'Switch to dark mode', exact: true }).click();
+  await page.getByLabel('Accent color', { exact: true }).fill('#356a9a');
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
+  await page.getByRole('button', { name: 'Switch to light mode', exact: true }).click();
+  await page.reload();
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'light');
+  await expect(page.getByLabel('Accent color', { exact: true })).toHaveValue('#356a9a');
+  await expect(page.locator('dialog')).toHaveCount(0);
+  await expect(page.locator('#experience .technology-scroll li').first()).toContainText('Azure');
 });
