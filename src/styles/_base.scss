@@ -2,7 +2,8 @@
   box-sizing: border-box;
 }
 html {
-  scroll-padding-top: 150px;
+  scroll-behavior: smooth;
+  scroll-padding-top: 250px;
 }
 body {
   margin: 0;
