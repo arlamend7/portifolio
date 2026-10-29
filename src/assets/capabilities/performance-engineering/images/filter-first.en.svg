@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" role="img" aria-labelledby="t d" xmlns:c2pa="http://c2pa.org/manifest">
+  <title id="t">Filter first: same result, about 99% less time</title>
+  <desc id="d">Before: join all tables, calculate fields for every row and filter at the end, so every step handles millions of rows. After: filter first and keep only the IDs for one page, then join and calculate for those rows only.</desc>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#245b45"/></marker>
+  </defs>
+  <style>
+    .f{font-family:Arial,Helvetica,sans-serif}
+    .h{font-size:22px;font-weight:bold;fill:#1a1c1b}
+    .b{font-size:16px;fill:#1a1c1b}
+    .s{font-size:13px;fill:#414844}
+    .box{fill:#f4f4f2;stroke:#c1c8c3;stroke-width:1.5}
+    .vol{fill:#245b45}
+    .arr{stroke:#245b45;stroke-width:2.2}
+  </style>
+  <rect width="900" height="640" fill="#f9f9f7"/>
+  <g class="f" text-anchor="middle">
+    <text x="450" y="58" font-size="32" font-weight="bold" fill="#1a1c1b">Filter first</text>
+    <text x="450" y="90" class="s" font-size="15">The green bar shows how much data each step handles</text>
+
+    <text x="225" y="140" class="h">Before</text>
+    <text x="675" y="140" class="h">After</text>
+
+    <!-- BEFORE -->
+    <rect class="box" x="45" y="160" width="360" height="70" rx="8"/><text x="225" y="190" class="b">Join all related tables</text>
+    <rect class="vol" x="65" y="206" width="320" height="10" rx="3"/><text x="225" y="246" class="s">millions of rows</text>
+    <line class="arr" x1="225" y1="252" x2="225" y2="266" marker-end="url(#a)"/>
+    <rect class="box" x="45" y="272" width="360" height="70" rx="8"/><text x="225" y="302" class="b">Calculate fields for every row</text>
+    <rect class="vol" x="65" y="318" width="320" height="10" rx="3"/><text x="225" y="358" class="s">millions of rows</text>
+    <line class="arr" x1="225" y1="364" x2="225" y2="378" marker-end="url(#a)"/>
+    <rect class="box" x="45" y="384" width="360" height="70" rx="8"/><text x="225" y="414" class="b">Filter by the search criteria</text>
+    <rect class="vol" x="65" y="430" width="320" height="10" rx="3"/><text x="225" y="470" class="s">millions of rows</text>
+    <line class="arr" x1="225" y1="476" x2="225" y2="490" marker-end="url(#a)"/>
+    <rect class="box" x="45" y="496" width="360" height="70" rx="8"/><text x="225" y="526" class="b">Return one page</text>
+    <rect class="vol" x="65" y="542" width="8" height="10" rx="3"/><text x="225" y="582" class="s">one page of rows</text>
+
+    <!-- AFTER -->
+    <rect class="box" x="495" y="160" width="360" height="70" rx="8"/><text x="675" y="190" class="b">Filter by the search criteria</text>
+    <rect class="vol" x="515" y="206" width="320" height="10" rx="3"/><text x="675" y="246" class="s">reads millions, keeps only matches</text>
+    <line class="arr" x1="675" y1="252" x2="675" y2="266" marker-end="url(#a)"/>
+    <rect class="box" x="495" y="272" width="360" height="70" rx="8"/><text x="675" y="302" class="b">Keep only the IDs for one page</text>
+    <rect class="vol" x="515" y="318" width="8" height="10" rx="3"/><text x="675" y="358" class="s">one page of IDs</text>
+    <line class="arr" x1="675" y1="364" x2="675" y2="378" marker-end="url(#a)"/>
+    <rect class="box" x="495" y="384" width="360" height="70" rx="8"/><text x="675" y="414" class="b">Join related tables</text>
+    <rect class="vol" x="515" y="430" width="8" height="10" rx="3"/><text x="675" y="470" class="s">one page of rows</text>
+    <line class="arr" x1="675" y1="476" x2="675" y2="490" marker-end="url(#a)"/>
+    <rect class="box" x="495" y="496" width="360" height="70" rx="8"/><text x="675" y="526" class="b">Calculate fields</text>
+    <rect class="vol" x="515" y="542" width="8" height="10" rx="3"/><text x="675" y="582" class="s">one page of rows</text>
+
+    <rect x="160" y="598" width="580" height="34" rx="8" fill="#002218"/>
+    <text x="450" y="621" font-size="16" font-weight="bold" fill="#ffffff">Same data · about 99% less execution time in this case</text>
+  </g>
+</svg>

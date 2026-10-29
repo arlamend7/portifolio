@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" role="img" aria-labelledby="t d" xmlns:c2pa="http://c2pa.org/manifest">
+  <title id="t">Filtrar primeiro: mesmos dados, menos tempo</title>
+  <desc id="d">Antes: acrescentar detalhes a muitos registros. Depois: filtrar, selecionar uma página e enriquecer apenas seus registros.</desc>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#245b45"/></marker>
+  </defs>
+  <style>
+    .f{font-family:Arial,Helvetica,sans-serif}
+    .h{font-size:22px;font-weight:bold;fill:#1a1c1b}
+    .b{font-size:16px;fill:#1a1c1b}
+    .s{font-size:13px;fill:#414844}
+    .box{fill:#f4f4f2;stroke:#c1c8c3;stroke-width:1.5}
+    .vol{fill:#245b45}
+    .arr{stroke:#245b45;stroke-width:2.2}
+  </style>
+  <rect width="900" height="640" fill="#f9f9f7"/>
+  <g class="f" text-anchor="middle">
+    <text x="450" y="58" font-size="32" font-weight="bold" fill="#1a1c1b">Filtrar primeiro</text>
+    <text x="450" y="90" class="s" font-size="15">A barra verde representa o volume de dados em cada etapa</text>
+
+    <text x="225" y="140" class="h">Antes</text>
+    <text x="675" y="140" class="h">Depois</text>
+
+    <!-- BEFORE -->
+    <rect class="box" x="45" y="160" width="360" height="70" rx="8"/><text x="225" y="190" class="b">Reunir dados das tabelas relacionadas</text>
+    <rect class="vol" x="65" y="206" width="320" height="10" rx="3"/><text x="225" y="246" class="s">milhões de registros</text>
+    <line class="arr" x1="225" y1="252" x2="225" y2="266" marker-end="url(#a)"/>
+    <rect class="box" x="45" y="272" width="360" height="70" rx="8"/><text x="225" y="302" class="b">Calcular campos para todos os registros</text>
+    <rect class="vol" x="65" y="318" width="320" height="10" rx="3"/><text x="225" y="358" class="s">milhões de registros</text>
+    <line class="arr" x1="225" y1="364" x2="225" y2="378" marker-end="url(#a)"/>
+    <rect class="box" x="45" y="384" width="360" height="70" rx="8"/><text x="225" y="414" class="b">Aplicar os critérios de pesquisa</text>
+    <rect class="vol" x="65" y="430" width="320" height="10" rx="3"/><text x="225" y="470" class="s">milhões de registros</text>
+    <line class="arr" x1="225" y1="476" x2="225" y2="490" marker-end="url(#a)"/>
+    <rect class="box" x="45" y="496" width="360" height="70" rx="8"/><text x="225" y="526" class="b">Retornar uma página</text>
+    <rect class="vol" x="65" y="542" width="8" height="10" rx="3"/><text x="225" y="582" class="s">registros de uma página</text>
+
+    <!-- AFTER -->
+    <rect class="box" x="495" y="160" width="360" height="70" rx="8"/><text x="675" y="190" class="b">Aplicar os critérios de pesquisa</text>
+    <rect class="vol" x="515" y="206" width="320" height="10" rx="3"/><text x="675" y="246" class="s">ler a base e manter os correspondentes</text>
+    <line class="arr" x1="675" y1="252" x2="675" y2="266" marker-end="url(#a)"/>
+    <rect class="box" x="495" y="272" width="360" height="70" rx="8"/><text x="675" y="302" class="b">Manter os IDs de uma página</text>
+    <rect class="vol" x="515" y="318" width="8" height="10" rx="3"/><text x="675" y="358" class="s">IDs de uma página</text>
+    <line class="arr" x1="675" y1="364" x2="675" y2="378" marker-end="url(#a)"/>
+    <rect class="box" x="495" y="384" width="360" height="70" rx="8"/><text x="675" y="414" class="b">Reunir os dados relacionados</text>
+    <rect class="vol" x="515" y="430" width="8" height="10" rx="3"/><text x="675" y="470" class="s">registros de uma página</text>
+    <line class="arr" x1="675" y1="476" x2="675" y2="490" marker-end="url(#a)"/>
+    <rect class="box" x="495" y="496" width="360" height="70" rx="8"/><text x="675" y="526" class="b">Calcular os campos</text>
+    <rect class="vol" x="515" y="542" width="8" height="10" rx="3"/><text x="675" y="582" class="s">registros de uma página</text>
+
+    <rect x="160" y="598" width="580" height="34" rx="8" fill="#002218"/>
+    <text x="450" y="621" font-size="16" font-weight="bold" fill="#ffffff">Mesmos dados · cerca de 99% menos tempo neste caso</text>
+  </g>
+</svg>
