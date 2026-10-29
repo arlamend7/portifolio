@@ -33,6 +33,7 @@
       <button
         type="button"
         class="icon-button"
+        [disabled]="theme.transitioning()"
         [attr.aria-label]="(theme.theme() === 'dark' ? 'preferences.switchLight' : 'preferences.switchDark') | translate"
         (click)="toggleTheme()"
       >

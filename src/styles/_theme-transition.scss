@@ -1,0 +1,53 @@
+// A broad, feathered diagonal reveal keeps the entire transition visible.
+html.theme-transition::view-transition-group(root) {
+  animation-duration: 3.6s;
+}
+
+html.theme-transition::view-transition-old(root),
+html.theme-transition::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+html.theme-transition::view-transition-old(root) {
+  z-index: 1;
+}
+html.theme-transition::view-transition-new(root) {
+  z-index: 2;
+  mask-image: linear-gradient(to top right, #000 42%, transparent 58%);
+  mask-size: 300% 300%;
+  animation: theme-reveal 3.6s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+
+@keyframes theme-reveal {
+  from {
+    mask-position: 100% 0%;
+    filter: brightness(1.12);
+  }
+  to {
+    mask-position: 0% 100%;
+    filter: brightness(1);
+  }
+}
+
+// Older browsers keep a frozen, inert copy of the previous theme above the live page.
+.theme-transition-snapshot {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483647;
+  overflow: hidden;
+  pointer-events: none;
+  background: var(--surface);
+  color: var(--text);
+  mask-image: linear-gradient(to top right, transparent 42%, #000 58%);
+  mask-size: 300% 300%;
+  animation: theme-reveal 3.6s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.theme-transition::view-transition-group(root),
+  html.theme-transition::view-transition-new(root),
+  .theme-transition-snapshot {
+    animation: none !important;
+  }
+}
