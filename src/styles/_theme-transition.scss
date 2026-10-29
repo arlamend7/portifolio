@@ -13,24 +13,24 @@ html.theme-transition::view-transition-new(root) {
   mix-blend-mode: normal;
 }
 
-// Peel away the old theme above the waterline; the new theme is underneath.
+// Peel away the old theme below the waterline; the new theme is underneath.
 // This is the same geometry used by the compatibility snapshot below.
 html.theme-transition::view-transition-new(root) {
   z-index: 1;
 }
 html.theme-transition::view-transition-old(root) {
   z-index: 2;
-  animation: theme-wave-rise $wave-duration linear both;
+  animation: theme-wave-fall $wave-duration linear both;
 }
 
 // Two sine waves form a rolling crest. Equal point counts allow smooth
 // interpolation, while cosine easing slows the arrival and final settling.
-@keyframes theme-wave-rise {
+@keyframes theme-wave-fall {
   @for $frame from 0 through 12 {
     $progress: math.div($frame, 12);
-    $rise: math.div(1 - math.cos($progress * math.$pi), 2);
-    $level: 110 - 120 * $rise;
-    $points: (0% -20%, 100% -20%);
+    $fall: math.div(1 - math.cos($progress * math.$pi), 2);
+    $level: -10 + 120 * $fall;
+    $points: (0% 120%, 100% 120%);
     @for $point from 0 through 48 {
       $x: 100 - math.div($point, 48) * 100;
       $phase: math.div($x, 100) * 2 * math.$pi + $progress * 3 * math.$pi;
@@ -52,7 +52,7 @@ html.theme-transition::view-transition-old(root) {
   pointer-events: none;
   background: var(--surface);
   color: var(--text);
-  animation: theme-wave-rise $wave-duration linear both;
+  animation: theme-wave-fall $wave-duration linear both;
 }
 
 @media (prefers-reduced-motion: reduce) {

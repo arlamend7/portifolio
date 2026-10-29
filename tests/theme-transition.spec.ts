@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 for (const fallback of [false, true]) {
-  test(`rising theme wave (${fallback ? 'compatibility' : 'native'})`, async ({ page }) => {
+  test(`descending theme wave (${fallback ? 'compatibility' : 'native'})`, async ({ page }) => {
     await page.emulateMedia({ reducedMotion: 'no-preference' });
     if (fallback) {
       await page.addInitScript(() => {
@@ -15,7 +15,7 @@ for (const fallback of [false, true]) {
         name: `Switch to ${target === 'dark' ? 'light' : 'dark'} mode`,
       });
       await expect(toggle).toBeDisabled();
-      await page.waitForTimeout(1700);
+      await page.waitForTimeout(800);
       const clip = await page.evaluate((compatibility) => {
         const element = compatibility
           ? document.querySelector('.theme-transition-snapshot')!
@@ -23,7 +23,7 @@ for (const fallback of [false, true]) {
         return getComputedStyle(element, compatibility ? null : '::view-transition-old(root)')
           .clipPath;
       }, fallback);
-      expect(clip).toContain('polygon(');
+      expect(clip).toContain('polygon(0% 120%, 100% 120%,');
       await page.screenshot({
         path: `test-results/wave-${fallback ? 'fallback' : 'native'}-${target}.png`,
       });
