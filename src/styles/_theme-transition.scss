@@ -1,6 +1,10 @@
-// A broad, feathered diagonal reveal keeps the entire transition visible.
+@use 'sass:math';
+@use 'sass:list';
+
+$wave-duration: 2s;
+
 html.theme-transition::view-transition-group(root) {
-  animation-duration: 3.6s;
+  animation-duration: $wave-duration;
 }
 
 html.theme-transition::view-transition-old(root),
@@ -9,24 +13,33 @@ html.theme-transition::view-transition-new(root) {
   mix-blend-mode: normal;
 }
 
-html.theme-transition::view-transition-old(root) {
+// Peel away the old theme above the waterline; the new theme is underneath.
+// This is the same geometry used by the compatibility snapshot below.
+html.theme-transition::view-transition-new(root) {
   z-index: 1;
 }
-html.theme-transition::view-transition-new(root) {
+html.theme-transition::view-transition-old(root) {
   z-index: 2;
-  mask-image: linear-gradient(to top right, #000 42%, transparent 58%);
-  mask-size: 300% 300%;
-  animation: theme-reveal 3.6s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  animation: theme-wave-rise $wave-duration linear both;
 }
 
-@keyframes theme-reveal {
-  from {
-    mask-position: 100% 0%;
-    filter: brightness(1.12);
-  }
-  to {
-    mask-position: 0% 100%;
-    filter: brightness(1);
+// Two sine waves form a rolling crest. Equal point counts allow smooth
+// interpolation, while cosine easing slows the arrival and final settling.
+@keyframes theme-wave-rise {
+  @for $frame from 0 through 12 {
+    $progress: math.div($frame, 12);
+    $rise: math.div(1 - math.cos($progress * math.$pi), 2);
+    $level: 110 - 120 * $rise;
+    $points: (0% -20%, 100% -20%);
+    @for $point from 0 through 48 {
+      $x: 100 - math.div($point, 48) * 100;
+      $phase: math.div($x, 100) * 2 * math.$pi + $progress * 3 * math.$pi;
+      $y: $level + 4 * math.sin($phase) + 1.5 * math.sin(2 * $phase + 1);
+      $points: list.append($points, ($x * 1% $y * 1%), comma);
+    }
+    #{$progress * 100%} {
+      clip-path: polygon(#{$points});
+    }
   }
 }
 
@@ -39,14 +52,12 @@ html.theme-transition::view-transition-new(root) {
   pointer-events: none;
   background: var(--surface);
   color: var(--text);
-  mask-image: linear-gradient(to top right, transparent 42%, #000 58%);
-  mask-size: 300% 300%;
-  animation: theme-reveal 3.6s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  animation: theme-wave-rise $wave-duration linear both;
 }
 
 @media (prefers-reduced-motion: reduce) {
   html.theme-transition::view-transition-group(root),
-  html.theme-transition::view-transition-new(root),
+  html.theme-transition::view-transition-old(root),
   .theme-transition-snapshot {
     animation: none !important;
   }
