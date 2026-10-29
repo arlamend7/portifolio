@@ -1,3 +1,4 @@
+import { themedDiagram } from './themed-diagrams';
 import MarkdownIt, { Token } from 'markdown-it';
 import hljs from 'highlight.js/lib/core';
 import javascript from 'highlight.js/lib/languages/javascript';
@@ -106,6 +107,15 @@ export function renderMarkdown(
     }
   }
   prepareLinks(tokens);
+  const defaultImage = parser.renderer.rules['image']!;
+  let diagramId = 0;
+  parser.renderer.rules['image'] = (items, index, options, env, renderer) => {
+    const token = items[index];
+    return (
+      themedDiagram(String(token.attrGet('src') || ''), baseUrl, token.content, diagramId++) ??
+      defaultImage(items, index, options, env, renderer)
+    );
+  };
 
   parser.renderer.rules['fence'] = (blocks, index) => {
     const block = blocks[index];

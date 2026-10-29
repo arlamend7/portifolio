@@ -27,7 +27,7 @@ J’ai utilisé le fonctionnement de la poste comme métaphore : notre système 
 
 J’ai également comparé le traitement à une file d’attente : ajouter des lettres n’accélère pas le traitement de celles qui attendent déjà, et suspendre l’arrivée de nouvelles lettres ne vide pas immédiatement la file. Il s’agissait d’une simplification, et non d’une description exacte de l’ordre de livraison du service, mais elle donnait à chacun une représentation commune de ce que notre système contrôle et de ce que le service prend ensuite en charge.
 
-![Analogie postale : notre système transmet les messages à SendGrid, qui les traite et les achemine vers les destinataires. Transmettre un message au service ne signifie pas le livrer ; l’ordre et le délai de livraison peuvent varier.](images/smtp-postal-analogy.fr.png)
+![Analogie postale : notre système transmet les messages à SendGrid, qui les traite et les achemine vers les destinataires. Transmettre un message au service ne signifie pas le livrer ; l’ordre et le délai de livraison peuvent varier.](images/smtp-postal-analogy.fr.svg)
 
 Grâce à cette compréhension commune, la discussion pouvait passer du fonctionnement du service aux actions à envisager. C’est ainsi que j’utilise les analogies : pour établir un point de départ familier, puis expliquer les détails techniques nécessaires à la situation.
 

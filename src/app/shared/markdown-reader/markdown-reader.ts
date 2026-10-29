@@ -62,7 +62,8 @@ export class MarkdownReader {
       this.translate.instant('projects.copy') as string,
     );
     // This is the single trust boundary: markdown-it has raw HTML disabled and the
-    // engine only emits escaped attributes, validated URLs and highlighted code.
+    // engine emits escaped attributes, validated URLs, highlighted code and
+    // build-time SVGs from the repository-owned diagram allowlist.
     return { ...rendered, safeHtml: this.sanitizer.bypassSecurityTrustHtml(rendered.html) };
   });
 

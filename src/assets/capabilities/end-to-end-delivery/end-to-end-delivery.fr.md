@@ -4,7 +4,7 @@ L’ingénierie logicielle est mon domaine principal. Selon le projet, ma contri
 
 Le parapluie illustre les liens entre ces domaines. Le développement logiciel forme la tige et la poignée : ma base pratique. La toile représente des connaissances dans des disciplines voisines, qui m’aident à comprendre les besoins des autres spécialistes et les liens entre leur travail et le mien. Il s’agit de domaines de connaissance et de contribution, et non d’une liste de postes que j’ai occupés.
 
-![Un parapluie dont la tige et la poignée représentent le développement logiciel. Ses sept panneaux représentent l’architecture logicielle, le design UX/UI, l’analyse métier, l’assurance qualité, DevOps, Scrum et la livraison agile, ainsi que le leadership technique.](images/team-roles-umbrella.fr.png)
+![Un parapluie dont la tige et la poignée représentent le développement logiciel. Ses sept panneaux représentent l’architecture logicielle, le design UX/UI, l’analyse métier, l’assurance qualité, DevOps, Scrum et la livraison agile, ainsi que le leadership technique.](images/team-roles-umbrella.fr.svg)
 
 ### La poignée : le développement logiciel
 

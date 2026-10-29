@@ -144,3 +144,16 @@
     color: #a4b6a9;
   }
 }
+
+.markdown-content .themed-diagram {
+  display: block;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.markdown-content .themed-diagram svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}

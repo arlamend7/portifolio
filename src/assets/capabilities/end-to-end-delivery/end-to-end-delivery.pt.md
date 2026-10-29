@@ -4,7 +4,7 @@ A engenharia de software é minha área principal. Dependendo do projeto, minha 
 
 O guarda-chuva representa como essas áreas se conectam. O desenvolvimento de software forma a haste e o cabo: minha base prática. A cobertura representa conhecimentos de disciplinas próximas, que me ajudam a compreender o que outros especialistas precisam e como o trabalho deles se relaciona com o meu. São áreas de conhecimento e contribuição, e não uma lista de cargos que ocupei.
 
-![Um guarda-chuva com Desenvolvimento de Software na haste e no cabo. Seus sete painéis representam Arquitetura de Software, Design UX/UI, Análise de Negócios, Garantia de Qualidade, DevOps, Scrum e Entrega Ágil e Liderança Técnica.](images/team-roles-umbrella.pt.png)
+![Um guarda-chuva com Desenvolvimento de Software na haste e no cabo. Seus sete painéis representam Arquitetura de Software, Design UX/UI, Análise de Negócios, Garantia de Qualidade, DevOps, Scrum e Entrega Ágil e Liderança Técnica.](images/team-roles-umbrella.pt.svg)
 
 ### O cabo: desenvolvimento de software
 

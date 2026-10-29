@@ -4,7 +4,7 @@ Software engineering is my core discipline. Depending on the project, my contrib
 
 The umbrella illustrates how these areas connect. Software development forms the shaft and handle: my practical foundation. The canopy represents knowledge of neighbouring disciplines that helps me understand what other specialists need and how their work connects to mine. These are areas of knowledge and contribution, rather than a list of job titles I have held.
 
-![An umbrella with Software Development as its shaft and handle. Its seven panels represent Software Architecture, UX/UI Design, Business Analysis, Quality Assurance, DevOps, Scrum and Agile Delivery, and Technical Leadership.](images/team-roles-umbrella.en.png)
+![An umbrella with Software Development as its shaft and handle. Its seven panels represent Software Architecture, UX/UI Design, Business Analysis, Quality Assurance, DevOps, Scrum and Agile Delivery, and Technical Leadership.](images/team-roles-umbrella.en.svg)
 
 ### The handle: software development
 

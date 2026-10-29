@@ -27,7 +27,7 @@ I used the postal service as a metaphor: our system prepares a letter and hands 
 
 I also compared processing to a queue: adding more letters does not speed up those already waiting, and pausing new letters does not empty the queue right away. This was a simplification rather than an exact description of the service's delivery order, but it gave everyone a shared picture of what our system controls and what the service handles afterward.
 
-![Postal analogy: our system hands messages to SendGrid, which processes them and forwards them to recipients. Handing a message over is not the same as delivering it; delivery order and timing may vary.](images/smtp-postal-analogy.en.png)
+![Postal analogy: our system hands messages to SendGrid, which processes them and forwards them to recipients. Handing a message over is not the same as delivering it; delivery order and timing may vary.](images/smtp-postal-analogy.en.svg)
 
 With that shared picture, the conversation could move from how the service works to what to do next. That is how I use analogies: to establish a familiar starting point and then explain the technical details needed for the situation.
 

@@ -27,7 +27,7 @@ Utilizei o funcionamento dos correios como metáfora: nosso sistema prepara uma 
 
 Também comparei o processamento a uma fila: acrescentar mais cartas não acelera as que já estão aguardando, e pausar a entrada de novas cartas não esvazia a fila imediatamente. Era uma simplificação, não uma descrição exata da ordem de entrega do serviço, mas oferecia a todos uma referência comum sobre o que nosso sistema controla e o que o serviço faz depois.
 
-![Analogia postal: nosso sistema encaminha mensagens ao SendGrid, que as processa e as envia aos destinatários. Encaminhar uma mensagem ao serviço não é o mesmo que entregá-la; a ordem e o prazo de entrega podem variar.](images/smtp-postal-analogy.pt.png)
+![Analogia postal: nosso sistema encaminha mensagens ao SendGrid, que as processa e as envia aos destinatários. Encaminhar uma mensagem ao serviço não é o mesmo que entregá-la; a ordem e o prazo de entrega podem variar.](images/smtp-postal-analogy.pt.svg)
 
 Com esse entendimento compartilhado, a conversa podia avançar do funcionamento do serviço para o que fazer em seguida. É assim que utilizo analogias: para estabelecer um ponto de partida familiar e, a partir dele, explicar os detalhes técnicos necessários à situação.
 

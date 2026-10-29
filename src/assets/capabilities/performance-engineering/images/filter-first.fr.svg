@@ -1,53 +1,45 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" role="img" aria-labelledby="t d" xmlns:c2pa="http://c2pa.org/manifest">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" role="img" aria-labelledby="t d">
   <title id="t">Filtrer d’abord : mêmes données, moins de temps</title>
   <desc id="d">Avant : enrichir un grand ensemble. Après : filtrer, sélectionner une page et enrichir uniquement ses lignes.</desc>
   <defs>
-    <marker id="a" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#245b45"/></marker>
+    <marker id="a" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="var(--diagram-accent)" /></marker>
   </defs>
-  <style>
-    .f{font-family:Arial,Helvetica,sans-serif}
-    .h{font-size:22px;font-weight:bold;fill:#1a1c1b}
-    .b{font-size:16px;fill:#1a1c1b}
-    .s{font-size:13px;fill:#414844}
-    .box{fill:#f4f4f2;stroke:#c1c8c3;stroke-width:1.5}
-    .vol{fill:#245b45}
-    .arr{stroke:#245b45;stroke-width:2.2}
-  </style>
-  <rect width="900" height="640" fill="#f9f9f7"/>
-  <g class="f" text-anchor="middle">
-    <text x="450" y="58" font-size="32" font-weight="bold" fill="#1a1c1b">Filtrer d’abord</text>
-    <text x="450" y="90" class="s" font-size="15">La barre verte représente le volume traité à chaque étape</text>
 
-    <text x="225" y="140" class="h">Avant</text>
-    <text x="675" y="140" class="h">Après</text>
+  <rect width="900" height="640" fill="var(--surface)" />
+  <g text-anchor="middle" font-family="Arial,Helvetica,sans-serif">
+    <text x="450" y="58" font-size="32" font-weight="bold" fill="var(--text)">Filtrer d’abord</text>
+    <text x="450" y="90" font-size="13px" fill="var(--text-muted)">La barre colorée représente le volume traité à chaque étape</text>
 
-    <!-- BEFORE -->
-    <rect class="box" x="45" y="160" width="360" height="70" rx="8"/><text x="225" y="190" class="b">Joindre toutes les tables liées</text>
-    <rect class="vol" x="65" y="206" width="320" height="10" rx="3"/><text x="225" y="246" class="s">des millions de lignes</text>
-    <line class="arr" x1="225" y1="252" x2="225" y2="266" marker-end="url(#a)"/>
-    <rect class="box" x="45" y="272" width="360" height="70" rx="8"/><text x="225" y="302" class="b">Calculer les champs de chaque ligne</text>
-    <rect class="vol" x="65" y="318" width="320" height="10" rx="3"/><text x="225" y="358" class="s">des millions de lignes</text>
-    <line class="arr" x1="225" y1="364" x2="225" y2="378" marker-end="url(#a)"/>
-    <rect class="box" x="45" y="384" width="360" height="70" rx="8"/><text x="225" y="414" class="b">Appliquer les critères de recherche</text>
-    <rect class="vol" x="65" y="430" width="320" height="10" rx="3"/><text x="225" y="470" class="s">des millions de lignes</text>
-    <line class="arr" x1="225" y1="476" x2="225" y2="490" marker-end="url(#a)"/>
-    <rect class="box" x="45" y="496" width="360" height="70" rx="8"/><text x="225" y="526" class="b">Retourner une page</text>
-    <rect class="vol" x="65" y="542" width="8" height="10" rx="3"/><text x="225" y="582" class="s">lignes d’une page</text>
+    <text x="225" y="140" font-size="22px" font-weight="bold" fill="var(--text)">Avant</text>
+    <text x="675" y="140" font-size="22px" font-weight="bold" fill="var(--text)">Après</text>
 
-    <!-- AFTER -->
-    <rect class="box" x="495" y="160" width="360" height="70" rx="8"/><text x="675" y="190" class="b">Appliquer les critères de recherche</text>
-    <rect class="vol" x="515" y="206" width="320" height="10" rx="3"/><text x="675" y="246" class="s">lire la base, garder les correspondances</text>
-    <line class="arr" x1="675" y1="252" x2="675" y2="266" marker-end="url(#a)"/>
-    <rect class="box" x="495" y="272" width="360" height="70" rx="8"/><text x="675" y="302" class="b">Garder les identifiants d’une page</text>
-    <rect class="vol" x="515" y="318" width="8" height="10" rx="3"/><text x="675" y="358" class="s">identifiants d’une page</text>
-    <line class="arr" x1="675" y1="364" x2="675" y2="378" marker-end="url(#a)"/>
-    <rect class="box" x="495" y="384" width="360" height="70" rx="8"/><text x="675" y="414" class="b">Joindre les tables liées</text>
-    <rect class="vol" x="515" y="430" width="8" height="10" rx="3"/><text x="675" y="470" class="s">lignes d’une page</text>
-    <line class="arr" x1="675" y1="476" x2="675" y2="490" marker-end="url(#a)"/>
-    <rect class="box" x="495" y="496" width="360" height="70" rx="8"/><text x="675" y="526" class="b">Calculer les champs</text>
-    <rect class="vol" x="515" y="542" width="8" height="10" rx="3"/><text x="675" y="582" class="s">lignes d’une page</text>
 
-    <rect x="160" y="598" width="580" height="34" rx="8" fill="#002218"/>
-    <text x="450" y="621" font-size="16" font-weight="bold" fill="#ffffff">Mêmes données · environ 99 % de temps en moins dans ce cas</text>
+    <rect x="45" y="160" width="360" height="70" rx="8" fill="var(--surface-low)" stroke="var(--border)" stroke-width="1.5" /><text x="225" y="190" font-size="16px" fill="var(--text)">Joindre toutes les tables liées</text>
+    <rect x="65" y="206" width="320" height="10" rx="3" fill="var(--diagram-accent)" /><text x="225" y="246" font-size="13px" fill="var(--text-muted)">des millions de lignes</text>
+    <line x1="225" y1="252" x2="225" y2="266" marker-end="url(#a)" stroke="var(--diagram-accent)" stroke-width="2.2" />
+    <rect x="45" y="272" width="360" height="70" rx="8" fill="var(--surface-low)" stroke="var(--border)" stroke-width="1.5" /><text x="225" y="302" font-size="16px" fill="var(--text)">Calculer les champs de chaque ligne</text>
+    <rect x="65" y="318" width="320" height="10" rx="3" fill="var(--diagram-accent)" /><text x="225" y="358" font-size="13px" fill="var(--text-muted)">des millions de lignes</text>
+    <line x1="225" y1="364" x2="225" y2="378" marker-end="url(#a)" stroke="var(--diagram-accent)" stroke-width="2.2" />
+    <rect x="45" y="384" width="360" height="70" rx="8" fill="var(--surface-low)" stroke="var(--border)" stroke-width="1.5" /><text x="225" y="414" font-size="16px" fill="var(--text)">Appliquer les critères de recherche</text>
+    <rect x="65" y="430" width="320" height="10" rx="3" fill="var(--diagram-accent)" /><text x="225" y="470" font-size="13px" fill="var(--text-muted)">des millions de lignes</text>
+    <line x1="225" y1="476" x2="225" y2="490" marker-end="url(#a)" stroke="var(--diagram-accent)" stroke-width="2.2" />
+    <rect x="45" y="496" width="360" height="70" rx="8" fill="var(--surface-low)" stroke="var(--border)" stroke-width="1.5" /><text x="225" y="526" font-size="16px" fill="var(--text)">Retourner une page</text>
+    <rect x="65" y="542" width="8" height="10" rx="3" fill="var(--diagram-accent)" /><text x="225" y="582" font-size="13px" fill="var(--text-muted)">lignes d’une page</text>
+
+
+    <rect x="495" y="160" width="360" height="70" rx="8" fill="var(--surface-low)" stroke="var(--border)" stroke-width="1.5" /><text x="675" y="190" font-size="16px" fill="var(--text)">Appliquer les critères de recherche</text>
+    <rect x="515" y="206" width="320" height="10" rx="3" fill="var(--diagram-accent)" /><text x="675" y="246" font-size="13px" fill="var(--text-muted)">lire la base, garder les correspondances</text>
+    <line x1="675" y1="252" x2="675" y2="266" marker-end="url(#a)" stroke="var(--diagram-accent)" stroke-width="2.2" />
+    <rect x="495" y="272" width="360" height="70" rx="8" fill="var(--surface-low)" stroke="var(--border)" stroke-width="1.5" /><text x="675" y="302" font-size="16px" fill="var(--text)">Garder les identifiants d’une page</text>
+    <rect x="515" y="318" width="8" height="10" rx="3" fill="var(--diagram-accent)" /><text x="675" y="358" font-size="13px" fill="var(--text-muted)">identifiants d’une page</text>
+    <line x1="675" y1="364" x2="675" y2="378" marker-end="url(#a)" stroke="var(--diagram-accent)" stroke-width="2.2" />
+    <rect x="495" y="384" width="360" height="70" rx="8" fill="var(--surface-low)" stroke="var(--border)" stroke-width="1.5" /><text x="675" y="414" font-size="16px" fill="var(--text)">Joindre les tables liées</text>
+    <rect x="515" y="430" width="8" height="10" rx="3" fill="var(--diagram-accent)" /><text x="675" y="470" font-size="13px" fill="var(--text-muted)">lignes d’une page</text>
+    <line x1="675" y1="476" x2="675" y2="490" marker-end="url(#a)" stroke="var(--diagram-accent)" stroke-width="2.2" />
+    <rect x="495" y="496" width="360" height="70" rx="8" fill="var(--surface-low)" stroke="var(--border)" stroke-width="1.5" /><text x="675" y="526" font-size="16px" fill="var(--text)">Calculer les champs</text>
+    <rect x="515" y="542" width="8" height="10" rx="3" fill="var(--diagram-accent)" /><text x="675" y="582" font-size="13px" fill="var(--text-muted)">lignes d’une page</text>
+
+    <rect x="160" y="598" width="580" height="34" rx="8" fill="var(--diagram-accent)" />
+    <text x="450" y="621" font-size="16" font-weight="bold" fill="var(--diagram-on-accent)">Mêmes données · environ 99 % de temps en moins dans ce cas</text>
   </g>
 </svg>

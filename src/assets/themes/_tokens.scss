@@ -1,4 +1,6 @@
 :root {
+  --diagram-accent: #245b45;
+  --diagram-on-accent: #ffffff;
   --font-body: 'Plus Jakarta Sans', sans-serif;
   --font-heading: 'Newsreader', Georgia, serif;
   --font-mono: 'JetBrains Mono', monospace;
@@ -22,6 +24,8 @@
 }
 :root[data-theme='dark'] {
   color-scheme: dark;
+  --diagram-accent: #bce4cd;
+  --diagram-on-accent: #002218;
   --surface: #101c17;
   --surface-low: #17271e;
   --surface-high: #253b2e;
@@ -36,6 +40,8 @@
   --header-bg: #101c17ed;
 }
 :root[data-custom-accent='true'] {
+  --diagram-accent: var(--custom-accent);
+  --diagram-on-accent: var(--custom-on-accent);
   --brand: var(--custom-accent, #245b45);
   --accent: color-mix(in srgb, var(--custom-accent) 65%, var(--text));
   --accent-soft: color-mix(in srgb, var(--custom-accent) 20%, var(--surface));
@@ -46,4 +52,20 @@
     --display: 400 38px/44px var(--font-heading);
     --heading-xl: 400 30px/36px var(--font-heading);
   }
+}
+
+// Keep dark surfaces subdued while deriving their hue from the accent picker.
+:root[data-theme='dark'][data-custom-accent='true'] {
+  --surface: color-mix(in srgb, var(--custom-accent) 10%, #101014);
+  --surface-low: color-mix(in srgb, var(--custom-accent) 14%, #18181c);
+  --surface-high: color-mix(in srgb, var(--custom-accent) 18%, #29292e);
+  --surface-card: color-mix(in srgb, var(--custom-accent) 16%, #202025);
+  --text: #f2f2f5;
+  --text-muted: #c5c5cd;
+  --border: color-mix(in srgb, var(--custom-accent) 20%, #666670);
+  --header-bg: color-mix(in srgb, var(--surface) 93%, transparent);
+  // Lighter accents stay visible against dark surfaces, even for a dark picker value.
+  --accent: color-mix(in srgb, var(--custom-accent) 40%, #ffffff);
+  --diagram-accent: var(--accent);
+  --diagram-on-accent: #101014;
 }
