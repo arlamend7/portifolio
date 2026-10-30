@@ -4,6 +4,7 @@ const diagrams = {};
 for (const path of globSync([
   'src/assets/capabilities/*/images/*.svg',
   'src/assets/projects/gft-life-insurance-sales-platform/images/*.svg',
+  'src/assets/projects/techinnov-account-management-platform/images/*.svg',
 ]).sort()) {
   const svg = readFileSync(path, 'utf8');
   if (/<(?:script|foreignObject|image|style)\b|\bon\w+\s*=|(?:href|src)\s*=/i.test(svg)) {

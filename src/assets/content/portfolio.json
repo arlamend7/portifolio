@@ -1467,9 +1467,9 @@
       "id": "techinnov-account-management-platform",
       "name": "Account Management Platform",
       "description": {
-        "en": "Project documentation to be supplied.",
-        "pt": "Documentação do projeto a ser adicionada.",
-        "fr": "Documentation du projet à venir."
+        "en": "Learning portal modernization, scheduling and reporting, with full-stack development and coordinated manual and automated QA.",
+        "pt": "Modernização de um portal de aprendizagem, agendamento e relatórios, com desenvolvimento full-stack e coordenação de QA manual e automatizado.",
+        "fr": "Modernisation d’un portail d’apprentissage, réservation et rapports, avec développement full stack et coordination des tests manuels et automatisés."
       },
       "markdown": {
         "en": "assets/projects/techinnov-account-management-platform/techinnov-account-management-platform.en.md",
