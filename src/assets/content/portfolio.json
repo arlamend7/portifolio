@@ -1482,9 +1482,9 @@
       "id": "techinnov-language-learning-platform",
       "name": "Language Learning Platform",
       "description": {
-        "en": "Project documentation to be supplied.",
-        "pt": "Documentação do projeto a ser adicionada.",
-        "fr": "Documentation du projet à venir."
+        "pt": "Desenvolvimento de novas atividades e funcionalidades, refatoração de código e processos e coordenação de QA em uma plataforma de aprendizagem de idiomas.",
+        "en": "Development of new learning activities and features, code and process refactoring, and QA coordination within an established language-learning platform.",
+        "fr": "Développement de nouvelles activités et fonctionnalités, refactorisation du code et des processus et coordination de l’assurance qualité d’une plateforme d’apprentissage linguistique."
       },
       "markdown": {
         "en": "assets/projects/techinnov-language-learning-platform/techinnov-language-learning-platform.en.md",
